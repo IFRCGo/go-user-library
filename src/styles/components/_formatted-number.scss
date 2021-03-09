@@ -1,0 +1,11 @@
+.tc-formatted-number {
+  display: flex;
+
+  .tc-number-suffix {
+    padding-inline-start: 3px;
+  }
+}
+
+.tc-formatted-date {
+  white-space: nowrap;
+}

@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Global: Inpages
+   ========================================================================== */
+
+.inpage {
+  &__header {
+    position: relative;
+    color: $base-font-color;
+    padding-top: $spacing-3;
+
+    @include media(medium-up) {
+      padding-top: $spacing-5;
+    }
+  }
+
+  &__subheader {
+    font-size: 0.75rem;
+    padding-top: $spacing-2;
+    margin-bottom: $spacing-2;
+  }
+
+  &__nav {
+    font-weight: $base-font-medium;
+  }
+
+  &__headline {
+    margin-bottom: $spacing-2;
+  }
+
+  &__headline-content {
+    .inpage__title {
+      margin-bottom: $spacing-2;
+    }
+  };
+
+  &__headline-actions {
+    margin-bottom: $global-spacing;
+    @include media(medium-up) {
+      margin-bottom: 0;
+    }
+  };
+
+  &__title--centered {
+    display: block;
+    max-width: 42rem;
+    margin: 0 auto;
+  }
+
+  &__title {
+    @extend .heading, .heading--xlarge;
+    text-align: center;
+    letter-spacing: $letter-spacing-lg;
+  }
+
+  &__subtitle {
+    position: relative;
+    @extend .heading-alt;
+    color: rgba($base-font-color, 0.64);
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    margin: ($global-spacing / 4) 0;
+
+    &:first-child {
+      margin-top: -1.25rem;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @include media(medium-up) {
+      font-size: 1rem;
+      line-height: 1.25rem;
+
+      &:first-child {
+        margin-top: -1.5rem;
+      }
+    }
+  }
+
+  &__note {
+    font-size: 0.875rem;
+    color: rgba($base-font-color, 0.44);
+  }
+
+  &__introduction {
+    margin-bottom: $spacing-2;
+
+    @include media(medium-up) {
+      text-align: center;
+    }
+  }
+
+  &__introduction--small {
+    font-size: 1.25rem;
+    line-height: 2rem;
+
+    @include media(medium-up) {
+      font-size: 1.5rem;
+      line-height: 2.25rem;
+    }
+  }
+
+  &__body {
+    margin-top: ($spacing * 1.5);
+  }
+}
+
+.inpage__body__main {
+  background-color: #fff;  
+}
+
+
+/* Inpage Header
+   ========================================================================== */
+
+.header-stats {
+  hr {
+   opacity: 0;
+   @include media(medium-up) {
+     opacity: 1;
+   }
+  }
+}
+
+.stats-list {
+  list-style: none;
+  @include column(12/12);
+  @include media(large-up) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    @include column(12/12);
+    font-size: 2.25rem;
+    line-height: 3rem;
+    padding-bottom: $global-spacing;
+    border-inline-end: 0;
+    padding-inline-start: $global-spacing * 3.5;
+    border-bottom: solid 1px rgba($base-color, 0.18);
+    margin-bottom: $global-spacing;
+    &:last-child {
+      border-inline-end: none;
+      border-bottom: none;
+    }
+    @include media(large-up) {
+      @include column(3/12);
+      border-inline-end: solid 1px rgba($base-color, 0.18);
+      border-bottom: 0;
+      padding-inline-end: $global-spacing;
+      margin-bottom: 0;
+    }
+  }
+  .stat-double {
+    @include media(large-up) {
+      width: auto;
+      & + .stat-double {
+        padding-inline-start: $global-spacing/2;
+      }
+    }
+  }
+  .stat-borderless {
+    border-inline-end: none;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  small {
+    display: block;
+    font-size: 0.875rem;
+    color: $light-base-color;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    @include media(medium-up) {
+      font-size: 0.875rem;
+    }
+    @include media(large-up) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.stats-list-deployments {
+  list-style: none;
+  @include column(12/12);
+  @include media(large-up) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  li {
+    @include column(12/12);
+    font-size: 2.25rem;
+    line-height: 3rem;
+    padding-bottom: $global-spacing;
+    border-inline-end: 0;
+    padding-inline-start: $global-spacing * 3.5;
+    border-bottom: solid 1px rgba($base-color, 0.18);
+    margin-bottom: $global-spacing;
+    &:last-child {
+      border-inline-end: none;
+      border-bottom: none;
+    }
+    @include media(large-up) {
+      @include column(4/12);
+      border-inline-end: solid 1px rgba($base-color, 0.18);
+      border-bottom: 0;
+      padding-inline-end: $global-spacing;
+      margin-bottom: 0;
+    }
+  }
+  .stat-double {
+    @include media(large-up) {
+      width: auto;
+      & + .stat-double {
+        padding-inline-start: $global-spacing/2;
+      }
+    }
+  }
+  .stat-borderless {
+    border-inline-end: none;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  small {
+    display: block;
+    font-size: 0.875rem;
+    color: $light-base-color;
+    text-transform: uppercase;
+    line-height: 1.25rem;
+    @include media(medium-up) {
+      font-size: 0.875rem;
+    }
+    @include media(large-up) {
+      font-size: 1rem;
+    }
+  }
+}
+
+.header-stats--two-col {
+  @include column(12/12);
+  @include media(large-up){
+    @include column(5/12);
+  }
+  .stats-list {
+    li {
+      @include column(12/12);
+      @include media(small-up){
+        @include column(6/12);
+      }
+    }
+  }
+}
+
+.inpage__headline-charts--two-col {
+  @include column(12/12);
+  @include media(large-up){
+    @include column(7/12);
+  }
+  .stats-chart {
+    @include column(12/12);
+    &:first-child {
+      margin-bottom: $global-spacing * 2;
+    };
+    @include media(small-up){
+      @include column(6/12);
+      &:first-child {
+        margin-bottom: 0;
+      };
+    }
+  }
+}
+
+
+/* Use for header with action buttons
+   ========================================================================== */
+.inpage__header--action {
+  padding-top: $spacing-3;
+
+  .inpage__title {
+    margin-bottom: 0;
+  }
+}
+
+/* Dark theme modifier
+   ========================================================================== */
+
+.page--dark {
+  .inpage__header {
+    @extend .antialiased;
+    background-color: $base-color;
+    color: #fff;
+  }
+
+  .inpage__subtitle {
+    color: rgba(#fff, 0.48);
+  }
+
+  .inpage__introduction {
+    color: rgba(#fff, 0.64);
+  }
+
+  .inpage__headline {
+    &::after {
+      background: #fff;
+    }
+  }
+}
+
+/* Short Red Line: Decorative element  */
+
+@mixin line-brand-deco {
+  content: '';
+  height: $base-border-width * 2;
+  background: $primary-color;
+}
+
+.line-brand-deco {
+  &::after {
+    @include line-brand-deco;
+    width: 10rem;
+    display: block;
+    margin: ($global-spacing * 4) auto 0 auto;
+
+  }
+}
+
+// Use for top fluid red border to match width of text content below it
+.line-brand-deco-border-top-wrap {
+  display: inline-block;
+}
+
+.line-brand-deco-border-top {
+  &::after {
+    @include line-brand-deco;
+    margin: 0 0 ($global-spacing / 2) 0;
+    display: block;
+  }
+}

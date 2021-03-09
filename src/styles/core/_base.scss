@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Base
+   ========================================================================== */
+
+/* Reset the box-sizing */
+
+html {
+  box-sizing: border-box;
+  font-size: $root-font-size;
+  /* Changes the default tap highlight to be completely transparent in iOS. */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Make viewport responsive on every browser */
+
+@at-root {
+  @-moz-viewport      { width: device-width; }
+  @-ms-viewport       { width: device-width; }
+  @-o-viewport        { width: device-width; }
+  @-webkit-viewport   { width: device-width; }
+  @viewport           { width: device-width; }
+}
+
+/* Reset HTML, body, etc */
+
+body {
+  background-color: $grey-mist;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: $base-font-weight;
+  font-style: $base-font-style;
+  min-width: $row-min-width;
+}
+
+
+/* Links
+   ========================================================================== */
+
+a {
+  cursor: pointer;
+  color: $base-color;
+  text-decoration: none;
+  transition: opacity 0.24s ease 0s;
+}
+
+//a:visited {
+  //color: $base-color;
+//}
+
+a:hover {
+  opacity: 0.64;
+}
+
+a:active {
+  outline: none;
+  transform: translate(0, 1px);
+}
+
+a:focus {
+  outline: none; // This causes usability problems. Needs fixing.
+}
+
+.link-wrapper {
+  display: inline-block;
+  vertical-align: top;
+}
+
+//a.link--primary {
+  //background-image: linear-gradient(180deg,transparent 65%, $primary-color 0);
+  //color: $base-color;
+  //font-weight: $base-font-regular;
+  //padding-bottom: $global-spacing/4;
+  //background-size: 100% 140%;
+  //background-repeat: no-repeat;
+  //text-decoration: none;
+  //transition: background-size .4s ease;
+  //&:hover {
+    //opacity: 1;
+    //background-size: 100% 85%;
+  //};
+//}
+
+.map-vis .map-vis__legend {
+  z-index: 1;
+}
+
+.mapboxgl-popup {
+  z-index: 2;
+  font-family: $base-font-family;
+  border-radius: $base-border-radius;
+
+  .popover__subtitle {
+    font-weight: $base-font-semi-bold;
+    //text-decoration: underline;
+    margin-bottom: $global-spacing/2.5;
+  }
+  
+  .popover__subtitle, .popover__details {
+    font-size: $font-size-sm;
+  }
+}
+
+.popover__body {
+  font-size: $font-size-sm;
+}
+
+.popover__contents {
+  font-weight: $base-font-light;
+  box-shadow: 1px 0px 4px 2px rgba(0,0,0,0.08);
+}
+
+.popover__actions {
+  .poa-xmark {
+    padding: $spacing-half 0;
+    position: relative;
+    top: -($spacing / 1.9);
+  }
+
+  .actions__menu {
+    padding-bottom: $spacing-half;
+    margin-bottom: 0;
+  }
+}
+
+.mapboxgl-popup .link--primary {
+  color: $primary-color;
+  text-transform: uppercase;
+  //border-bottom: 1px solid $primary-color;
+  font-weight: $base-font-medium;
+  padding-bottom: $global-spacing/4;
+  background-image: none;
+  background-size: auto;
+  background-repeat: repeat;
+  transition: none;
+
+  .popover__headline__icon {
+    font-size: $font-size-xs;
+    font-weight: $base-font-bold;
+    padding-left: ($spacing-half / 4);
+  }
+}
+
+.link {
+  color: $primary-color;
+  font-weight: $base-font-medium;
+  font-size: $font-size-sm;
+
+  &:hover, &:focus {
+    text-decoration: underline;
+    opacity: 1;
+  }
+}
+
+.link--with-icon {
+  display: flex;
+  align-items: center;
+  border: none; // to reset for icon buttons
+  background: none; // to reset for icon buttons
+  cursor: pointer;
+
+  &:hover, &:focus {
+    text-decoration: none;
+    opacity: 1;
+
+    .link--with-icon-text {
+      text-decoration: underline;
+    }
+  }
+}
+
+.link--with-icon-inner {
+  position: relative;
+  top: -1px;
+  
+  &:before {
+    font-size: $font-size-xxs;
+    margin-inline-start: ($spacing-half / 2);
+  }
+}
+
+
+@mixin link-underline {
+  text-decoration: underline;
+  font-weight: $base-font-medium;
+
+  &:hover, &:focus {
+    color: $primary-color;
+    opacity: 1;
+  }
+}
+
+.link-underline {
+  @include link-underline;
+}
+
+//a.link--secondary {
+  //color: $base-color;
+  //font-weight: 400;
+  //background-image: linear-gradient(180deg, transparent 65%, rgba($base-color, 0.1) 0);
+  //background-size: 100% 100%;
+  //background-repeat: no-repeat;
+  //text-decoration: none;
+  //transition: background-size .4s ease;
+  //&:hover {
+    //opacity: 1;
+    //background-size: 100% 140%;
+  //};
+//}
+
+a.link--external {
+  color: $secondary-color;
+  text-decoration: none;
+  position: relative;
+  padding-inline-start: $global-spacing * 1.5;
+  font-weight: $base-font-regular;
+  transition: padding-inline-start .2s ease-in-out;
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 1rem;
+    left: 0;
+    top: $global-spacing/2;
+    background-color: $secondary-color;
+    transition: width .2s ease-in-out;
+  }
+
+  &:hover {
+    opacity: 1;
+    padding-inline-start: $global-spacing * 2;
+    
+    &:before {
+      width: 1.5rem;
+    }
+  }
+}
+
+/* Rows
+   ========================================================================== */
+
+.row {
+  @extend .clearfix;
+  //padding-inline-start: $global-spacing * 3;
+  //padding-inline-end: $global-spacing * 3;
+
+  @include media(xlarge-up) {
+    //padding-inline-start: $global-spacing * 5;
+    //padding-inline-end: $global-spacing * 5;
+  }
+
+  &--centered {
+    //max-width: $row-max-width;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+}
+
+.row-fold {
+  @extend .clearfix;
+  padding-inline-start: $global-spacing * 1.5;
+  padding-inline-end: $global-spacing * 1.5;
+
+  @include media(xlarge-up) {
+    padding-inline-start: $global-spacing * 2.5;
+    padding-inline-end: $global-spacing * 2.5;
+  }
+
+  &--centered {
+    max-width: $row-max-width;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+  }
+}
+
+
+/* Buttons
+   ========================================================================== */
+
+/**
+ * iOS "clickable elements" fix for role="button":
+ * https://developer.mozilla.org/en-US/docs/Web/Events/click#Safari_Mobile
+ */
+
+[role="button"] {
+  cursor: pointer;
+}
+
+
+/* Forms
+   ========================================================================== */
+
+input, select, textarea {
+  font: inherit;
+  height: auto;
+  width: auto;
+  margin: 0;
+  max-width: 90%;
+}
+
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Make all browsers render the <main> element correctly.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Style selection appearance (via ::selection pseudo-element).
+ */
+
+::selection {
+  background-color: rgba($base-color, 0.64);
+  color: #fff;
+}

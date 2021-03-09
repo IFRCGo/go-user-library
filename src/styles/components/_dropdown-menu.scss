@@ -1,0 +1,27 @@
+.tc-dropdown-menu {
+  box-sizing: border-box;
+  padding: 3px 6px;
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.tc-dropdown-container {
+  z-index: 10;
+  box-sizing: border-box;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  //padding: 10px;
+  max-width: 50vw;
+  max-height: 50vh;
+  overflow: auto;
+  @extend %drop-skin;
+}

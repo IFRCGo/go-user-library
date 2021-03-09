@@ -1,0 +1,26 @@
+.breadcrumb__block {
+
+  margin-top: $spacing-half;
+
+  span span:first-of-type .breadcrumb {
+    padding-inline-start: 0;
+  }
+
+}
+
+.breadcrumb {
+  color: $base-color--light;
+  font-size: $font-size-sm;
+  padding: $spacing-half;
+  display: inline-block;
+}
+
+b.breadcrumb {
+  font-weight: $base-font-semi-bold;
+}
+
+.breadcrumb__next {
+  vertical-align: middle;
+  font-size: 12px;
+}
+

@@ -1,0 +1,426 @@
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: $global-spacing;
+  font-size: 0.875rem;
+
+  th, td  {
+    padding: ($spacing * 1.2);
+    //vertical-align: baseline;
+    text-align: left;
+    @include media(small-down) {
+      &:nth-child(n + 4) {
+        visibility: hidden;
+      }
+    }
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+  }
+
+  th:first-child,
+  td:first-child {
+    padding-inline-start: $global-spacing;
+  }
+
+  th:last-child,
+  td:last-child {
+    padding-inline-end: $global-spacing;
+  }
+
+  .table__header--active {
+    color: $primary-color;
+  }
+
+  .table__header--requestAmount, .table__cell--requestAmount {
+    width: 184px;
+  }
+
+  thead th {
+    color: $base-color;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    vertical-align: baseline;
+    box-shadow: inset 0 (-$base-border-width) 0 0 $base-alpha-color;
+
+    a {
+      //display: inline-block;
+      display: flex;
+
+      &.table__sort:after {
+        font-size: 1rem;
+        //margin-inline-start: 0.375rem;
+        vertical-align: bottom;
+        display: inline-block;
+        position: relative;
+        left: ($spacing / 4);
+        line-height: inherit !important;
+      }
+
+      &.table__sort--none:after {
+        @extend %collecticon-sort-none;
+      }
+
+      &.table__sort--asc:after {
+        @extend %collecticon-sort-asc;
+      }
+
+      &.table__sort--desc:after {
+        @extend %collecticon-sort-desc;
+      }
+
+      &.table__filter:after {
+        font-size: 1rem;
+        margin-inline-start: 0.375rem;
+        vertical-align: bottom;
+        display: inline-block;
+        line-height: inherit !important;
+
+        @extend %collecticon-sm-chevron-down;
+      }
+    }
+
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+    }
+  }
+
+  tbody tr:last-child td,
+  tbody tr:last-child th {
+    box-shadow: none;
+  }
+
+  tfoot td {
+    box-shadow: inset 0 ($base-border-width * 2) 0 0 $base-alpha-color;
+  }
+
+  &--zebra {
+    tbody tr:nth-of-type(even) {
+      background: rgba($base-color, 0.04);
+    }
+  }
+
+  .table__empty-cell {
+    text-align: center;
+    font-weight: $base-font-regular;
+    color: rgba($base-font-color, 0.48);
+    font-style: italic;
+  }
+}
+
+.table__basic-grid {
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table__basic--header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: ($global-spacing * 2);
+  font-weight: bold;
+}
+
+.table__basic {
+  display: flex;
+  justify-content: center;
+  .table__basic--title {
+    width: ($global-spacing * 10);
+  }
+  .table__basic--value {
+    font-weight: bold;
+  }
+}
+
+.table__basic-footer {
+  display: flex;
+  justify-content: center;
+  margin-top: ($global-spacing * 2);
+}
+
+.table__basic-footer-line {
+  margin-inline-start: 4px; 
+}
+
+/* Warapped in a scrollable-x element (optimized for narrow screens) */
+
+.scrollable-x {
+  .table {
+    box-shadow: inset 0 -$base-border-width 0 0 $base-alpha-color;
+  }
+}
+
+td.right-align, th.right-align{
+  text-align: end;
+}
+
+
+/* Prose specific */
+
+.prose--responsive {
+  > .table thead th {
+    @include media(medium-up) {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+.alerts {
+  list-style: none;
+  margin: 0;
+
+  &__item {
+    margin-bottom: $global-spacing;
+    box-shadow: 0 0 0 1px $base-alpha-color;
+    border-inline-start: 3px solid red;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.alerts-table {
+  margin-bottom: $global-spacing * 2;
+  width: 100%;
+
+  td {
+    &:nth-child(3) {
+      width: 50%;
+      @include media(large-up){
+        width: 25%;
+      }
+    }
+    &:nth-child(4) {
+      font-weight: $base-font-light;
+    }
+  }
+
+  tbody tr {
+    border-inline-start: 4px solid transparent;
+
+    &:nth-child(even) {
+      height: $global-spacing;
+
+      td {
+        padding: 0;
+      }
+    }
+
+    &.status-open {
+      border-color: $primary-color;
+    }
+  }
+
+  @include media(medium-down) {
+    /* Force table to not be like tables anymore */
+    &, thead, tbody, th, td, tr {
+      display: block;
+    }
+
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    td {
+      /* Behave  like a "row" */
+      border: none;
+      position: relative;
+      padding: 1rem 1rem 0 45%;
+
+      &:first-child {
+        padding-inline-start: 45%;
+      }
+
+      &:last-child {
+        padding-bottom: 1rem;
+      }
+    }
+
+    td:before {
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 1rem;
+      left: 1rem;
+      width: 40%;
+      padding-inline-end: 1rem;
+      white-space: wrap;
+      font-weight: $base-font-bold;
+      speak: none;
+    }
+
+    /*
+    Label the data
+    */
+    [data-heading] {
+      &:before {
+        content: attr(data-heading);
+      }
+    }
+  }
+}
+
+.table__container {
+  .fold__actions {
+    position: relative;
+    top: -5.2em;
+    @include media(small-down) {
+      display: none;
+    }
+  }
+}
+
+
+.table--border {
+  thead th {
+    color: $secondary-color;
+    box-shadow: none;
+  }
+
+  th, td {
+    border: 1px solid $base-border-color;
+  }
+}
+
+.table--border-bottom {
+  thead th {
+    box-shadow: none;
+    font-weight: $base-font-semi-bold;
+    text-align: inline-start;
+  }
+
+  thead th, td {
+    font-size: $base-font-size;
+
+    &:first-child {
+      padding-inline-start: 0;
+    }
+
+    &:last-child {
+      padding-inline-end: 0;
+    }
+  }
+
+  th {
+    .drop__toggle--caret::after {
+      content: '\EA0A';
+      font-family: 'icomoon', Arial, Verdana, Tahoma, sans-serif;
+      font-size: $font-size-xxs;
+      vertical-align: baseline;
+    }
+  }
+
+  td {
+    color: $grey-soot;
+    border-bottom: 1px solid $base-border-color--light;
+    font-weight: $base-font-regular;
+  }
+
+  // Progress bar styling for tables with bottom borders
+  .progress-bar {
+    background-color: rgba(50, 50, 50, 0.1);
+    border-radius: 0;
+  }
+
+  .progress-bar__value {
+    background-color: $primary-color;
+    border-radius: 0;
+    height: 4px;
+  }
+
+  .progress_value_funding_table {
+    margin-bottom: ($global-spacing / 3);
+    display: block;
+  }
+}
+
+.table--box-shadow {
+  @include box__global;
+
+  thead th, td {
+    &:first-child {
+      padding-inline-start: $global-spacing;
+    }
+
+    &:last-child {
+      padding-inline-end: $global-spacing;
+    }
+  }  
+}
+
+.table--border__list {
+  padding: $spacing 0;
+}
+
+// Simple, underlined links for tables
+.link--table {
+  color: $black;
+  font-weight: $base-font-medium;
+  text-decoration: underline;
+
+  &:hover, &:focus {
+    color: $primary-color;
+    opacity: 1;
+  }
+}
+
+// Pagination for table
+.pagination-wrapper.pagination-wrapper--table {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: $global-spacing;
+}
+
+
+// Ensure table dates don't wrap
+.table__header--glide, .table__cell--glide {
+  width: 90px; 
+}
+
+.table__header--affected, .table__cell--affected {
+  width: 130px;
+}
+
+.table__header--date, .table__cell--date, .table__header--startDateInterval, .table__cell--startDateInterval, .table__header--endDate, .table__cell--endDate {
+  width: 140px;
+}
+
+.table__cell--deploy-emergency-no {
+  width: 200px;
+}
+
+.table__cell--deploy-emergency-name {
+  width: 250px;
+}
+
+.table__header--name, .table__cell--name {
+  width: 260px;
+}
+
+.table__header--requested, .table__cell--requested {
+  width: 184px;
+}
+
+.table__header--fundedAmount, .table__cell--fundedAmount {
+  width: 110px;  
+}
+
+.table__header--dtype, .table__cell--dtype {
+  width: 160px;
+}
+
+.table__header--deployed, .table__cell--deployed {
+  width: 140px;
+}

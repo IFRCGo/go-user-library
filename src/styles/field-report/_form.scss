@@ -1,0 +1,407 @@
+/* ==========================================================================
+   Field Report form
+   ========================================================================== */
+
+
+.page--frep-form {
+
+  .fold__body > .form__group {
+    @include form__group;
+    background-color: #fff;
+    box-shadow: $box-shadow-component;
+    margin-bottom: ($spacing * 1.5);
+    @include row;
+    
+    > .form__inner-header {
+      display: block;
+    }
+  }
+
+  .form__group.action-checkboxes {
+    .form__options-group + .form__label {
+      padding-top: $global-spacing-2;
+    }
+  }
+
+  .resp-value {
+    padding-top: 0;  
+  }
+
+
+  .form__hascol {
+    margin-bottom: 0 !important;
+
+    .form__group {
+      margin-inline-end: 0 !important;
+      margin-inline-start: 0 !important;
+      width: 50% !important;
+    }
+  }
+
+  .fold__body .form__group--kv-actions, .fold__body .contact-row {
+    margin-bottom: 0;
+    padding-bottom: $global-spacing-2;
+  }
+
+  .fold__body .contact-row:last-of-type {
+    margin-bottom: $global-spacing-2;
+  }
+
+  .fold__body {
+    .plan-response-row-wrap, .contact-row-wrap {
+      @include form__group;
+      background-color: #fff;
+      box-shadow: $box-shadow-component;
+      margin-bottom: ($spacing * 1.5);
+    }
+    
+    .plan-response-row, .contact-row {
+      box-shadow: none;
+    }
+  }
+}
+
+.sources-list {
+  &__item {
+    @include column(12/12);
+    margin-bottom: $global-spacing * 1.5;
+
+    @include media(small-up) {
+      @include column(6/12, $cycle: 2);
+    }
+
+    @include media(medium-up) {
+      @include column(4/12, $cycle: 3);
+    }
+
+    @include media(large-up) {
+      @include column(3/12, $cycle: 4);
+    }
+  }
+}
+
+.contact-row {
+  .form__group {
+    padding-top: 0;
+  }
+}
+
+.estimation-row {
+  .estimation {
+    @extend .clearfix;
+    margin-bottom: $global-spacing;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .estimation__item {
+    .form__option--inline {
+      display: flex;
+    }
+  }
+
+  .estimation:first-child {
+    .estimation__item--actions {
+      margin-top: 1.8rem;
+    }
+  }
+}
+
+.action-checkboxes .form__options-group {
+  display: flex;
+  flex-wrap: wrap;
+  .form__option {
+    @include col;
+
+    @include media(small-up) {
+      @include col(50%);
+    }
+
+    @include media(medium-up) {
+      width: 33.33%;
+    }
+
+    @include media(large-up) {
+      width: 25%;
+    }
+  }
+}
+
+.eru {
+  @extend .clearfix;
+
+  .eru__item-actions {
+    padding-top: 1.5rem;
+  }
+}
+
+.form__label--nested {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: $base-font-weight;
+  opacity: 0.64;
+}
+
+.plan-response-row  {
+
+  > .form__inner-body {
+    @include media(medium-up) {
+
+      display: flex;
+      flex-flow: row nowrap;
+
+      .form__group {
+        margin-bottom: 0;
+      }
+
+      .form__option {
+        margin-top: 0;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .resp-status {
+    padding-top: 0;
+
+    .form__inner-body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.form__group--visible-field-group {
+  margin-top: $global-spacing-2;
+}
+
+.action-checkboxes--textarea {
+  .label-secondary {
+    margin-top: $global-spacing-3;
+  }
+}
+
+
+.stepper {
+  max-width: $media-medium;
+  display: flex;
+  flex-flow: column wrap;
+  list-style: none;
+  margin: 0 auto ($global-spacing * 2) auto;
+  padding: 0;
+  font-family: $heading-font-family;
+  font-size: 0.875rem;
+  line-height: 1rem;
+
+  @include media(medium-up) {
+    flex-flow: row wrap;
+    margin-bottom: ($global-spacing * 4);
+
+    [dir='ltr'] & {
+      margin-inline-start: 18%;
+    }
+  }
+}
+
+.stepper__item {
+  position: relative;
+  flex-grow: 1;
+  padding: 0 0 1rem 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: $grey-pearl;
+
+  @include media(medium-up) {
+    padding: 1.5rem 1rem 0 0;
+    margin: 0 0.5rem 0 0;
+  }
+
+  &:not(.stepper__item--complete) {
+    &::before {
+      content: ''
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: $full-border-radius;
+    background: tint($base-color, 80%);
+    color: #fff;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    z-index: 1;
+
+    [dir='rtl'] & {
+      right: -1.5rem;
+      left: auto;
+    }
+
+    @include media(medium-up) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 1.5rem;
+    left: 0.5rem;
+    content: '';
+    width: 2px;
+    height: 100%;
+    transform: translate(-1px, 0);
+    background: tint($base-color, 80%);
+
+    @include media(medium-up) {
+      width: 100%;
+      height: 2px;
+      transform: translate(0, -1px);
+      top: 0.5rem;
+      left: 1.5rem;
+    }
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    [dir='ltr'] & {
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    color: inherit;
+    font-weight: $base-font-semi-bold;
+    text-transform: uppercase;
+    display: block;
+    margin-inline-start: $spacing-half;
+
+    @include media(medium-up) {
+      margin: $spacing-half 0 0 0;
+      position: relative;
+      margin-inline-start: -10%;
+    }
+  }
+
+ &--current {
+    color: $primary-color;
+
+     &::before {
+       background: $primary-color;
+       box-shadow: 0 0 0 4px $grey-mist, 0 0 0 6px $primary-color;
+     }
+  }
+
+  &--complete {
+    color: $grey-gravel;
+    &::before {
+      background-color: $grey-gravel;
+      @extend %collecticon-sm-tick;
+    }
+  }
+}
+
+.form__actions {
+  button {
+    &:first-child {
+      margin-inline-end: $global-spacing/2;
+    };
+  }
+}
+
+/* Buttons */
+
+.button--add-item {
+  @extend .button, .button--secondary-light;
+
+  &::before {
+    @extend %collecticon-sm-plus;
+  }
+}
+
+.button--remove-source {
+  @include button-trash;
+}
+
+.button--clear-source {
+  @include button-trash;
+  margin: $spacing 0 0 ($spacing * 2.2);
+}
+
+.epi-figures-source {
+  float: left;
+  width: 100%;
+}
+
+.epi-form-group {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.epi-label-indent {
+  padding-inline-start: 3rem;
+}
+
+.pl-small {
+  padding-inline-start: 1.5rem;
+}
+
+.form__group__fr  {
+  > .form__group__wrap {
+    @include row;
+
+    @include media(medium-up) {
+      @include flex;
+    }
+
+    > .form__inner-header {
+      @include col;
+
+      @include media(medium-up) {
+        @include col(30%);
+      }
+    }
+
+    > .form__inner-body {
+      @include col;
+
+      @include media(medium-up) {
+        @include col(70%);
+      }
+    }
+  }
+
+  .form__option--custom-radio {
+    .form__option__text {
+      font-weight: $base-font-regular;
+    }
+  }
+}
+
+.per__form__radio-group {
+  margin-bottom: 12px;
+  margin-top: -24px; // to compensate the empty space caused by 'form__inner-header
+}
+
+.per__form__button {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.per__list__button {
+  margin-left: 4px;
+  margin-right: 4px;
+  min-width: 62px;
+}
+
+.textarea--notes {
+  margin-bottom: $spacing * 2.5;
+}

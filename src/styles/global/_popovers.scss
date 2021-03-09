@@ -1,0 +1,268 @@
+/* ==========================================================================
+   Popovers
+   ========================================================================== */
+
+.popover {
+  position: relative;
+  text-align: initial;
+  line-height: 1.5;
+  min-width: 16rem;
+  max-width: 20rem;
+  color: $base-color;
+}
+
+.popover__contents {
+  background: #fff;
+  box-shadow: 0 4px 16px 2px rgba($base-color, 0.08);   // Elevation Index: 2
+  border-radius: $base-border-radius;
+  position: relative;
+  z-index: 1;
+  padding: ($spacing * 1.2) ($spacing * 1.5);
+  //max-height: 225px; // Popovers can scroll
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover__contents__preparedness {
+  background: #fff;
+  box-shadow: 0 4px 16px 2px rgba($base-color, 0.08);   // Elevation Index: 2
+  border-radius: $base-border-radius;
+  position: relative;
+  z-index: 1;
+  padding: $global-spacing;
+  overflow-x: hidden;
+  overflow-y: auto;
+  max-height: auto;
+  height: fit-content;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-inline-end: 0px !important;
+  }
+}
+
+.popover__contents__noscroll {
+  @extend .popover__contents;
+  max-height:fit-content;
+}
+
+.popover__headline {
+  font-size: $base-font-size;
+}
+
+.popover__headline__bold {
+  font-weight: bold;
+}
+
+a.popover__contents {
+  color: inherit;
+
+  &:hover {
+    opacity: 1;
+    background-color: tint($link-color, 92%);
+  }
+}
+
+/* popover header
+   ========================================================================== */
+
+.popover__header {
+  display: flex;
+  width: 100%;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover__title {
+  @include heading(1rem);
+  margin: 0;
+
+  a.popover__contents & {
+    color: $link-color;
+  }
+}
+
+
+/* popover body
+   ========================================================================== */
+
+.popover__body {
+  max-height: 170px; // Popovers can scroll
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-bottom: $global-spacing;
+  padding-right: $spacing-half;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  li {
+    list-style: none;
+  }
+  ul {
+    margin-inline-start: 0;
+  }
+
+  img {
+    height: 20px;
+    margin-inline-end: $global-spacing;
+  }
+}
+
+.popover__summary {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: tint($base-color, 36%);
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.popover__details {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  dt {
+    width: 68%;
+    font-size: 0.875rem;
+    margin-bottom: $global-spacing;
+  }
+
+  dd {
+    font-size: 1.25rem;
+    width: 32%;
+    margin-bottom: 0;
+  }
+
+  dd + dd {
+    margin-inline-start: 68%;
+  }
+}
+
+.popover__details--list {
+  border-bottom: 1px solid $base-border-color;
+  padding-bottom: $spacing;
+
+  &:only-of-type {
+    border-color: transparent;
+    padding-bottom: 0;
+  }  
+}
+
+.popover__stat {
+  font-weight: $base-font-regular;
+  margin-bottom: 0;
+  &:first-child {
+    margin-bottom: $global-spacing/2;
+    padding-bottom: $global-spacing/2;
+    border-bottom: solid 1px $base-border-color;
+  };
+}
+/* popover footer
+   ========================================================================== */
+
+.popover__footer {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* popover actions
+   ========================================================================== */
+
+.popover__actions {
+  flex: 1 1 auto;
+  text-align: right;
+  font-size: 0;
+  white-space: nowrap;
+
+  * {
+    vertical-align: top;
+  }
+
+  > *:last-child {
+    margin-inline-end: -($spacing);
+  }
+}
+
+.popover__subtitle {
+  font-size: 0.875rem;
+  line-height: 1rem;
+}
+
+/**
+ * "poa-" prefix stands for "popover action"
+ */
+
+[class^="poa-"],
+[class*=" poa-"] {
+  @extend .button, .button--small, .button--base-plain, .button--text-hidden;
+}
+
+.poa-xmark::before {
+  @extend %collecticon-sm-xmark;
+  font-size: $font-size-xxl;
+}
+
+.chart-tooltip {
+  float: left;
+  background: #fff;
+  box-shadow: 0 4px 16px 2px rgba($base-color, 0.08);   // Elevation Index: 2
+  border-radius: $base-border-radius;
+  padding: $global-spacing / 2;
+  min-width: 8rem;
+
+  &__contents {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.chart-tooltip--transparent {
+  background: rgba(#fff, 0.7);
+}
+
+.recharts-tooltip-wrapper {
+  dd {
+    margin-bottom: 0;
+    font-weight: $base-font-regular;
+    font-size: 0.8rem;
+  }
+  dt {
+    margin-bottom: $global-spacing/2;
+    font-weight: $base-font-light;
+    font-size: 1rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: $base-font-bold;
+    margin-bottom: $global-spacing/2;
+  }
+}
+
+.tooltip__contents-col {
+  float: left;
+  margin-inline-end: $global-spacing;
+}
+
+.appeals-content {
+  dt {
+    color: $primary-color;
+  }
+}
+
+.drefs-content {
+  dt {
+    color: $warning-color;
+  }
+}

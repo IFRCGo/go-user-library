@@ -1,0 +1,116 @@
+.card_box_container--op {
+  @include flex;
+}
+
+.card_box {
+  width: 100%;
+}
+
+.card_box, .card_box_footer {
+  padding: $spacing ($spacing * 1.5);
+
+  @media(min-width: $media-desktop) {
+    padding: $spacing $spacing-2;
+  }
+}
+
+.card_box_title {
+  padding-bottom: $spacing-half;
+}
+
+.card__title {
+  min-height: 50px;
+  line-height: 1.2;
+}
+
+.card_box_no {
+  color: $grey-soot;
+  font-weight: $base-font-semi-bold;
+  font-size: 1.2rem;
+  line-height: 1.2;
+
+  @include media(medium) {
+    font-size: 1rem;
+  }
+
+  @media(min-width: $media-desktop) {
+    font-size: 1.5rem;
+  }
+}
+
+.card_box_left {
+  border-bottom: 1px solid $base-border-color--light;
+}
+
+.ifrc_supported_badge {
+  float: right;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #fafafa;
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #f5333f;
+}
+
+.card_box_full {
+  width: 100%;
+  text-align: left;
+  justify-content: space-between;
+  align-items: baseline;
+
+  .progress-bar {
+    width: 80%;
+  }
+
+  .progress-bar__key {
+    display: inline-block;
+    padding-inline-start: 5px;
+    text-align: right;
+    width: 20%;
+    float: right;
+  }
+}
+
+.card_box_footer {
+  margin-top: $spacing-half;
+
+  .progress-bar {
+    height: 8px;
+  }
+}
+
+.more_button {
+  float: right;
+}
+
+.last_updated {
+  color: $grey-platinum;
+  font-weight: $base-font-light;
+  font-size: $font-size-xxs;
+}
+
+.card_box--op {
+  width: 50%;
+
+  &:first-of-type {
+    border-inline-end: 1px solid $base-border-color--light;
+  }
+}
+
+.card_box--op, .card_box_footer {
+  .heading-tiny {
+    font-size: $font-size-sm;
+  }
+}
+
+.card_box_fc {
+  color: $black;
+  text-align: inline-end;
+  font-weight: $base-font-medium;
+}

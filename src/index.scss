@@ -1,0 +1,48 @@
+﻿// FONT-FACE DECLARATIONS 
+
+@import url("https://fast.fonts.net/lt/1.css?apiType=css&c=d0812f61-1e4f-4420-b4df-8c8887df04b5&fontids=5664085,5664093,5664150");
+@font-face{
+    font-family:"Helvetica Neue LT W05 45 Light";
+    src:url("./assets/fonts/5664085/f9c5199e-a996-4c08-9042-1eb845bb7495.woff2") format("woff2"),url("./assets/fonts/5664085/2a34f1f8-d701-4949-b12d-133c1c2636eb.woff") format("woff");
+}
+@font-face{
+    font-family:"Helvetica Neue LT W05 55 Roman";
+    src:url("./assets/fonts/5664093/08b57253-2e0d-4c12-9c57-107f6c67bc49.woff2") format("woff2"),url("./assets/fonts/5664093/08edde9d-c27b-4731-a27f-d6cd9b01cd06.woff") format("woff");
+}
+@font-face{
+    font-family:"Helvetica Neue LT W05_75 Bold";
+    src:url("./assets/fonts/5664150/800da3b0-675f-465f-892d-d76cecbdd5b1.woff2") format("woff2"),url("./assets/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.woff") format("woff");
+}
+
+  .material-icons {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2.4rem;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+
+    &-round {
+        font-family: 'Material Icons Round';
+    }
+    &-outlined {
+        font-family: 'Material Icons Outlined';
+    }
+  }
+
+

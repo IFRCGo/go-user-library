@@ -1,0 +1,93 @@
+.tab__wrap {
+  background-color: #fff;
+  padding: $spacing-2 0;
+}
+
+.react-tabs {
+  -webkit-tap-highlight-color: transparent;
+
+  &__tab-list {
+    border-bottom: 1px solid $base-border-color;
+    margin: 0 0 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 100%;
+
+    @include media(small) {
+      flex-direction: row;
+    }
+  }
+
+  &__tab {
+    color: $black;
+    display: inline-block;
+    font-family: $heading-font-family;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-sm;
+    font-weight: $base-font-medium;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background-color: $grey-mist;
+    position: relative;
+    list-style: none;
+    padding: $spacing $spacing-2;
+    font-size: $font-size-sm;
+    cursor: pointer;
+    margin-inline-end: $spacing-half;
+
+    @include media(small) {
+      font-size: $base-font-size;
+    }
+
+    @include media(small) {
+      padding: $spacing ($spacing * 2.5);
+    }
+
+    &:last-of-type {
+      margin-inline-end: 0;    
+    }
+
+    &--selected {
+      background: #fff;
+      font-weight: $base-font-semi-bold;
+      color: $primary-color;
+      box-shadow: 0px 15px 1px -14px $primary-color;
+  
+      @include media(small) {
+        border-color: $base-border-color;
+        bottom: -1px;
+      }
+    }
+
+    &--disabled {
+      color: GrayText;
+      cursor: default;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px $grey-pearl;
+      outline: none;
+
+      &:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        left: -4px;
+        right: -4px;
+        bottom: -5px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__tab-panel {
+    display: none;
+
+    &--selected {
+      display: block;
+    }
+  }
+}

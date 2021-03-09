@@ -1,0 +1,89 @@
+/* ==========================================================================
+   Vendor: react-paginate
+   ========================================================================== */
+
+/**
+ * Custom styles for:
+ * https://github.com/AdeleD/react-paginate
+ */
+
+.pagination {
+  @extend .clearfix;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: $global-spacing * 2;
+
+  > li {
+    float: left;
+  }
+
+  .disabled {
+    opacity: 0.2;
+  }
+
+  .previous a,
+  .next a {
+    @extend .button, .button--text-hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-inline-end: 0;
+    padding-inline-start: 0;
+
+    &:before {
+      font-size: $font-size-sm;
+    }
+  }
+
+  .previous a {
+    border-radius: 5px;
+
+    &:before {
+      @extend %collecticon-chevron-left;
+    }
+  }
+
+  .next a {
+    border-radius: 5px;
+    &:before {
+      @extend %collecticon-chevron-right;
+    }
+  }
+
+  .pages {
+    @extend .clearfix;
+
+    &__wrapper {
+      float: left;
+
+      &.active .pages__page {
+        @extend .button--primary-filled;
+      }
+
+      .pages__page {
+        @extend .button, .button--base-plain;
+        border-radius: 50%;
+        font-weight: $base-font-regular;
+        font-size: $font-size-xs;
+      }
+    }
+  }
+
+  .break {
+    .pages__page {
+      @extend .button;
+      border-radius: 0;
+      background: none;
+      cursor: auto;
+      opacity: 1;
+    }
+  }
+}
+
+.pagination-wrapper {
+  margin-top: $global-spacing * 4;
+  .pagination {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}

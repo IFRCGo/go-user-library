@@ -1,0 +1,114 @@
+/* ==========================================================================
+   Preparedness Page
+   ========================================================================== */
+
+.component__block__wrap {
+
+  @include media(medium) {
+    @include col($width: calc(100% / 6), $grid-gutter: $grid-gutter-sm);
+  }
+}
+
+.component__block {
+  border: 1px solid $base-border-color;
+  border-radius: $base-border-radius;
+  cursor: pointer;
+}
+
+.component__block__title__block {
+  font-size: $font-size-sm;
+  padding: $global-spacing/2.5;
+  border-bottom: 1px solid $base-border-color;
+}
+
+.component__block__title {
+  color: $secondary-color;
+  font-weight: $base-font-semi-bold;
+  text-transform: uppercase;
+  font-size: $font-size-xs;
+  letter-spacing: $letter-spacing-sm;
+}
+
+.component__block__value {
+  color: $primary-color;
+  font-size: 310%;
+  font-weight: $base-font-semi-bold;
+}
+
+.component__block__content {
+  font-size: $font-size-sm;
+  padding: $global-spacing/2 $global-spacing/2 $global-spacing $global-spacing/2;
+  text-align: center;
+}
+
+.component__block__icon {
+  width: 11px;
+  height: 11px;
+  margin-inline-end: $global-spacing/2;
+  vertical-align: middle;
+}
+
+.key-emergencies-list-wrap {
+  @include media(small-up) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.key-emergencies-list--preparedness {
+  font-size: $font-size-xl;
+}  
+
+.key-emergencies-list-image {
+  display: flex;
+
+  img {
+    max-width: 100%;
+    height: auto;
+
+    @include media(small-up) {
+      margin-left: auto;
+    }
+  }
+}
+
+.donot__label__preparedness {
+  color: $secondary-color;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: $font-size-sm;
+  font-weight: $base-font-semi-bold;
+  letter-spacing: $letter-spacing-sm;
+  margin: $global-spacing 0 0 0;
+}
+
+.donot__label__desc {
+  text-align: center;
+  font-size: $font-size-sm;
+}
+
+.recharts-pie-labels {
+  text {
+    fill: lighten($secondary-color, 35%);
+    font-weight: $base-font-semi-bold;
+  }
+}
+
+.col--preparedness-ns {
+  @include media(small) {
+    width: 33.33%;
+  }
+
+  @include media(medium) {
+    width: 20%;
+  }
+}
+
+.tick-icon {
+  width: 10px;
+  height: 10px;
+}
+
+.text-bold {
+  font-weight: $base-font-bold;
+}

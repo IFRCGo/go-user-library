@@ -1,0 +1,215 @@
+/* ==========================================================================
+   Global: Folds
+   ========================================================================== */
+
+.fold-container {
+  margin-bottom: 50px !important;
+  width: 100%;
+}
+
+.fold {
+  background: #fff;
+  padding: $spacing-2 0;
+  box-shadow: $base-box-shadow;
+  &:last-child {
+    margin-bottom: 0;
+  };
+
+  > .inner {
+    padding-left: $spacing-2;
+    padding-right: $spacing-2;
+  }
+
+  &,
+  .fold__header,
+  .fold__body {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media(medium) {
+    padding: $spacing-5 0;
+  }
+}
+
+.fold--transparent {
+  background: transparent;
+}
+
+.fold__header {
+  margin-bottom: $global-spacing;
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media(medium-up) {
+    margin-bottom: ($global-spacing * 2)
+  }
+}
+
+.fold--main {
+  box-shadow: none;  
+}
+
+.fold__actions {
+  margin-bottom: $global-spacing * 2;
+  @include media(medium) {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
+}
+
+.fold__title {
+  @include heading__title;
+}
+
+.fold__description {
+  padding-top: $spacing;
+  color: rgba($base-color, 0.58);
+}
+
+.fold__footer {
+  margin-top: $global-spacing * 2;
+}
+
+/* Modifiers
+   ========================================================================== */
+
+.fold--filled {
+  background: tint($base-color, 92%);
+}
+
+.empty-data__container {
+  background: tint($base-color, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: $global-spacing * 4;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.links-list {
+  @include box__global;
+  padding: $spacing-2 $spacing-half;
+  position: relative;
+  list-style: none;
+
+  @include media(xsmall) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    display: block;
+
+    @include media(xsmall) {
+      width: 50%;
+    }
+
+    @include media(medium) {
+      width: 33.33%;  
+    }
+  }
+
+  a {
+    font-weight: 500;
+    display: block;
+    margin: 0 0 $spacing 0;
+  }
+}
+
+li.links-list-design {
+  position: absolute;
+  top: $spacing-2;
+  bottom: $spacing-2;
+  width: 1px;
+  padding: 0;
+  background-color: $base-border-color;
+  left: 33.33%;
+  display: none;
+
+  @include media(medium) {
+    display: block;
+  }
+}
+
+li.links-list-design--2 {
+  left: 66.66%;
+}
+
+.icon-links-list {
+  font-size: 0.5rem;
+  font-weight: $base-font-bold;
+  padding: 0 0 0 $spacing-half;
+}
+
+.fold__header__block {
+  border-bottom: 1px solid $grey-cloud;
+  padding-bottom: $spacing;
+  @include row;
+
+  @include media(xsmall-up) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .fold__title {
+    @include col;
+  }
+  
+  .fold__title__linkwrap {  
+    @include col;
+  }
+}
+
+.fold__title--inline {
+  @include col;
+
+  @include media(medium-up) {
+   margin-bottom: 0;
+   line-height: 1;
+  }
+}
+
+.fold__title__linkwrap {  
+  font-size: $font-size-sm;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+
+  @include media(xsmall-up) {
+    margin-left: auto;
+
+    [dir='rtl'] & {
+      margin-right: auto;
+      margin-left: unset;
+    }
+  }
+
+  @include media(medium-up) {
+    text-align: end !important;
+  }
+
+  [class^="collecticon"] {
+    font-size: $font-size-xxs;
+    font-weight: $base-font-bold;
+    margin-inline-start: $spacing-half;
+  }
+
+  &:hover, &:focus {
+    > span {
+      color: $primary-color;
+    }
+  }
+}
+
+.fold__title__link {
+  @include link-underline;
+}
+  

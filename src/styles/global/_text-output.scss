@@ -1,0 +1,30 @@
+.tc-text-output {
+  display: flex;
+
+  .tc-label {
+    padding: 3px 6px;
+
+    &:after {
+      content: ':';
+    }
+  }
+
+  .tc-value {
+    padding: 3px $spacing-half 3px 3px;
+    font-weight: $base-font-medium;
+  }
+
+  &.tc-text-output-reversed {
+    .tc-label {
+      order: 2;
+
+      &:after {
+        content: unset;
+      }
+    }
+
+    .tc-value {
+      order: 1;
+    }
+  }
+}
