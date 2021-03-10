@@ -4,7 +4,6 @@ import { Link, withRouter } from "react-router-dom";
 import Logo from "../assets/graphics/layout/go-logo-2020.svg";
 
 function Header(props) {
-
   return (
     <div className="desktop__header">
       <header className="page__header" role="banner">
@@ -36,7 +35,7 @@ function Header(props) {
                 </Link>
 
                 <Link
-                  to="/ui-components"
+                  to="/ui-components/buttons/"
                   title="title"
                   className="page__meta-nav-elements"
                 >
