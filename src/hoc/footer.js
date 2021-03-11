@@ -6,13 +6,24 @@ const Footer = () => {
       <div className="container-lg">
         <div className="footer-menu row flex-xs">
           <div className="col col-6-xs col-3-mid">
-            <div className="footer-section-heading"></div>
-            <div className="base-font-medium"></div>
-            <div className="footer-copyright footer-copyright--lg"></div>
+            <div className="footer-section-heading">
+              <span className="">About Go</span>
+            </div>
+            <div className="base-font-medium">
+              <span className="">
+                IFRC GO is a Red Cross Red Crescent platform to connect
+                information on emergency needs with the right response.
+              </span>
+            </div>
+            <div className="footer-copyright footer-copyright--lg">
+              <span className="">© IFRC 2020</span>
+            </div>
           </div>
 
           <div className="col col-6-xs col-3-mid">
-            <div className="footer-section-heading"></div>
+            <div className="footer-section-heading">
+              <span className="">Find out more</span>
+            </div>
             <a
               href="https://ifrc.org"
               className="footer-section-link"
@@ -40,33 +51,37 @@ const Footer = () => {
           </div>
 
           <div className="col col-6-xs col-3-mid">
-            <div className="footer-section-heading"></div>
+            <div className="footer-section-heading">
+              <span className="">Helpful links</span>
+            </div>
             <div className="footer-section-link">
               <a
                 href="https://github.com/ifrcgo/go-frontend"
-                title="title"
+                title="Open Source Code"
                 target="_blank"
                 rel="noreferrer"
               >
-                Link
+                <span className="">Open Source Code</span>
               </a>
             </div>
             <a
-              href="mailto:im@ifrc.org"
-              title="title"
+              href="https://dscgocdnapi.azureedge.net/docs"
+              title="API Documentation"
               className="footer-section-link"
               target="_blank"
               rel="noreferrer"
             >
-              Link
+              <span className="">API Documentation</span>
             </a>
             <a href="/about" className="footer-section-link">
-              Link
+              <span className="">Other Resources</span>
             </a>
           </div>
 
           <div className="col col-6-xs col-3-mid">
-            <div className="footer-section-heading"></div>
+            <div className="footer-section-heading">
+              <span className="">Contact Us</span>
+            </div>
             <a
               href="mailto:im@ifrc.org"
               className="button button--primary-filled button--small button-footer-contact"
@@ -107,7 +122,9 @@ const Footer = () => {
                 <span className="f-icon-youtube footer-social-icon"></span>
               </a>
             </div>
-            <div className="footer-copyright footer-copyright--sm"></div>
+            <div className="footer-copyright footer-copyright--sm">
+              <span className="">© IFRC 2020</span>
+            </div>
           </div>
         </div>
       </div>

@@ -9,8 +9,8 @@ const PageLayout = (props) => {
     <React.Fragment>
       <Header />
       <MobileHeader />
-      <main role="main" className="page__body">
-        <div className="container-lg">{props.children}</div>
+      <main role="main" className="page__body ui-library">
+        {props.children}
       </main>
       <Footer />
     </React.Fragment>

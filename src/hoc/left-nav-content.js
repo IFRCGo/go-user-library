@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink, withRouter } from "react-router-dom";
 
-class LeftNavDesign extends Component {
+class LeftNavContent extends Component {
   state = {
     addClass: false,
   };
@@ -10,13 +10,13 @@ class LeftNavDesign extends Component {
       <ul className="left-nav">
         <li>
           <NavLink
-            to="/brand-design/intro"
+            to="/content/map"
             title="some link"
             activeClassName="active"
             className={this.state.className ? "active" : ""}
             exact
           >
-            IFRC Brand Guidelines
+            Map
           </NavLink>
         </li>
         <li>
@@ -38,4 +38,4 @@ class LeftNavDesign extends Component {
   }
 }
 
-export default withRouter(LeftNavDesign);
+export default withRouter(LeftNavContent);

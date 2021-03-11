@@ -5,10 +5,10 @@ import "./styles/main.scss";
 /** Layouts **/
 import PageLayoutUi from "./hoc/page-layout-ui";
 import PageLayoutDesign from "./hoc/page-layout-design";
+import PageLayoutContent from "./hoc/page-layout-content";
 import PageLayout from "./hoc/page-layout";
 
 /** Views **/
-import Content from "./views/content/";
 import Home from "./views/get-started/";
 import Resources from "./views/resources/";
 
@@ -16,6 +16,7 @@ import Resources from "./views/resources/";
 import ButtonsPage from "./views/ui-components/buttons";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
 import DesignPage from "./views/brand-design/intro";
+import MapPage from "./views/content/map";
 
 /* 
    App 
@@ -47,11 +48,15 @@ const App = () => (
       component={BreadcrumbsPage}
     />
     <AppRoute
-      path="/brand-design"
+      path="/brand-design/intro"
       layout={PageLayoutDesign}
       component={DesignPage}
     />
-    <AppRoute path="/content" layout={PageLayout} component={Content} />
+    <AppRoute
+      path="/content/map"
+      layout={PageLayoutContent}
+      component={MapPage}
+    />
     <AppRoute path="/resources" layout={PageLayout} component={Resources} />
   </Switch>
 );
