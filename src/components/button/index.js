@@ -7,15 +7,10 @@ function Button(props) {
     return (
       <button
         tabIndex="0"
-        className={`button button--primary-filled button--small ${props.class}`}
+        className={`button button--small button--primary-${props.class}`}
         type={props.type}
       >
         {props.name}
-        {(() => {
-          if (props.icon) {
-            return <i className="material-icons-round">{props.icon}</i>;
-          }
-        })()}
       </button>
     );
   }
@@ -23,14 +18,9 @@ function Button(props) {
   return (
     <button
       tabIndex="0"
-      className={`button button--primary-filled button--small ${props.class}`}
+      className={`button button--small button--primary-${props.class}`}
     >
       {props.name}
-      {(() => {
-        if (props.icon) {
-          return <i className="material-icons-round">{props.icon}</i>;
-        }
-      })()}
     </button>
   );
 }

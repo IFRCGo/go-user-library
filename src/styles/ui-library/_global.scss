@@ -1,6 +1,8 @@
 /* ==========================================================================
    Ui Library generic styles
    ========================================================================== */
+$primary-color-hover: #de2934;
+$grey-disabled: #b4b4b4;
 
 .ui-library {
   .main {
@@ -10,6 +12,22 @@
 
   .fold__header {
     padding: 0 20px;
+  }
+
+  .inpage__header {
+    padding: 60px 0;
+
+    .inpage__headline {
+      margin: 0;
+    }
+
+    .inpage__title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 40px;
+      line-height: 54.47px;
+      margin: 0;
+      text-transform: uppercase;
+    }
   }
 
   .tab__wrap {
@@ -35,5 +53,36 @@
         }
       }
     }
+  }
+
+  .button--primary-filled {
+    &:hover,
+    &:active {
+      background-color: $primary-color-hover;
+      color: $white;
+    }
+
+    &.disabled {
+      background-color: $grey-pearl;
+      color: $white;
+    }
+  }
+
+  .button--primary-bounded {
+    &:hover,
+    &:active {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+    &.disabled {
+      background-color: $white;
+      color: $grey-disabled;
+      box-shadow: inset 0 0 0 1px $grey-disabled;
+    }
+  }
+
+  button {
+    margin-right: 20px;
   }
 }

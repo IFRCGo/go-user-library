@@ -26,7 +26,22 @@ const ButtonsPage = () => {
           </TabList>
 
           <TabPanel>
-            <Button name="this is a button" />
+            <br />
+            <Button class="filled" name="this is red button" />
+            <Button
+              class="filled disabled"
+              name="this is a red disabled button"
+            />
+            <br />
+            <br />
+            <Button class="bounded" name="this is a white button" />
+            <Button
+              class="bounded disabled"
+              name="this is a white disabled button"
+            />
+
+            <br />
+            <br />
           </TabPanel>
           <TabPanel>
             <p>Any content 2</p>
