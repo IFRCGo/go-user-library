@@ -1,9 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import Button from "../../../components/button";
-
-const ButtonsPage = () => {
+const BreadcrumbsPage = () => {
   return (
     <div>
       <div className="inner">
@@ -11,12 +9,12 @@ const ButtonsPage = () => {
           <div className="container-lg">
             <div className="fold__header">
               <div className="fold__header__block">
-                <h2 className="fold__title margin-reset">Buttons</h2>
+                <h2 className="fold__title margin-reset">Breadcrumbs</h2>
               </div>
             </div>
             <div className="fold__body">
               <div className="container-full">
-                <p>This is a button and this is some information</p>
+                <p>This is a Breadcrumbs and this is some information</p>
               </div>
             </div>
           </div>
@@ -30,7 +28,7 @@ const ButtonsPage = () => {
           </TabList>
 
           <TabPanel>
-            <Button name="this is a button" />
+            <p>Any content 1</p>
           </TabPanel>
           <TabPanel>
             <p>Any content 2</p>
@@ -40,4 +38,4 @@ const ButtonsPage = () => {
     </div>
   );
 };
-export default ButtonsPage;
+export default BreadcrumbsPage;

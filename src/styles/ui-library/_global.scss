@@ -7,3 +7,16 @@
     display: none;
   }
 }
+
+.left-nav {
+  margin-left: 10px;
+  li {
+    padding: 10px;
+    list-style: none;
+    a {
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}

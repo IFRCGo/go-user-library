@@ -16,21 +16,24 @@ const Footer = () => {
             <a
               href="https://ifrc.org"
               className="footer-section-link"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               ifrc.org
             </a>
             <a
               href="https://rcrcsims.org"
               className="footer-section-link"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               rcrcsims.org
             </a>
             <a
               href="https://data.ifrc.org"
               className="footer-section-link"
-              target="_blank" rel="noreferrer"
+              target="_blank"
+              rel="noreferrer"
             >
               data.ifrc.org
             </a>
@@ -42,16 +45,24 @@ const Footer = () => {
               <a
                 href="https://github.com/ifrcgo/go-frontend"
                 title="title"
-                target="_blank" rel="noreferrer"
-              >Link</a>
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link
+              </a>
             </div>
             <a
               href="mailto:im@ifrc.org"
               title="title"
               className="footer-section-link"
-              target="_blank" rel="noreferrer"
-            >Link</a>
-            <a href="/about" className="footer-section-link">Link</a>
+              target="_blank"
+              rel="noreferrer"
+            >
+              Link
+            </a>
+            <a href="/about" className="footer-section-link">
+              Link
+            </a>
           </div>
 
           <div className="col col-6-xs col-3-mid">
@@ -66,30 +77,34 @@ const Footer = () => {
               <a
                 href="https://ifrcgoproject.medium.com"
                 className="footer-social-each"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <span className="f-icon-medium footer-social-icon">Link</span>
+                <span className="f-icon-medium footer-social-icon"></span>
               </a>
               <a
                 href="https://www.facebook.com/IFRC"
                 className="footer-social-each"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <span className="f-icon-facebook footer-social-icon">Link</span>
+                <span className="f-icon-facebook footer-social-icon"></span>
               </a>
               <a
                 href="https://twitter.com/ifrcgo"
                 className="footer-social-each"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <span className="f-icon-twitter footer-social-icon">Link</span>
+                <span className="f-icon-twitter footer-social-icon"></span>
               </a>
               <a
                 href="https://www.youtube.com/watch?v=dwPsQzla9A4"
                 className="footer-social-each"
-                target="_blank" rel="noreferrer"
+                target="_blank"
+                rel="noreferrer"
               >
-                <span className="f-icon-youtube footer-social-icon">Link</span>
+                <span className="f-icon-youtube footer-social-icon"></span>
               </a>
             </div>
             <div className="footer-copyright footer-copyright--sm"></div>

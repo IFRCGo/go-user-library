@@ -4,9 +4,9 @@ import { Row, Col } from "react-flexbox-grid";
 import Header from "./header";
 import Footer from "./footer";
 import MobileHeader from "./mobile-header";
-import SecondaryNavigation from "./left-nav";
+import LeftNavUi from "./left-nav-ui";
 
-const PageLayoutWithNav = (props) => (
+const PageLayoutUi = (props) => (
   <React.Fragment>
     <Header />
     <MobileHeader />
@@ -16,23 +16,25 @@ const PageLayoutWithNav = (props) => (
           <div className="">
             <div className="inpage__headline">
               <h1 className="inpage__title inpage__title--home container-lg">
-                UI components
+                Ui components
               </h1>
             </div>
           </div>
         </header>
-        <Row>
-          <Col xs={12} md={3} lg={3} className="mobile">
-            <SecondaryNavigation />
-          </Col>
-          <Col xs={12} md={9} lg={9}>
-            {props.children}
-          </Col>
-        </Row>
+        <div className="container-lg">
+          <Row>
+            <Col xs={12} md={3} lg={3} className="mobile">
+              <LeftNavUi />
+            </Col>
+            <Col xs={12} md={9} lg={9}>
+              {props.children}
+            </Col>
+          </Row>
+        </div>
       </section>
     </main>
     <Footer />
   </React.Fragment>
 );
 
-export default PageLayoutWithNav;
+export default PageLayoutUi;
