@@ -2,20 +2,28 @@
    Ui Library generic styles
    ========================================================================== */
 
-.mobile {
-  @include media(small-down) {
-    display: none;
+.ui-library {
+  .inner {
+    padding: 0 20px;
   }
-}
 
-.left-nav {
-  margin-left: 10px;
-  li {
-    padding: 10px;
-    list-style: none;
-    a {
-      &.active {
-        font-weight: bold;
+  .mobile {
+    @include media(small-down) {
+      display: none;
+    }
+  }
+
+  .left-nav {
+    margin-left: 0;
+
+    li {
+      padding: 10px 0;
+      list-style: none;
+
+      a {
+        &.active {
+          font-weight: bold;
+        }
       }
     }
   }

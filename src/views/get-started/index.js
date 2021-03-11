@@ -88,7 +88,11 @@ const Home = () => {
                 </p>
                 <ul className="logo__list row-lg flex-sm">
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.org/" target="_blank">
+                    <a
+                      href="http://www.redcross.org/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={AmericanLogo}
                         alt="Visit American Red Cross Page"
@@ -97,7 +101,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.org.uk/" target="_blank">
+                    <a
+                      href="http://www.redcross.org.uk/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={BritishLogo}
                         alt="Visit British Red Cross Page"
@@ -106,7 +114,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.jrc.or.jp/english/" target="_blank">
+                    <a
+                      href="http://www.jrc.or.jp/english/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={JapaneseLogo}
                         alt="Visit Japanese Red Cross Page"
@@ -115,7 +127,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.ca/" target="_blank">
+                    <a
+                      href="http://www.redcross.ca/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={CanadianLogo}
                         alt="Visit Canadian Red Cross Page"
@@ -124,7 +140,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.rodekruis.nl/" target="_blank">
+                    <a
+                      href="https://www.rodekruis.nl/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={DutchLogo}
                         alt="Visit Netherlands Red Cross Page"
@@ -133,7 +153,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.cruzroja.es/" target="_blank">
+                    <a
+                      href="https://www.cruzroja.es/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={SpanishLogo}
                         alt="Visit Spanish Red Cross Page"
@@ -142,7 +166,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.redcross.org.au/" target="_blank">
+                    <a
+                      href="https://www.redcross.org.au/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={AustralianLogo}
                         alt="Visit Australian Red Cross Page"
@@ -151,7 +179,11 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.ericsson.com/en" target="_blank">
+                    <a
+                      href="https://www.ericsson.com/en"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <img
                         src={EricssonLogo}
                         alt="Visit Ericsson Page"

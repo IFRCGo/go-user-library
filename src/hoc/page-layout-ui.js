@@ -1,5 +1,4 @@
 import React from "react";
-import { Row, Col } from "react-flexbox-grid";
 
 import Header from "./header";
 import Footer from "./footer";
@@ -10,7 +9,7 @@ const PageLayoutUi = (props) => (
   <React.Fragment>
     <Header />
     <MobileHeader />
-    <main role="main" className="page__body">
+    <main role="main" className="page__body ui-library">
       <section className="inpage">
         <header className="inpage__header">
           <div className="">
@@ -23,14 +22,12 @@ const PageLayoutUi = (props) => (
         </header>
         <div className="fold">
           <div className="container-lg">
-            <Row>
-              <Col xs={12} md={3} lg={3} className="mobile">
+            <div className="flex flex-lg">
+              <div className="col-3-xs col-2-mid mobile">
                 <LeftNavUi />
-              </Col>
-              <Col xs={12} md={9} lg={9}>
-                {props.children}
-              </Col>
-            </Row>
+              </div>
+              <div className="col-12-xs col-10-mid">{props.children}</div>
+            </div>
           </div>
         </div>
       </section>
