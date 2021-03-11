@@ -10,11 +10,9 @@ import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
 import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 
 const Home = () => {
-  
   return (
     <React.Fragment>
-
-      <div className="page--homepage">
+      <div className="page--about">
         <section className="inpage">
           <header className="inpage__header">
             <div className="">
@@ -80,13 +78,17 @@ const Home = () => {
                 </div>
               </div>
             </section>
-
             <section className="logo__group">
               <div className="container-mid">
-                <p className="logo__title text-center"></p>
+                <p className="logo__title text-center">
+                  <span className="">
+                    GO has received dedicated personnel and funding support
+                    from:
+                  </span>
+                </p>
                 <ul className="logo__list row-lg flex-sm">
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.org/" target="_blank" rel="noreferrer">
+                    <a href="http://www.redcross.org/" target="_blank">
                       <img
                         src={AmericanLogo}
                         alt="Visit American Red Cross Page"
@@ -95,7 +97,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.org.uk/" target="_blank" rel="noreferrer">
+                    <a href="http://www.redcross.org.uk/" target="_blank">
                       <img
                         src={BritishLogo}
                         alt="Visit British Red Cross Page"
@@ -104,7 +106,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.jrc.or.jp/english/" target="_blank" rel="noreferrer">
+                    <a href="http://www.jrc.or.jp/english/" target="_blank">
                       <img
                         src={JapaneseLogo}
                         alt="Visit Japanese Red Cross Page"
@@ -113,7 +115,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="http://www.redcross.ca/" target="_blank" rel="noreferrer">
+                    <a href="http://www.redcross.ca/" target="_blank">
                       <img
                         src={CanadianLogo}
                         alt="Visit Canadian Red Cross Page"
@@ -122,7 +124,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.rodekruis.nl/" target="_blank" rel="noreferrer">
+                    <a href="https://www.rodekruis.nl/" target="_blank">
                       <img
                         src={DutchLogo}
                         alt="Visit Netherlands Red Cross Page"
@@ -131,7 +133,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.cruzroja.es/" target="_blank" rel="noreferrer">
+                    <a href="https://www.cruzroja.es/" target="_blank">
                       <img
                         src={SpanishLogo}
                         alt="Visit Spanish Red Cross Page"
@@ -140,7 +142,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.redcross.org.au/" target="_blank" rel="noreferrer">
+                    <a href="https://www.redcross.org.au/" target="_blank">
                       <img
                         src={AustralianLogo}
                         alt="Visit Australian Red Cross Page"
@@ -149,7 +151,7 @@ const Home = () => {
                     </a>
                   </li>
                   <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
-                    <a href="https://www.ericsson.com/en" target="_blank" rel="noreferrer">
+                    <a href="https://www.ericsson.com/en" target="_blank">
                       <img
                         src={EricssonLogo}
                         alt="Visit Ericsson Page"
@@ -165,5 +167,5 @@ const Home = () => {
       </div>
     </React.Fragment>
   );
-}
+};
 export default Home;
