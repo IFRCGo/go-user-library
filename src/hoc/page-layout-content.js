@@ -27,7 +27,7 @@ const PageLayoutContent = (props) => (
               <div className="col-3-xs col-2-mid mobile">
                 <LeftNavContent />
               </div>
-              <div className="col-12-xs col-10-mid">{props.children}</div>
+              <div className="col-12-xs col-10-mid main">{props.children}</div>
             </div>
           </div>
         </div>

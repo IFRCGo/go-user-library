@@ -5,7 +5,7 @@ import Button from "../../../components/button";
 
 const ButtonsPage = () => {
   return (
-    <div>
+    <React.Fragment>
       <div className="inner">
         <div className="fold__header">
           <div className="fold__header__block">
@@ -33,7 +33,7 @@ const ButtonsPage = () => {
           </TabPanel>
         </Tabs>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default ButtonsPage;
