@@ -22,15 +22,17 @@ const PageLayoutDesign = (props) => (
           </div>
         </header>
 
-        <div className="container-lg">
-          <Row>
-            <Col xs={12} md={3} lg={3} className="mobile">
-              <LeftNavDesign />
-            </Col>
-            <Col xs={12} md={9} lg={9}>
-              {props.children}
-            </Col>
-          </Row>
+        <div className="fold">
+          <div className="container-lg">
+            <Row>
+              <Col xs={12} md={3} lg={3} className="mobile">
+                <LeftNavDesign />
+              </Col>
+              <Col xs={12} md={9} lg={9}>
+                {props.children}
+              </Col>
+            </Row>
+          </div>
         </div>
       </section>
     </main>

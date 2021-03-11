@@ -34,7 +34,7 @@ class LeftNavDesign extends Component {
   }
 
   render() {
-    return <div className="fold fold--main">{this.getMenu()}</div>;
+    return <div className="">{this.getMenu()}</div>;
   }
 }
 
