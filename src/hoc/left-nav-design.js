@@ -20,8 +20,8 @@ class LeftNavDesign extends Component {
           </NavLink>
         </li>
         <li>
-          <NavLink to="/" title="some link" activeClassName="active" exact>
-            Some link3
+          <NavLink to="/brand-design/colours" title="colours" activeClassName="active" exact>
+            Colours
           </NavLink>
         </li>
         <li>

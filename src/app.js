@@ -16,6 +16,7 @@ import Resources from "./views/resources/";
 import ButtonsPage from "./views/ui-components/buttons";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
 import DesignPage from "./views/brand-design/intro";
+import ColoursPage from "./views/brand-design/colours";
 
 /* 
    App 
@@ -50,6 +51,11 @@ const App = () => (
       path="/brand-design"
       layout={PageLayoutDesign}
       component={DesignPage}
+    />
+    <AppRoute
+      path="/brand-design/colours/"
+      layout={PageLayoutDesign}
+      component={ColoursPage}
     />
     <AppRoute path="/content" layout={PageLayout} component={Content} />
     <AppRoute path="/resources" layout={PageLayout} component={Resources} />
