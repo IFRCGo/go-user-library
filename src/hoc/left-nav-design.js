@@ -10,7 +10,7 @@ class LeftNavDesign extends Component {
       <ul className="left-nav">
         <li>
           <NavLink
-            to="/brand-design"
+            to="/brand-design/intro"
             title="some link"
             activeClassName="active"
             className={this.state.className ? "active" : ""}

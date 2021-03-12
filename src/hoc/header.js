@@ -27,7 +27,7 @@ function Header(props) {
                 </Link>
 
                 <Link
-                  to="/brand-design"
+                  to="/brand-design/intro"
                   title="title"
                   className="page__meta-nav-elements"
                 >

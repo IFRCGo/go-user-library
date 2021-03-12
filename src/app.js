@@ -48,7 +48,7 @@ const App = () => (
       component={BreadcrumbsPage}
     />
     <AppRoute
-      path="/brand-design"
+      path="/brand-design/intro"
       layout={PageLayoutDesign}
       component={DesignPage}
     />
