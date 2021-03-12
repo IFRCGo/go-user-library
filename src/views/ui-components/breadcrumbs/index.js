@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 const BreadcrumbsPage = () => {
   return (
-    <div>
+    <React.Fragment>
       <div className="inner">
         <div className="fold__header">
           <div className="fold__header__block">
@@ -31,7 +31,7 @@ const BreadcrumbsPage = () => {
           </TabPanel>
         </Tabs>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 export default BreadcrumbsPage;

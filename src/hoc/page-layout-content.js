@@ -3,9 +3,9 @@ import React from "react";
 import Header from "./header";
 import Footer from "./footer";
 import MobileHeader from "./mobile-header";
-import LeftNavUi from "./left-nav-ui";
+import LeftNavContent from "./left-nav-content";
 
-const PageLayoutUi = (props) => (
+const PageLayoutContent = (props) => (
   <React.Fragment>
     <Header />
     <MobileHeader />
@@ -15,16 +15,17 @@ const PageLayoutUi = (props) => (
           <div className="">
             <div className="inpage__headline">
               <h1 className="inpage__title inpage__title--home container-lg">
-                Ui components
+                Content
               </h1>
             </div>
           </div>
         </header>
+
         <div className="fold">
           <div className="container-lg">
             <div className="flex flex-lg">
               <div className="col-3-xs col-2-mid mobile">
-                <LeftNavUi />
+                <LeftNavContent />
               </div>
               <div className="col-12-xs col-10-mid main">{props.children}</div>
             </div>
@@ -36,4 +37,4 @@ const PageLayoutUi = (props) => (
   </React.Fragment>
 );
 
-export default PageLayoutUi;
+export default PageLayoutContent;

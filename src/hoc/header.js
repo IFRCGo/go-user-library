@@ -42,7 +42,7 @@ function Header(props) {
                   Ui Components
                 </Link>
                 <Link
-                  to="/content"
+                  to="/content/map"
                   title="title"
                   className="page__meta-nav-elements"
                 >
