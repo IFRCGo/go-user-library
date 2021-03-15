@@ -29,37 +29,59 @@ const LinksPage = () => {
           <TabPanel>
             <div className="row flex">
               <div className="buttons-page">
-                <Link
-                  href="#link"
-                  icon="chevron-right"
-                  class="link--with-icon"
-                  name="Link with icon"
-                />
+                <div>
+                  <h4>Regular Links</h4>
+                  <Link
+                    href="#link"
+                    icon="chevron-right"
+                    class="link--with-icon"
+                    name="View emergencies (last 30 days)"
+                  />
+                </div>
+                <div>
+                  <h4>Special Links (top of the page)</h4>
+                  <Link
+                    href="#link"
+                    icon="chevron-right"
+                    class="link--with-icon-red"
+                    name="Africa Pacific"
+                  />
+                </div>
+                <div>
+                  <h4>Popup</h4>
+                  <Link
+                    href="#link"
+                    icon="chevron-right"
+                    class="link--popup"
+                    name="PHILIPPINES"
+                  />
+                </div>
+                <div>
+                  <h4>Table</h4>
+                  <Link
+                    href="#link"
+                    class="link--inline"
+                    name="Philippines - Emergency 1"
+                  />
+                </div>
+                <div>
+                  <h4>Email / other links</h4>
+                  <Link
+                    href="#link"
+                    class="link--inline"
+                    name="comunicación@cruzroj.org"
+                  />
 
-                <Link
-                  href="#link"
-                  icon="chevron-right"
-                  class="link--with-icon-text"
-                  name="Link with icon text"
-                />
-                <Link
-                  href="#link"
-                  icon="chevron-right"
-                  class="link--with-icon-inner"
-                  name="Link with icon inner"
-                />
-
-                <Link
-                  href="#link"
-                  class="link-underline"
-                  name="Link underline"
-                />
-                <Link
-                  href="#link"
-                  class="link--external"
-                  name="Link external"
-                />
-                <Link href="#link" class="link--table" name="Link table" />
+                  <div>
+                    <h4>Special Email</h4>
+                    <LinkButton
+                      href="#link"
+                      classSize="small"
+                      classType="primary-filled"
+                      name="comunicación@cruzroj.org"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </TabPanel>

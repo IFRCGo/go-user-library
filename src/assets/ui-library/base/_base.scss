@@ -3,6 +3,13 @@
    ========================================================================== */
 
 .ui-library {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $headingFontFamily;
+  }
+
   .main {
     border-left: 1px solid #cccccc;
     padding: 0 10px;
@@ -20,7 +27,7 @@
     }
 
     .inpage__title {
-      font-family: "Open Sans", sans-serif;
+      font-family: $headingFontFamily;
       font-size: 40px;
       line-height: 54.47px;
       margin: 0;

@@ -1,56 +1,6 @@
-//Max width
-$max-width: 1080px;
-
-// Media queries / Break points
-$mobile: "all and (max-width:767px)";
-$tablet: "all and (min-width:768px)";
-$tablet-portrait: "all and (min-width:768px) and (max-width:1023px)";
-$desktop: "all and (min-width:1024px)";
-$desktop-large: "all and (min-width:1160px)";
-
 // Project Primary colours
-$red: #d0021b;
-$white: #ffffff;
-$black: #262626;
-$green: #40a22a;
+$red-hover: #de2934;
+$grey-disabled: #d1d1d1;
 
-// Project Secondary colours
-$redDark: #ad1120;
-$redDarkTint: #cc434f;
-$grey: #5c747a;
-$greyTint: #9caaae;
-$greenDark: #05853a;
-$greenDarkTint: #69ba56;
-$blueDark: #193351;
-$blueDarkTint: #475c74;
-$teal: #2b7586;
-$tealTint: #6a9eaa;
-
-// Aux background colour styles
-$greyBack: #f6f6f6;
-$greyDiv: #e0e0e0;
-$greyMid: #bbbbbb;
-$greyBorder: #e2e2e2;
-$footerDivider: rgba($greyMid, 0.3);
-$sectionDivider: rgba($greyDiv, 0.25);
-$eventsDivider: rgba($white, 0.25);
-
-$mustard: #f1b13b;
-$disabled: #717171;
-$transparent: transparent;
-
-// Project Font colour
-$baseFontFamily: "Helvetica Neue LT W05 55 Roman", Arial, Verdana, sans-serif;
-
-$baseFontFamilyLight: "Helvetica Neue LT W05 45 Light", Arial, Verdana,
-  sans-serif;
-
-$baseFontColour: $black;
-$baseAnchorColour: $black;
-
-$headingFontFamily: "Helvetica Neue LT W05_75 Bold", Arial, Verdana, sans-serif;
-
-$iconFamily: "brc";
-
-// Animations
-$cubicBezier: cubic-bezier(0.215, 0.61, 0.355, 1);
+// Headings
+$headingFontFamily: "Open Sans", sans-serif;

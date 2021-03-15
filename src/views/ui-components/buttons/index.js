@@ -35,14 +35,14 @@ const ButtonsPage = () => {
               />
               <Button
                 classSize="small"
-                classType="primary-bounded"
-                name="primary bounded button"
-              />
-
-              <Button
-                classSize="small"
                 classType="primary-filled disabled"
                 name="primary filled disabled button"
+              />
+              <br />
+              <Button
+                classSize="small"
+                classType="primary-bounded"
+                name="primary bounded button"
               />
               <Button
                 classSize="small"
