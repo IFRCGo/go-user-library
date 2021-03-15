@@ -29,22 +29,26 @@ const ButtonsPage = () => {
             <div className="buttons-page">
               <h3>Primary</h3>
               <Button
+                type="submit"
                 classSize="small"
                 classType="primary-filled"
                 name="primary filled button"
               />
               <Button
+                type="submit"
                 classSize="small"
                 classType="primary-filled disabled"
                 name="primary filled disabled button"
               />
               <br />
               <Button
+                type="submit"
                 classSize="small"
                 classType="primary-bounded"
                 name="primary bounded button"
               />
               <Button
+                type="submit"
                 classSize="small"
                 classType="primary-bounded disabled"
                 name="primary bounded disabled button"
