@@ -1,8 +1,6 @@
 /* ==========================================================================
    Ui Library generic styles
    ========================================================================== */
-$primary-color-hover: #de2934;
-$grey-disabled: #b4b4b4;
 
 .ui-library {
   .main {
@@ -32,6 +30,13 @@ $grey-disabled: #b4b4b4;
 
   .tab__wrap {
     padding: 24px 10px;
+    .react-tabs__tab-panel {
+      padding: 20px;
+    }
+  }
+
+  .react-tabs__tab-list {
+    justify-content: left;
   }
 
   .mobile {
@@ -55,34 +60,13 @@ $grey-disabled: #b4b4b4;
     }
   }
 
-  .button--primary-filled {
-    &:hover,
-    &:active {
-      background-color: $primary-color-hover;
-      color: $white;
+  .buttons-page {
+    margin: 20px 0;
+    &:last-child {
+      margin: 0 0 20px 0;
     }
-
-    &.disabled {
-      background-color: $grey-pearl;
-      color: $white;
+    .button {
+      margin: 0 20px 20px 0;
     }
-  }
-
-  .button--primary-bounded {
-    &:hover,
-    &:active {
-      background-color: $primary-color;
-      color: $white;
-    }
-
-    &.disabled {
-      background-color: $white;
-      color: $grey-disabled;
-      box-shadow: inset 0 0 0 1px $grey-disabled;
-    }
-  }
-
-  button {
-    margin-right: 20px;
   }
 }

@@ -1,28 +1,15 @@
 import React from "react";
 
-function Button(props) {
-  const inputType = props.type;
-
-  if (inputType) {
-    return (
-      <button
-        tabIndex="0"
-        className={`button button--small button--primary-${props.class}`}
-        type={props.type}
-      >
-        {props.name}
-      </button>
-    );
-  }
-
+const Button = (props) => {
   return (
     <button
       tabIndex="0"
-      className={`button button--small button--primary-${props.class}`}
+      className={`button button--${props.classSize} button--${props.classType}`}
+      type={props.type}
     >
-      {props.name}
+      <span>{props.name}</span>
     </button>
   );
-}
+};
 
 export default Button;
