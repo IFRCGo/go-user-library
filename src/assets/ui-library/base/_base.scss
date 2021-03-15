@@ -84,3 +84,18 @@
     }
   }
 }
+
+.nav-global-menu {
+  padding-top: 2px;
+  > li {
+    margin: 0 0.7rem;
+  }
+
+  a.button {
+    color: $white;
+  }
+}
+
+.page__header--mobile .page__menu a:before {
+  top: 6px;
+}
