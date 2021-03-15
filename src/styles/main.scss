@@ -95,11 +95,6 @@
 @import "global/text-output";
 @import "global/tooltip";
 
-/* Ui Library
-   ========================================================================== */
-
-@import "ui-library/global";
-
 /* Home
    ========================================================================== */
 
@@ -189,3 +184,8 @@
 
 @import "header/navbar";
 @import "forms/per-form";
+
+/* Ui Library
+   ========================================================================== */
+
+@import "./../assets/ui-library/ui-styles.scss";

@@ -12,12 +12,10 @@ const PageLayoutContent = (props) => (
     <main role="main" className="page__body ui-library">
       <section className="inpage">
         <header className="inpage__header">
-          <div className="">
-            <div className="inpage__headline">
-              <h1 className="inpage__title inpage__title--home container-lg">
-                Content
-              </h1>
-            </div>
+          <div className="inpage__headline">
+            <h1 className="inpage__title inpage__title--home container-lg">
+              Content
+            </h1>
           </div>
         </header>
 
