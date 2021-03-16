@@ -99,6 +99,17 @@ class MobileHeader extends React.PureComponent {
                 <ul className="nav-block-submenu">
                   <li>
                     <Link
+                      to="/ui-components/breadcrumbs"
+                      title="Breadcrumbs"
+                      className={c({
+                        disabled: pathname === "/ui-components/breadcrumbs",
+                      })}
+                    >
+                      <span>Breadcrumbs</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
                       to="/ui-components/buttons"
                       title="Buttons"
                       className={c({

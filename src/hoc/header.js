@@ -31,9 +31,8 @@ function Header(props) {
                       <span className="drop__toggle--caret tc-dropdown-menu"></span>
                     </Link>
                   </li>
-
                   <li>
-                    <Link to="/ui-components/buttons/" title="title">
+                    <Link to="/ui-components/breadcrumbs/" title="title">
                       Ui Components
                       <span className="drop__toggle--caret tc-dropdown-menu"></span>
                     </Link>
@@ -52,7 +51,7 @@ function Header(props) {
 
                   <li>
                     <Link
-                      to="/resources"
+                      to="/"
                       title="title"
                       className="button button--small button--primary-filled"
                     >
