@@ -1,7 +1,18 @@
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
 import Button from "../../../components/button";
+import Code from "./../../../hoc/source-code";
+
+const htmlString = ReactDOMServer.renderToStaticMarkup(
+  <Button
+    type="submit"
+    classSize="small"
+    classType="primary-filled"
+    name="primary filled button"
+  />
+);
 
 const ButtonsPage = () => {
   return (
@@ -56,7 +67,7 @@ const ButtonsPage = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <p>Any content 2</p>
+            <Code source={`${htmlString}`} />
           </TabPanel>
         </Tabs>
       </div>
