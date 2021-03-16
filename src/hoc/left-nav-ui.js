@@ -11,7 +11,7 @@ class LeftNavUi extends Component {
         <li>
           <NavLink
             to="/ui-components/buttons"
-            title="some link"
+            title="Buttons"
             activeClassName="active"
             className={this.state.className ? "active" : ""}
             exact
@@ -21,17 +21,12 @@ class LeftNavUi extends Component {
         </li>
         <li>
           <NavLink
-            to="/ui-components/breadcrumbs"
-            title="some link"
+            to="/ui-components/links"
+            title="Links"
             activeClassName="active"
             exact
           >
-            Breadcrumbs
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/" title="some link" activeClassName="active" exact>
-            Some link4
+            Links
           </NavLink>
         </li>
       </ul>

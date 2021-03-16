@@ -14,7 +14,7 @@ import Resources from "./views/resources/";
 
 /** Pages **/
 import ButtonsPage from "./views/ui-components/buttons";
-import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
+import LinksPage from "./views/ui-components/links";
 import DesignPage from "./views/brand-design/intro";
 import MapPage from "./views/content/map";
 
@@ -43,9 +43,9 @@ const App = () => (
     />
 
     <AppRoute
-      path="/ui-components/breadcrumbs/"
+      path="/ui-components/links/"
       layout={PageLayoutUi}
-      component={BreadcrumbsPage}
+      component={LinksPage}
     />
     <AppRoute
       path="/brand-design/intro"
