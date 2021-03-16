@@ -1,0 +1,93 @@
+.colours {
+  .colour {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include media(large) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    &-text {
+      display: block;
+      width: 100%;
+
+      p {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .box {
+      width: 130px;
+      margin: 1rem 0.7rem 2.4rem 0.7rem;
+      border: 1px solid grey;
+      display: flex;
+      flex-direction: column;
+
+      @include media(medium-up) {
+        margin: 1rem 2.4rem 2.4rem 0;
+      }
+
+      @include media(large) {
+        flex-shrink: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &-bg {
+        min-height: 130px;
+        width: 100%;
+      }
+
+      &-text {
+        padding: 1rem;
+        color: grey;
+
+        p {
+          &.small-print {
+            font-weight: bold;
+            margin: 0;
+          }
+
+          &.box-hex {
+            font-size: 13px;
+            margin: 0;
+            line-height: 18px;
+          }
+
+          &.box-rgb {
+            font-size: 12px;
+            margin: 0;
+            line-height: 15px;
+          }
+        }
+      }
+
+      .brand {
+        background: $primary-color;
+      }
+
+      .complement {
+        background: $secondary-color;
+      }
+
+      .dark-grey {
+        background: $grey-coal;
+      }
+
+      .positive {
+        background: #7fb845;
+      }
+
+      .negative {
+        background: #f75c65;
+      }
+
+      .warning {
+        background: #ffb443;
+      }
+    }
+  }
+}
