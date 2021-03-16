@@ -13,10 +13,14 @@ import Home from "./views/get-started/";
 import Resources from "./views/resources/";
 
 /** Pages **/
+/** UI Components **/
 import ButtonsPage from "./views/ui-components/buttons";
 import LinksPage from "./views/ui-components/links";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
+/** Brand Design **/
 import DesignPage from "./views/brand-design/intro";
+import ColoursPage from "./views/brand-design/colours";
+/** Content **/
 import MapPage from "./views/content/map";
 
 /* 
@@ -58,6 +62,11 @@ const App = () => (
       path="/brand-design/intro"
       layout={PageLayoutDesign}
       component={DesignPage}
+    />
+    <AppRoute
+      path="/brand-design/colours/"
+      layout={PageLayoutDesign}
+      component={ColoursPage}
     />
     <AppRoute
       path="/content/map"

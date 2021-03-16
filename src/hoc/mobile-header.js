@@ -84,15 +84,31 @@ class MobileHeader extends React.PureComponent {
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/brand-design/intro"
-                  title="Brand & Design Guidelines"
-                  className={c({
-                    disabled: pathname === "/brand-design/intro",
-                  })}
-                >
-                  <span>Brand & Design Guidelines</span>
-                </Link>
+                <span>Brand & Design Guidelines</span>
+                <ul className="nav-block-submenu">
+                  <li>
+                    <Link
+                      to="/brand-design/intro"
+                      title="IFRC Brand Guidelines"
+                      className={c({
+                        disabled: pathname === "/brand-design/intro",
+                      })}
+                    >
+                      <span>IFRC Brand Guidelines</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/brand-design/colours"
+                      title="Colours"
+                      className={c({
+                        disabled: pathname === "/brand-design/colours",
+                      })}
+                    >
+                      <span>Colours</span>
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <span>Ui Components</span>
