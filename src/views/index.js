@@ -1,5 +1,7 @@
 import React from "react";
 
+import LinkButton from "./../components/link-button";
+
 import HeroImage from "./../assets/graphics/content/per_approach_notext.png";
 import AmericanLogo from "./../assets/graphics/content/arc_logo.png";
 import BritishLogo from "./../assets/graphics/content/brc_logo.png";
@@ -31,12 +33,12 @@ const Home = () => {
                       imperdiet ullamcorper libero.
                     </p>
                     <div className="inner spacing-t">
-                      <a
-                        href="mailto:PER.Team@ifrc.org"
-                        className="button button--primary-filled global-margin-t"
-                      >
-                        <span className="">Contact PER team</span>
-                      </a>
+                      <LinkButton
+                        href="#link"
+                        classSize="small"
+                        classType="home-filled"
+                        name="Learn More"
+                      />
                     </div>
                   </div>
                   <div className="col col-6-xs">

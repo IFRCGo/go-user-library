@@ -1,0 +1,14 @@
+﻿.left-nav {
+  margin-left: 0;
+
+  li {
+    padding: 10px 0;
+    list-style: none;
+
+    a {
+      &.active {
+        font-weight: bold;
+      }
+    }
+  }
+}
