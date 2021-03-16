@@ -1,5 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import BreadCrumb from "./../../../components/breadcrumb";
 
 const BreadcrumbsPage = () => {
   return (
@@ -24,7 +25,12 @@ const BreadcrumbsPage = () => {
           </TabList>
 
           <TabPanel>
-            <p>Any content 1</p>
+            <BreadCrumb
+              crumbs={[
+                { link: "/ui-components/buttons", name: "Buttons" },
+                { link: "/get-started", name: "Home" },
+              ]}
+            />
           </TabPanel>
           <TabPanel>
             <p>Any content 2</p>
