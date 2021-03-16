@@ -111,3 +111,8 @@ code {
 .page__header--mobile .page__menu a:before {
   top: 6px;
 }
+
+.page__header__inner__wrap {
+  border-bottom: none;
+  box-shadow: 0px 3px 8px rgba($grey-boxshadow, 0.24);
+}
