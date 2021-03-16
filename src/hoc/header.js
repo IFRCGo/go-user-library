@@ -17,44 +17,48 @@ function Header(props) {
                   </Link>
                 </h1>
               </div>
-              <nav className="page__meta-nav col" role="navigation">
-                <Link
-                  to="/get-started"
-                  title="title"
-                  className="page__meta-nav-elements"
-                >
-                  Get Started
-                </Link>
+              <nav className="page__prime-nav col" role="navigation">
+                <ul className="nav-global-menu">
+                  <li>
+                    <Link to="/get-started" title="title">
+                      Get Started
+                    </Link>
+                  </li>
 
-                <Link
-                  to="/brand-design/intro"
-                  title="title"
-                  className="page__meta-nav-elements"
-                >
-                  Brand & Design Guidelines
-                </Link>
+                  <li>
+                    <Link to="/brand-design/intro" title="title">
+                      Brand & Design Guidelines
+                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/ui-components/breadcrumbs/" title="title">
+                      Ui Components
+                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/content/map" title="title">
+                      Content
+                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/resources" title="title">
+                      Resources
+                    </Link>
+                  </li>
 
-                <Link
-                  to="/ui-components/breadcrumbs"
-                  title="title"
-                  className="page__meta-nav-elements"
-                >
-                  Ui Components
-                </Link>
-                <Link
-                  to="/content/map"
-                  title="title"
-                  className="page__meta-nav-elements"
-                >
-                  Content
-                </Link>
-                <Link
-                  to="/resources"
-                  title="title"
-                  className="page__meta-nav-elements"
-                >
-                  Resources
-                </Link>
+                  <li>
+                    <Link
+                      to="/"
+                      title="title"
+                      className="button button--small button--primary-filled"
+                    >
+                      Go to GO
+                    </Link>
+                  </li>
+                </ul>
               </nav>
             </div>
           </div>
