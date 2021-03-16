@@ -15,6 +15,7 @@ import Resources from "./views/resources/";
 /** Pages **/
 /** UI Components **/
 import ButtonsPage from "./views/ui-components/buttons";
+import LinksPage from "./views/ui-components/links";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
 /** Brand Design **/
 import DesignPage from "./views/brand-design/intro";
@@ -40,16 +41,22 @@ const App = () => (
   <Switch>
     <AppRoute exact path="/" layout={PageLayout} component={Home} />
     <AppRoute path="/get-started" layout={PageLayout} component={Home} />
+
     <AppRoute
-      path="/ui-components/buttons/"
+      path="/ui-components/breadcrumbs"
+      layout={PageLayoutUi}
+      component={BreadcrumbsPage}
+    />
+    <AppRoute
+      path="/ui-components/buttons"
       layout={PageLayoutUi}
       component={ButtonsPage}
     />
 
     <AppRoute
-      path="/ui-components/breadcrumbs/"
+      path="/ui-components/links"
       layout={PageLayoutUi}
-      component={BreadcrumbsPage}
+      component={LinksPage}
     />
     <AppRoute
       path="/brand-design/intro"
