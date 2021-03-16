@@ -1,0 +1,79 @@
+﻿/* ==========================================================================
+   Ui Library generic styles
+   ========================================================================== */
+
+.ui-library {
+  .main {
+    border-left: 1px solid #cccccc;
+    padding: 0 10px;
+  }
+
+  .fold__header {
+    padding: 0 20px;
+  }
+
+  .inpage__header {
+    padding: 60px 0;
+
+    .inpage__headline {
+      margin: 0;
+    }
+
+    .inpage__title {
+      font-family: "Open Sans", sans-serif;
+      font-size: 40px;
+      line-height: 54.47px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  .tab__wrap {
+    padding: 24px 10px;
+    .react-tabs__tab-panel {
+      padding: 20px;
+    }
+  }
+
+  .react-tabs__tab-list {
+    justify-content: left;
+  }
+
+  .mobile {
+    @include media(small-down) {
+      display: none;
+    }
+  }
+
+  .left-nav {
+    margin-left: 0;
+
+    li {
+      padding: 10px 0;
+      list-style: none;
+
+      a {
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .buttons-page {
+    margin: 20px 0;
+
+    &:last-child {
+      margin: 0 0 20px 0;
+    }
+
+    .button {
+      margin: 0 20px 20px 0;
+    }
+
+    a:not(.button) {
+      display: block;
+      margin: 0 20px 20px 0;
+    }
+  }
+}

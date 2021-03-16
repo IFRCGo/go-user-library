@@ -1,38 +1,15 @@
 import React from "react";
 
-function Button(props) {
-  const inputType = props.type;
-
-  if (inputType) {
-    return (
-      <button
-        tabIndex="0"
-        className={`button button--primary-filled button--small ${props.class}`}
-        type={props.type}
-      >
-        {props.name}
-        {(() => {
-          if (props.icon) {
-            return <i className="material-icons-round">{props.icon}</i>;
-          }
-        })()}
-      </button>
-    );
-  }
-
+const Button = (props) => {
   return (
     <button
       tabIndex="0"
-      className={`button button--primary-filled button--small ${props.class}`}
+      className={`button button--${props.classSize} button--${props.classType}`}
+      type={props.type}
     >
-      {props.name}
-      {(() => {
-        if (props.icon) {
-          return <i className="material-icons-round">{props.icon}</i>;
-        }
-      })()}
+      <span>{props.name}</span>
     </button>
   );
-}
+};
 
 export default Button;
