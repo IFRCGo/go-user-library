@@ -1,8 +1,28 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import ReactDOMServer from "react-dom/server";
 
 import LinkButton from "../../../components/link-button";
 import Link from "../../../components/link";
+import Code from "./../../../hoc/source-code";
+
+const htmlString1 = ReactDOMServer.renderToStaticMarkup(
+  <Link
+    href="#link"
+    icon="chevron-right"
+    class="link--with-icon"
+    name="View emergencies (last 30 days)"
+  />
+);
+
+const htmlString2 = ReactDOMServer.renderToStaticMarkup(
+  <LinkButton
+    href="#link"
+    classSize="small"
+    classType="primary-filled disabled"
+    name="primary filled disabled button styled link"
+  />
+);
 
 const LinksPage = () => {
   return (
@@ -86,7 +106,7 @@ const LinksPage = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <p>Any content 2</p>
+            <Code source={`${htmlString1}`} />
           </TabPanel>
         </Tabs>
 
@@ -139,7 +159,7 @@ const LinksPage = () => {
             </div>
           </TabPanel>
           <TabPanel>
-            <p>Any content 2</p>
+            <Code source={`${htmlString2}`} />
           </TabPanel>
         </Tabs>
       </div>
