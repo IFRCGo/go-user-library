@@ -16,6 +16,7 @@ import Resources from "./views/resources/";
 /** Pages **/
 import ButtonsPage from "./views/ui-components/buttons";
 import LinksPage from "./views/ui-components/links";
+import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
 import DesignPage from "./views/brand-design/intro";
 import MapPage from "./views/content/map";
 
@@ -37,14 +38,20 @@ const App = () => (
   <Switch>
     <AppRoute exact path="/" layout={PageLayout} component={Home} />
     <AppRoute path="/get-started" layout={PageLayout} component={GetStarted} />
+
     <AppRoute
-      path="/ui-components/buttons/"
+      path="/ui-components/breadcrumbs"
+      layout={PageLayoutUi}
+      component={BreadcrumbsPage}
+    />
+    <AppRoute
+      path="/ui-components/buttons"
       layout={PageLayoutUi}
       component={ButtonsPage}
     />
 
     <AppRoute
-      path="/ui-components/links/"
+      path="/ui-components/links"
       layout={PageLayoutUi}
       component={LinksPage}
     />

@@ -67,6 +67,15 @@ class MobileHeader extends React.PureComponent {
             <ul className="nav-block-menu">
               <li>
                 <Link
+                  to="/resources"
+                  title="title"
+                  className="button button--small button--primary-filled"
+                >
+                  Go to GO
+                </Link>
+              </li>
+              <li>
+                <Link
                   to="/get-started"
                   title="Get started"
                   className={c({ disabled: pathname === "/get-started" })}
@@ -76,9 +85,11 @@ class MobileHeader extends React.PureComponent {
               </li>
               <li>
                 <Link
-                  to="/brand-design"
+                  to="/brand-design/intro"
                   title="Brand & Design Guidelines"
-                  className={c({ disabled: pathname === "/brand-design" })}
+                  className={c({
+                    disabled: pathname === "/brand-design/intro",
+                  })}
                 >
                   <span>Brand & Design Guidelines</span>
                 </Link>
@@ -86,6 +97,17 @@ class MobileHeader extends React.PureComponent {
               <li>
                 <span>Ui Components</span>
                 <ul className="nav-block-submenu">
+                  <li>
+                    <Link
+                      to="/ui-components/breadcrumbs"
+                      title="Breadcrumbs"
+                      className={c({
+                        disabled: pathname === "/ui-components/breadcrumbs",
+                      })}
+                    >
+                      <span>Breadcrumbs</span>
+                    </Link>
+                  </li>
                   <li>
                     <Link
                       to="/ui-components/buttons"
@@ -97,13 +119,25 @@ class MobileHeader extends React.PureComponent {
                       <span>Buttons</span>
                     </Link>
                   </li>
+
+                  <li>
+                    <Link
+                      to="/ui-components/links"
+                      title="Links"
+                      className={c({
+                        disabled: pathname === "/ui-components/links",
+                      })}
+                    >
+                      <span>Links</span>
+                    </Link>
+                  </li>
                 </ul>
               </li>
               <li>
                 <Link
-                  to="/content"
+                  to="/content/map"
                   title="Content"
-                  className={c({ disabled: pathname === "/content" })}
+                  className={c({ disabled: pathname === "/content/map" })}
                 >
                   <span>Content</span>
                 </Link>

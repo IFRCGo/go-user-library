@@ -10,10 +10,20 @@ class LeftNavUi extends Component {
       <ul className="left-nav">
         <li>
           <NavLink
+            to="/ui-components/breadcrumbs"
+            title="Breadcrumbs"
+            activeClassName="active"
+            className={this.state.className ? "active" : ""}
+            exact
+          >
+            Breadcrumbs
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/ui-components/buttons"
             title="Buttons"
             activeClassName="active"
-            className={this.state.className ? "active" : ""}
             exact
           >
             Buttons

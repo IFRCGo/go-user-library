@@ -106,3 +106,53 @@
     }
   }
 }
+code {
+  background: none;
+  opacity: 1;
+  padding: 0;
+
+  textarea {
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    background: $grey-coal;
+    color: $grey-titanium;
+    padding: 2rem;
+    display: block;
+    white-space: pre-line;
+    min-height: 200px;
+    resize: none;
+    border: 1px solid $grey-coal;
+    min-width: 100%;
+    opacity: 1;
+
+    &:focus {
+      padding: 2rem;
+      border: 0;
+      outline: 0;
+      background: $grey-coal;
+    }
+  }
+  &:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  button {
+    margin: 0 20px 20px 0;
+  }
+}
+.nav-global-menu {
+  padding-top: 2px;
+  > li {
+    margin: 0 0.7rem;
+  }
+
+  a.button {
+    color: $white;
+  }
+}
+
+.page__header--mobile .page__menu a:before {
+  top: 6px;
+}
