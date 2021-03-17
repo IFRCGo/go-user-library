@@ -1,8 +1,7 @@
 import React from "react";
-import ReactDOMServer from "react-dom/server";
 import Form from "./form";
 
-const FormsPage = (props) => {
+const FormsPage = () => {
   return (
     <React.Fragment>
       <div className="inner">

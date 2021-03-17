@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOMServer from "react-dom/server";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import {
   FormInput,
@@ -11,11 +12,16 @@ import {
 class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { value: "", selectedOption: "" };
+    this.state = {
+      value: "",
+      selectedOption: "",
+      checked: true,
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.hadleRadio = this.hadleRadio.bind(this);
+    this.handleCheckbox = this.handleCheckbox.bind(this);
   }
 
   handleChange(event) {
@@ -29,6 +35,15 @@ class Form extends React.Component {
   hadleRadio(event) {
     this.setState({
       selectedOption: event.target.value,
+    });
+  }
+
+  handleCheckbox(event) {
+    const target = event.target;
+    const value = target.type === "checkbox" ? target.checked : target.value;
+
+    this.setState({
+      checked: value,
     });
   }
 
@@ -149,12 +164,14 @@ class Form extends React.Component {
 
             <TabPanel>
               <FormCheckbox
-                label="label"
+                name="Checkbox 1"
+                id="id1"
+                onClick={this.handleCheckbox}
+                checked={this.state.checked}
                 type="checkbox"
-                name="name"
-                id="id"
+                description="Checkbox 1"
                 value={this.state.value}
-                onChange={this.handleChange}
+                onChange={this.handleCheckbox}
               />
             </TabPanel>
             <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
