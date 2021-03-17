@@ -139,3 +139,11 @@ code {
 .form__option__text em {
   font-size: 0.875rem;
 }
+
+.form-message {
+  display: none;
+
+  &.show {
+    display: inline;
+  }
+}
