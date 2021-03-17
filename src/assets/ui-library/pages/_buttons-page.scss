@@ -1,0 +1,18 @@
+﻿// Buttons page
+
+.buttons-page {
+  margin: 20px 0;
+
+  &:last-child {
+    margin: 0 0 20px 0;
+  }
+
+  .button {
+    margin: 0 20px 20px 0;
+  }
+
+  a:not(.button) {
+    display: block;
+    margin: 0 20px 20px 0;
+  }
+}

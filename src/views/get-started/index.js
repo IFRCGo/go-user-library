@@ -9,7 +9,7 @@ import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
 import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
 import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 
-const Home = () => {
+const GetStarted = () => {
   return (
     <React.Fragment>
       <div className="page--about">
@@ -18,13 +18,8 @@ const Home = () => {
             <div className="">
               <div className="inpage__headline">
                 <h1 className="inpage__title inpage__title--home container-lg">
-                  IFRC GO Design System
+                  IFRC GO Design Systems
                 </h1>
-                <div className="inpage__introduction container-xs">
-                  A complete guide to the design rpinciples and guidelines that
-                  make IFRC GO possible. The library is open source, welcom to
-                  be used by any IFRC teams.
-                </div>
               </div>
             </div>
           </header>
@@ -200,4 +195,4 @@ const Home = () => {
     </React.Fragment>
   );
 };
-export default Home;
+export default GetStarted;
