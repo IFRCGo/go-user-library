@@ -16,6 +16,13 @@ class Form extends React.Component {
       value: "",
       selectedOption: "",
       checked: true,
+      selectList: [
+        { value: "USA", label: "USA" },
+        { value: "CANADA", label: "CANADA" },
+      ],
+      fields: { name: "", textarea: "" },
+      errors: {},
+      submitted: false,
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -24,12 +31,13 @@ class Form extends React.Component {
     this.handleCheckbox = this.handleCheckbox.bind(this);
   }
 
-  handleChange(event) {
-    this.setState({ value: event.target.value });
-  }
+  handleChange(e) {
+    let fields = this.state.fields;
+    fields[e.target.name] = e.target.value;
 
-  handleClick(event) {
-    this.setState({ value: event.target.value });
+    this.setState({
+      fields,
+    });
   }
 
   hadleRadio(event) {
@@ -48,7 +56,12 @@ class Form extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("A name was submitted: " + this.state.value);
+    alert(
+      "A text input was submitted: " +
+        this.state.fields.name +
+        "A textarea was submitted: " +
+        this.state.fields.textarea
+    );
     event.preventDefault();
   }
 
@@ -80,7 +93,7 @@ class Form extends React.Component {
                 type="text"
                 name="name"
                 id="id"
-                value={this.state.value}
+                value={this.state.fields.name}
                 onChange={this.handleChange}
                 autoFocus
               />
@@ -111,9 +124,9 @@ class Form extends React.Component {
               <FormTextarea
                 label="label"
                 type="text"
-                name="name"
+                name="textarea"
                 id="id"
-                value={this.state.value}
+                value={this.state.fields.textarea}
                 onChange={this.handleChange}
               />
             </TabPanel>
@@ -139,7 +152,14 @@ class Form extends React.Component {
               <Tab>Code</Tab>
             </TabList>
 
-            <TabPanel>{/* <FormSelect /> */}</TabPanel>
+            <TabPanel>
+              <FormSelect
+                name="Select form"
+                onChange={this.handleChange}
+                options={this.state.selectList}
+                value={this.state.selectList.value}
+              />
+            </TabPanel>
             <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
           </Tabs>
         </div>
