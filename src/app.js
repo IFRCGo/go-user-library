@@ -17,6 +17,7 @@ import Resources from "./views/resources/";
 import ButtonsPage from "./views/ui-components/buttons";
 import LinksPage from "./views/ui-components/links";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
+import FormsPage from "./views/ui-components/forms";
 /** Brand Design **/
 import DesignPage from "./views/brand-design/intro";
 import ColoursPage from "./views/brand-design/colours";
@@ -51,6 +52,11 @@ const App = () => (
       path="/ui-components/buttons"
       layout={PageLayoutUi}
       component={ButtonsPage}
+    />
+    <AppRoute
+      path="/ui-components/forms"
+      layout={PageLayoutUi}
+      component={FormsPage}
     />
 
     <AppRoute
