@@ -9,12 +9,12 @@ import {
   FormSelect,
 } from "./../../../components/form-elements";
 
+import Button from "./../../../components/button";
+
 class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: "",
-      selectedOption: "",
       checked: true,
       selectList: [
         { value: "USA", label: "USA" },
@@ -41,8 +41,9 @@ class Form extends React.Component {
   }
 
   hadleRadio(event) {
+    const value = event.target.value;
     this.setState({
-      selectedOption: event.target.value,
+      value,
     });
   }
 
@@ -86,6 +87,8 @@ class Form extends React.Component {
   }
 
   render() {
+    const levels = ["Option 1", "Option 2"];
+
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
@@ -242,27 +245,30 @@ class Form extends React.Component {
               </TabList>
 
               <TabPanel>
-                <FormRadio
-                  label="Radio option 1"
-                  name="group"
-                  id="id1"
-                  checked={this.state.selectedOption === this.state.value}
-                  value={this.state.value}
-                  onChange={this.handleChange}
-                />
-                <FormRadio
-                  label="Radio option 2"
-                  name="group"
-                  id="id2"
-                  checked={this.state.selectedOption === this.state.value}
-                  value={this.state.value}
-                  onChange={this.handleChange}
-                />
+                {levels.map((level, index) => (
+                  <span key={index}>
+                    <FormRadio
+                      label={level}
+                      name="level"
+                      id="id1"
+                      type="radio"
+                      checked={this.state.value === level}
+                      value={level}
+                      onChange={this.hadleRadio}
+                    />
+                  </span>
+                ))}
               </TabPanel>
               <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
             </Tabs>
+
+            <Button
+              type="submit"
+              classSize="small"
+              classType="primary-filled"
+              name="submit"
+            />
           </div>
-          <input type="submit" value="Submit" />
         </form>
         <div
           className={
