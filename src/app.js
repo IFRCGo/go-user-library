@@ -9,7 +9,7 @@ import PageLayoutContent from "./hoc/page-layout-content";
 import PageLayout from "./hoc/page-layout";
 
 /** Views **/
-import Home from "./views/get-started/";
+import GetStarted from "./views/get-started/";
 import Resources from "./views/resources/";
 
 /** Pages **/
@@ -40,8 +40,8 @@ const AppRoute = ({ component: Component, layout: Layout, ...rest }) => (
 
 const App = () => (
   <Switch>
-    <AppRoute exact path="/" layout={PageLayout} component={Home} />
-    <AppRoute path="/get-started" layout={PageLayout} component={Home} />
+    <AppRoute exact path="/" layout={PageLayout} component={GetStarted} />
+    <AppRoute path="/get-started" layout={PageLayout} component={GetStarted} />
 
     <AppRoute
       path="/ui-components/breadcrumbs"

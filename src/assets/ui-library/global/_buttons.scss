@@ -25,6 +25,20 @@
   }
 }
 
+.button--home-filled {
+  background: $white;
+  color: $primary-color;
+  &:hover,
+  &:focus {
+    background: $red-hover;
+    color: $white;
+  }
+
+  &.disabled {
+    background: $grey-disabled;
+  }
+}
+
 .link--with-icon {
   font-weight: 500;
   &:hover,

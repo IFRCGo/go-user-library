@@ -12,7 +12,7 @@ const LinkButton = (props) => {
           return <span className={`margin-half-r f-icon-${props.icon}`}></span>;
         }
       })()}
-      <span className="button-text">{props.name}</span>
+      <span>{props.name}</span>
     </a>
   );
 };
