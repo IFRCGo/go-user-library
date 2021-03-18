@@ -1,45 +1,85 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Select from "react-select";
 import {
   FormInput,
   FormTextarea,
   FormCheckbox,
   FormRadio,
-  FormSelect,
 } from "./../../../components/form-elements";
 
 import Button from "../../../components/button";
 import Code from "./../../../hoc/source-code";
 
 const InputString = ReactDOMServer.renderToStaticMarkup(
-  <FormInput label="label" type="text" name="name" id="id" value="" autoFocus />
+  <div className="form__group">
+    <div className="form__group__wrap">
+      <div className="form__inner-header">
+        <div className="form__inner-headline">
+          <label className="form__label">label</label>
+        </div>
+      </div>
+      <div className="form__inner-body">
+        <input
+          type="text"
+          id="id"
+          name="name"
+          className="form__control form__control--medium"
+          value=""
+          autoFocus=""
+          readOnly
+        />
+      </div>
+    </div>
+  </div>
 );
 
 const TextareaString = ReactDOMServer.renderToStaticMarkup(
-  <FormTextarea label="label" type="text" name="textarea" id="id" value="" />
+  <div className="form__group">
+    <div className="form__group__wrap">
+      <div className="form__inner-header">
+        <div className="form__inner-headline">
+          <label className="form__label" htmlFor="id">
+            label
+          </label>
+        </div>
+      </div>
+      <div className="form__inner-body">
+        <textarea
+          id="id"
+          name="textarea"
+          className="form__control form__control--medium"
+        ></textarea>
+      </div>
+    </div>
+  </div>
 );
 
 const RadioString = ReactDOMServer.renderToStaticMarkup(
-  <FormRadio
-    label="Radio"
-    name="level"
-    id="id1"
-    type="radio"
-    checked=""
-    value="1"
-  />
+  <label
+    className="form__option form__option--custom-radio form__option--inline"
+    data-for="id1-tooltip"
+    data-tip=""
+  >
+    <input type="radio" name="level" id="id1" value="1" />
+    <span className="form__option__ui"></span>
+    <span className="form__option__text">Radio </span>
+  </label>
 );
 
 const CheckboxString = ReactDOMServer.renderToStaticMarkup(
-  <FormCheckbox
-    name="Checkbox 1"
-    id="id1"
-    checked=""
-    type="checkbox"
-    description="Checkbox 1"
-    value="1"
-  />
+  <label
+    className="form__option form__option--custom-checkbox"
+    data-for="id1-tooltip"
+    data-tip=""
+  >
+    <input type="checkbox" name="Checkbox 1" id="id1" value="1" />
+    <span className="form__option__ui"></span>
+    <span className="form__option__text">
+      <em>Checkbox 1</em>
+    </span>
+  </label>
 );
 
 class Form extends React.Component {
@@ -47,18 +87,16 @@ class Form extends React.Component {
     super(props);
     this.state = {
       checked: true,
-      selectList: [
-        { value: "USA", label: "USA" },
-        { value: "CANADA", label: "CANADA" },
-      ],
       fields: { name: "", textarea: "" },
       errors: {},
       submitted: false,
+      selectedValue: "",
     };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.hadleRadio = this.hadleRadio.bind(this);
+    this.handleSelect = this.handleSelect.bind(this);
     this.handleCheckbox = this.handleCheckbox.bind(this);
   }
 
@@ -86,6 +124,10 @@ class Form extends React.Component {
       checked: value,
     });
   }
+
+  handleSelect = (value) => {
+    this.setState({ selectedValue: value });
+  };
 
   validateForm() {
     let fields = this.state.fields;
@@ -119,6 +161,12 @@ class Form extends React.Component {
 
   render() {
     const levels = ["Option 1", "Option 2"];
+    const selectList = [
+      { value: "1", label: "Option 1" },
+      { value: "2", label: "Option 2" },
+      { value: "3", label: "Option 3" },
+      { value: "4", label: "Option 4" },
+    ];
 
     return (
       <div>
@@ -216,11 +264,12 @@ class Form extends React.Component {
               </TabList>
 
               <TabPanel>
-                <FormSelect
-                  name="Select form"
-                  onChange={this.handleChange}
-                  options={this.state.selectList}
-                  value={this.state.selectList.value}
+                <Select
+                  name="organizationType"
+                  value={this.state.selectedValue}
+                  onChange={this.handleSelect}
+                  options={selectList}
+                  autoFocus={true}
                 />
               </TabPanel>
               <TabPanel>
