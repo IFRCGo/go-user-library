@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.dd289a6a.chunk.css",
-    "main.js": "/static/js/main.21c760a5.chunk.js",
-    "main.js.map": "/static/js/main.21c760a5.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.41946a07.js",
-    "runtime-main.js.map": "/static/js/runtime-main.41946a07.js.map",
-    "static/js/2.7f2382d4.chunk.js": "/static/js/2.7f2382d4.chunk.js",
-    "static/js/2.7f2382d4.chunk.js.map": "/static/js/2.7f2382d4.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.dd289a6a.chunk.css.map": "/static/css/main.dd289a6a.chunk.css.map",
-    "static/js/2.7f2382d4.chunk.js.LICENSE.txt": "/static/js/2.7f2382d4.chunk.js.LICENSE.txt",
-    "static/media/aurc_logo.1953d658.jpg": "/static/media/aurc_logo.1953d658.jpg",
-    "static/media/brc_logo.929136f2.png": "/static/media/brc_logo.929136f2.png",
-    "static/media/main.scss": "/static/media/x-thin.1b5dbf5a.svg",
-    "static/media/go-logo-2020.2b68182f.svg": "/static/media/go-logo-2020.2b68182f.svg",
-    "static/media/nlrc_logo.bbb3f53a.jpg": "/static/media/nlrc_logo.bbb3f53a.jpg",
-    "static/media/per_approach_notext.fffaa42e.png": "/static/media/per_approach_notext.fffaa42e.png"
+    "main.css": "/GO-UI-Library/static/css/main.745b16b4.chunk.css",
+    "main.js": "/GO-UI-Library/static/js/main.b4df4e01.chunk.js",
+    "main.js.map": "/GO-UI-Library/static/js/main.b4df4e01.chunk.js.map",
+    "runtime-main.js": "/GO-UI-Library/static/js/runtime-main.7d67a628.js",
+    "runtime-main.js.map": "/GO-UI-Library/static/js/runtime-main.7d67a628.js.map",
+    "static/js/2.7f2382d4.chunk.js": "/GO-UI-Library/static/js/2.7f2382d4.chunk.js",
+    "static/js/2.7f2382d4.chunk.js.map": "/GO-UI-Library/static/js/2.7f2382d4.chunk.js.map",
+    "index.html": "/GO-UI-Library/index.html",
+    "static/css/main.745b16b4.chunk.css.map": "/GO-UI-Library/static/css/main.745b16b4.chunk.css.map",
+    "static/js/2.7f2382d4.chunk.js.LICENSE.txt": "/GO-UI-Library/static/js/2.7f2382d4.chunk.js.LICENSE.txt",
+    "static/media/aurc_logo.1953d658.jpg": "/GO-UI-Library/static/media/aurc_logo.1953d658.jpg",
+    "static/media/brc_logo.929136f2.png": "/GO-UI-Library/static/media/brc_logo.929136f2.png",
+    "static/media/main.scss": "/GO-UI-Library/static/media/x-thin.1b5dbf5a.svg",
+    "static/media/go-logo-2020.2b68182f.svg": "/GO-UI-Library/static/media/go-logo-2020.2b68182f.svg",
+    "static/media/nlrc_logo.bbb3f53a.jpg": "/GO-UI-Library/static/media/nlrc_logo.bbb3f53a.jpg",
+    "static/media/per_approach_notext.fffaa42e.png": "/GO-UI-Library/static/media/per_approach_notext.fffaa42e.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.41946a07.js",
+    "static/js/runtime-main.7d67a628.js",
     "static/js/2.7f2382d4.chunk.js",
-    "static/css/main.dd289a6a.chunk.css",
-    "static/js/main.21c760a5.chunk.js"
+    "static/css/main.745b16b4.chunk.css",
+    "static/js/main.b4df4e01.chunk.js"
   ]
 }
