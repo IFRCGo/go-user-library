@@ -9,10 +9,10 @@ import FormRadio from "./radio";
 export default function FormRadioGroup(props) {
   const {
     label,
-    labelTooltipTitle,
-    labelTooltipDescription,
+    // labelTooltipTitle,
+    // labelTooltipDescription,
     name,
-    description,
+    // description,
     options,
     selectedOption,
     classWrapper,

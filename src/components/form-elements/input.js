@@ -11,7 +11,7 @@ function FormInput(props) {
     labelSecondary,
     type,
     name,
-    description,
+    // description,
     placeholder,
     classInput,
     classWrapper,
@@ -26,8 +26,8 @@ function FormInput(props) {
     formInnerHeaderClass,
     formInnerBodyClass,
     inputCol,
-    tooltipTitle,
-    tooltipDescription,
+    // tooltipTitle,
+    // tooltipDescription,
   } = props;
 
   return (

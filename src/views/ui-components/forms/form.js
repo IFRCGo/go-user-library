@@ -9,7 +9,38 @@ import {
   FormSelect,
 } from "./../../../components/form-elements";
 
-import Button from "./../../../components/button";
+import Button from "../../../components/button";
+import Code from "./../../../hoc/source-code";
+
+const InputString = ReactDOMServer.renderToStaticMarkup(
+  <FormInput label="label" type="text" name="name" id="id" value="" autoFocus />
+);
+
+const TextareaString = ReactDOMServer.renderToStaticMarkup(
+  <FormTextarea label="label" type="text" name="textarea" id="id" value="" />
+);
+
+const RadioString = ReactDOMServer.renderToStaticMarkup(
+  <FormRadio
+    label="Radio"
+    name="level"
+    id="id1"
+    type="radio"
+    checked=""
+    value="1"
+  />
+);
+
+const CheckboxString = ReactDOMServer.renderToStaticMarkup(
+  <FormCheckbox
+    name="Checkbox 1"
+    id="id1"
+    checked=""
+    type="checkbox"
+    description="Checkbox 1"
+    value="1"
+  />
+);
 
 class Form extends React.Component {
   constructor(props) {
@@ -124,7 +155,9 @@ class Form extends React.Component {
                   <p className="form__error">{this.state.errors.name}</p>
                 </FormInput>
               </TabPanel>
-              <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+              <TabPanel>
+                <Code source={`${InputString}`} />
+              </TabPanel>
             </Tabs>
           </div>
           <div className="inner">
@@ -158,7 +191,9 @@ class Form extends React.Component {
                   <p className="form__error">{this.state.errors.textarea}</p>
                 </FormTextarea>
               </TabPanel>
-              <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+              <TabPanel>
+                <Code source={`${TextareaString}`} />
+              </TabPanel>
             </Tabs>
           </div>
           <div className="inner">
@@ -188,7 +223,9 @@ class Form extends React.Component {
                   value={this.state.selectList.value}
                 />
               </TabPanel>
-              <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+              <TabPanel>
+                <Code source={`${InputString}`} />
+              </TabPanel>
             </Tabs>
           </div>
           <div className="inner">
@@ -222,7 +259,9 @@ class Form extends React.Component {
                   onChange={this.handleCheckbox}
                 />
               </TabPanel>
-              <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+              <TabPanel>
+                <Code source={`${CheckboxString}`} />
+              </TabPanel>
             </Tabs>
           </div>
           <div className="inner">
@@ -259,7 +298,9 @@ class Form extends React.Component {
                   </span>
                 ))}
               </TabPanel>
-              <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+              <TabPanel>
+                <Code source={`${RadioString}`} />
+              </TabPanel>
             </Tabs>
 
             <Button

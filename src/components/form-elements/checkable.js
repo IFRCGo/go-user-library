@@ -17,8 +17,8 @@ export default function FormCheckable(props) {
     onChange,
     onClick,
     checked,
-    tooltipTitle,
-    tooltipDescription,
+    // tooltipTitle,
+    // tooltipDescription,
   } = props;
 
   return (
