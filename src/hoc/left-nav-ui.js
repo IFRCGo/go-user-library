@@ -49,6 +49,16 @@ class LeftNavUi extends Component {
             Links
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            to="/ui-components/modal"
+            title="Links"
+            activeClassName="active"
+            exact
+          >
+            Modal
+          </NavLink>
+        </li>
       </ul>
     );
   }
