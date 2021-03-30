@@ -8,8 +8,8 @@ import Code from "./../../../hoc/source-code";
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <Button
     type="submit"
-    classSize="small"
-    classType="primary-filled"
+    size="small"
+    type="primary-filled"
     name="primary filled button"
   />
 );
@@ -39,31 +39,19 @@ const ButtonsPage = () => {
           <TabPanel>
             <div className="buttons-page">
               <h3>Primary</h3>
-              <Button
-                type="submit"
-                classSize="small"
-                classType="primary-filled"
-                name="primary filled button"
-              />
-              <Button
-                type="submit"
-                classSize="small"
-                classType="primary-filled disabled"
-                name="primary filled disabled button"
-              />
+              <Button size="small" type="primary-filled">
+                primary filled button
+              </Button>
+              <Button size="small" type="primary-filled disabled">
+                primary filled disabled button
+              </Button>
               <br />
-              <Button
-                type="submit"
-                classSize="small"
-                classType="primary-bounded"
-                name="primary bounded button"
-              />
-              <Button
-                type="submit"
-                classSize="small"
-                classType="primary-bounded disabled"
-                name="primary bounded disabled button"
-              />
+              <Button size="small" type="primary-bounded">
+                primary bounded button
+              </Button>
+              <Button size="small" type="primary-bounded disabled">
+                primary bounded button
+              </Button>
             </div>
           </TabPanel>
           <TabPanel>

@@ -31,6 +31,16 @@ class LeftNavUi extends Component {
         </li>
         <li>
           <NavLink
+            to="/ui-components/cards"
+            title="Forms"
+            activeClassName="active"
+            exact
+          >
+            Cards
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
             to="/ui-components/forms"
             title="Forms"
             activeClassName="active"

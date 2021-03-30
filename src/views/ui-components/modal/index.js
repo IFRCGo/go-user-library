@@ -2,6 +2,7 @@ import React, { useState, useCallback } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 
+import Button from "./../../../components/button";
 import ConfirmModal from "./../../../components/modal";
 import Code from "./../../../hoc/source-code";
 
@@ -41,14 +42,15 @@ const ModalPage = () => {
           </TabList>
 
           <TabPanel>
-            <button
-              className="button button--xsmall button--primary-filled per__list__button"
+            <Button
+              size="small"
+              type="primary-filled"
               onClick={() => {
                 setModalReveal(true);
               }}
             >
               Open modal
-            </button>
+            </Button>
             {modalReveal ? (
               <ConfirmModal
                 title="this is a modal"
