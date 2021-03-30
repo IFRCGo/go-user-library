@@ -28,19 +28,16 @@ function Header(props) {
                   <li>
                     <Link to="/brand-design/intro" title="title">
                       Brand & Design Guidelines
-                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
                     </Link>
                   </li>
                   <li>
                     <Link to="/ui-components/breadcrumbs/" title="title">
                       Ui Components
-                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
                     </Link>
                   </li>
                   <li>
                     <Link to="/content/map" title="title">
                       Content
-                      <span className="drop__toggle--caret tc-dropdown-menu"></span>
                     </Link>
                   </li>
                   <li>
@@ -48,18 +45,17 @@ function Header(props) {
                       Resources
                     </Link>
                   </li>
-
-                  <li>
-                    <Link
-                      to="/"
-                      title="title"
-                      className="button button--small button--primary-filled"
-                    >
-                      Go to GO
-                    </Link>
-                  </li>
                 </ul>
               </nav>
+              <div className="page__nav-actions">
+                <Link
+                  to="/"
+                  title="title"
+                  className="button button--small button--primary-filled"
+                >
+                  Go to GO
+                </Link>
+              </div>
             </div>
           </div>
         </div>
