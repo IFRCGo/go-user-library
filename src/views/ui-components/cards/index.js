@@ -5,13 +5,23 @@ import ReactDOMServer from "react-dom/server";
 import Card from "./../../../components/card";
 import Code from "./../../../hoc/source-code";
 
-// const htmlString = ReactDOMServer.renderToStaticMarkup(
-//   <ConfirmModal
-//     title="this is a modal"
-//     message="This is the content"
-//     okText="OK"
-//   />
-// );
+const htmlString = ReactDOMServer.renderToStaticMarkup(
+  <Card
+    linkTo="#"
+    operationName="Indonesia: Earthquakes"
+    lastUpdate="Last Updated: Oct 1, 2018"
+    beneficiaries="160,000"
+    emergencyDeploymentsErus="People Targeted"
+    operationCardUnits="74"
+    requested="Deployed Emergency Response Units"
+    operationCardFunding="22,000,000"
+    emergencyDeployments="Funding Requirements (CHF)"
+    operationCardDeployed="74"
+    operationCardFundingCoverage="Deployed Surge Personnel"
+    requestedPercentage="20.49%"
+    progressNumber="20.49"
+  />
+);
 
 const CardsPage = () => {
   return (
@@ -36,11 +46,27 @@ const CardsPage = () => {
           </TabList>
 
           <TabPanel>
-            <div className="key-emergencies-list key-emergencies-list-short row flex-sm">
-              <Card />
+            <div className="key-emergencies-list row flex-sm">
+              <Card
+                linkTo="#"
+                operationName="Indonesia: Earthquakes"
+                lastUpdate="Last Updated: Oct 1, 2018"
+                beneficiaries="160,000"
+                emergencyDeploymentsErus="People Targeted"
+                operationCardUnits="74"
+                requested="Deployed Emergency Response Units"
+                operationCardFunding="22,000,000"
+                emergencyDeployments="Funding Requirements (CHF)"
+                operationCardDeployed="74"
+                operationCardFundingCoverage="Deployed Surge Personnel"
+                requestedPercentage="20.49%"
+                progressNumber="20.49"
+              />
             </div>
           </TabPanel>
-          <TabPanel>{/* <Code source={`${htmlString}`} /> */}</TabPanel>
+          <TabPanel>
+            <Code source={`${htmlString}`} />
+          </TabPanel>
         </Tabs>
       </div>
     </React.Fragment>

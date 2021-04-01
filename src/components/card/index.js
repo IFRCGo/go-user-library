@@ -16,6 +16,7 @@ const Card = ({
   operationCardDeployed,
   operationCardFundingCoverage,
   requestedPercentage,
+  progressNumber,
 }) => {
   return (
     <div className="key-emergencies-item col col-6-sm col-5-mid" key="key">
@@ -62,7 +63,7 @@ const Card = ({
         </div>
 
         <div className="card_box_footer">
-          <Progress value={40} max={100} />
+          <Progress value={progressNumber} max={100} />
           <div className="card_box_full card_box_container card_box_container--op">
             <div className="heading-tiny">{operationCardFundingCoverage}</div>
             <div className="card_box_fc">{requestedPercentage}</div>
