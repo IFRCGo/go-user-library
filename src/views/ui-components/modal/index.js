@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 
@@ -16,9 +16,9 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 
 const ModalPage = () => {
   const [modalReveal, setModalReveal] = useState(false);
-  const handleDeleteConfirmed = useCallback((isOk) => {
+  const handleDeleteConfirmed = () => {
     setModalReveal(false);
-  });
+  };
 
   return (
     <React.Fragment>
