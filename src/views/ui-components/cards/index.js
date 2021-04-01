@@ -4,6 +4,7 @@ import ReactDOMServer from "react-dom/server";
 
 import Card from "./../../../components/card";
 import KeyFigures from "./../../../components/key-figures";
+import KeysOverview from "./../../../components/keys-overview";
 import Code from "./../../../hoc/source-code";
 
 import imgSrc1 from "./../../../assets/graphics/layout/logo-dref.svg";
@@ -44,6 +45,8 @@ const htmlString1 = ReactDOMServer.renderToStaticMarkup(
   <KeyFigures data={data} />
 );
 
+const htmlString2 = ReactDOMServer.renderToStaticMarkup(<KeysOverview />);
+
 const CardsPage = () => {
   return (
     <React.Fragment>
@@ -68,7 +71,7 @@ const CardsPage = () => {
 
           <TabPanel>
             <h3>Highlighted emergencies</h3>
-            <div className="key-emergencies-list row flex-sm">
+            <div className="key-emergencies-list row">
               <Card
                 linkTo="#"
                 operationName="Indonesia: Earthquakes"
@@ -107,6 +110,24 @@ const CardsPage = () => {
           </TabPanel>
           <TabPanel>
             <Code source={`${htmlString1}`} />
+          </TabPanel>
+        </Tabs>
+      </div>
+      <div className="tab__wrap">
+        <Tabs>
+          <TabList>
+            <Tab>Example</Tab>
+            <Tab>Code</Tab>
+          </TabList>
+
+          <TabPanel>
+            <h3>Key figures</h3>
+            <div className="key-emergencies-list row flex-sm">
+              <KeysOverview />
+            </div>
+          </TabPanel>
+          <TabPanel>
+            <Code source={`${htmlString2}`} />
           </TabPanel>
         </Tabs>
       </div>
