@@ -1,4 +1,5 @@
 import React from "react";
+import Tooltip from "./../tooltip";
 
 function KeyFigures(props) {
   const data = props.data;
@@ -9,7 +10,15 @@ function KeyFigures(props) {
           <img className="sumstats__icon_2020" src={item.src} alt={item.key} />
         </span>
         <span className="sumstats__value">{item.value}</span>
-        {item.key}
+        <span className="sumstats__key">
+          {item.key}
+          {item.tooltip ? (
+            <Tooltip
+              title={item.tooltip.title}
+              description={item.tooltip.description}
+            />
+          ) : null}
+        </span>
       </div>
     </li>
   ));

@@ -13,6 +13,11 @@ const data = [
     key: "Funding Requirements in the last years",
     value: "2,696",
     src: imgSrc1,
+    tooltip: {
+      title: "DREF",
+      description:
+        "These are small to medium scale emergency operations funded through the Disaster Relief Emergency Fund (DREF).",
+    },
   },
 ];
 
