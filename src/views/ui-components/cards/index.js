@@ -30,12 +30,12 @@ const CardsPage = () => {
       <div className="inner">
         <div className="fold__header">
           <div className="fold__header__block">
-            <h2 className="fold__title margin-reset">Modal</h2>
+            <h2 className="fold__title margin-reset">Cards</h2>
           </div>
         </div>
         <div className="fold__body">
           <div className="container-full">
-            <p>This is a Modal and this is some information</p>
+            <p>This is a card and this is some information</p>
           </div>
         </div>
       </div>
