@@ -43,7 +43,8 @@
 
       &-text {
         padding: 1rem;
-        color: grey;
+        color: #000000;
+        border-top: 1px solid grey;
 
         p {
           &.small-print {
@@ -64,7 +65,7 @@
           }
         }
       }
-
+      // Primary
       .brand {
         background: $primary-color;
       }
@@ -76,9 +77,14 @@
       .dark-grey {
         background: $grey-coal;
       }
-
+      
+      // Semantic
       .positive {
         background: #7fb845;
+      }
+
+      .informational {
+        background: #3FA2F7;
       }
 
       .negative {
@@ -87,6 +93,38 @@
 
       .warning {
         background: #ffb443;
+      }
+
+      // Greyscale
+      .black {
+        background: #000000;
+      }
+      .grey9 {
+        background: #323232;
+      }
+      .grey8 {
+        background: #525252;
+      }
+      .grey7 {
+        background: #6f6f6f;
+      }
+      .grey6 {
+        background: #8d8d8d;
+      }
+      .grey5 {
+        background: #a8a8a8;
+      }
+      .grey4 {
+        background: #c6c6c6;
+      }
+      .grey3 {
+        background: #e0e0e0;
+      }
+      .grey2 {
+        background: #f4f4f4;
+      }
+      .grey1 {
+        background: #fafafa;
       }
     }
   }
