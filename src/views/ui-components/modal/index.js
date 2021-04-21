@@ -24,13 +24,12 @@ const ModalPage = () => {
     <React.Fragment>
       <div className="inner">
         <div className="fold__header">
-          <div className="fold__header__block">
-            <h2 className="fold__title margin-reset">Modal</h2>
-          </div>
+          <h1>Modal</h1>
+          <p>Placeholder text</p>
         </div>
-        <div className="fold__body">
-          <div className="container-full">
-            <p>This is a Modal and this is some information</p>
+        <div className="fold__header">
+          <div className="fold__header__block">
+            <h2 className="fold__title margin-reset">Modal box</h2>
           </div>
         </div>
       </div>
@@ -65,6 +64,12 @@ const ModalPage = () => {
           </TabPanel>
         </Tabs>
       </div>
+
+      <div className="container-full">
+        <h2 className="fold__title margin-reset">Comments</h2>
+        <br /><p>Placeholder text</p>
+      </div>
+      
     </React.Fragment>
   );
 };
