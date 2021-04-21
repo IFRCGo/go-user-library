@@ -1,7 +1,8 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 
+import Button from "./../../../components/button";
 import ConfirmModal from "./../../../components/modal";
 import Code from "./../../../hoc/source-code";
 
@@ -15,21 +16,20 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 
 const ModalPage = () => {
   const [modalReveal, setModalReveal] = useState(false);
-  const handleDeleteConfirmed = useCallback((isOk) => {
+  const handleDeleteConfirmed = () => {
     setModalReveal(false);
-  });
+  };
 
   return (
     <React.Fragment>
       <div className="inner">
         <div className="fold__header">
-          <div className="fold__header__block">
-            <h2 className="fold__title margin-reset">Modal</h2>
-          </div>
+          <h1>Modal</h1>
+          <p>Placeholder text</p>
         </div>
-        <div className="fold__body">
-          <div className="container-full">
-            <p>This is a Modal and this is some information</p>
+        <div className="fold__header">
+          <div className="fold__header__block">
+            <h2 className="fold__title margin-reset">Modal box</h2>
           </div>
         </div>
       </div>
@@ -41,14 +41,15 @@ const ModalPage = () => {
           </TabList>
 
           <TabPanel>
-            <button
-              className="button button--xsmall button--primary-filled per__list__button"
+            <Button
+              size="small"
+              type="primary-filled"
               onClick={() => {
                 setModalReveal(true);
               }}
             >
               Open modal
-            </button>
+            </Button>
             {modalReveal ? (
               <ConfirmModal
                 title="this is a modal"
@@ -63,6 +64,12 @@ const ModalPage = () => {
           </TabPanel>
         </Tabs>
       </div>
+
+      <div className="container-full">
+        <h2 className="fold__title margin-reset">Comments</h2>
+        <br /><p>Placeholder text</p>
+      </div>
+      
     </React.Fragment>
   );
 };
