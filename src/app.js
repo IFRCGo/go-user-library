@@ -14,6 +14,7 @@ import Resources from "./views/resources/";
 
 /** Pages **/
 /** UI Components **/
+import AlertPage from "./views/ui-components/alert";
 import ButtonsPage from "./views/ui-components/buttons";
 import LinksPage from "./views/ui-components/links";
 import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
@@ -44,7 +45,11 @@ const App = () => (
   <Switch>
     <AppRoute exact path="/" layout={PageLayout} component={GetStarted} />
     <AppRoute path="/get-started" layout={PageLayout} component={GetStarted} />
-
+      <AppRoute
+          path="/ui-components/alert"
+          layout={PageLayoutUi}
+          component={AlertPage}
+      />
     <AppRoute
       path="/ui-components/breadcrumbs"
       layout={PageLayoutUi}
