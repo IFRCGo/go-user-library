@@ -6,11 +6,11 @@
   @extend .antialiased;
   position: relative;
   border-radius: $base-border-radius;
-  background: rgba($base-color, 0.92);
+  background: rgba($grey-10, 0.92);
   padding: $global-spacing ($global-spacing * 2.5) $global-spacing ($global-spacing * 1.75);
-  color: #fff;
+  color: #000;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 14px;
   line-height: 1.5;
   margin: 0 0 $global-spacing 0;
 
@@ -18,11 +18,69 @@
     margin-bottom: 0;
   }
 
+  &.primary {
+    color: #FFF;
+
+    .icon {
+      top: 4px;
+      position: relative;
+    }
+
+    .alert__button-dismiss {
+      color: #FFF;
+    }
+
+    &.warning {
+      background-color: $warning-color;
+    }
+
+    &.danger {
+      background-color: $danger-color;
+    }
+
+    &.success {
+      background-color: $success-color;
+    }
+
+    &.info {
+      background-color: $info-color;
+    }
+  }
+
+  &.secondary {
+    .icon {
+      top: 4px;
+      position: relative;
+
+      .warning {
+        color: $warning-color;
+      }
+
+      .danger {
+        color: $danger-color;
+      }
+
+      .success {
+        color: $success-color;
+      }
+
+      .info {
+        color: $info-color;
+      }
+    }
+  }
+
+  .text {
+    position: relative;
+    padding-left: 10px;
+    top: -3px;
+  }
+
   &::before {
     position: absolute;
-    top: $global-spacing / 2;
-    bottom: $global-spacing / 2;
-    left: $global-spacing / 2;
+    top: -$global-spacing / 2;
+    bottom: -$global-spacing / 2;
+    left: 0px;
     width: $global-spacing / 2;
     background: rgba($base-color, 0.92);
     border-radius: $base-border-radius / 2;
@@ -83,7 +141,8 @@
 .alert__button-dismiss {
   @extend .button, .button--small, .button--base-glass, .button--text-hidden;
   position: absolute;
-  top: $global-spacing / 2;
+  background-color: unset;
+  top: 15px;
   right: $global-spacing / 2;
   z-index: 10;
 
