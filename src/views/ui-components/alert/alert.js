@@ -83,7 +83,7 @@ class Alert extends React.Component {
                                         <span className='icon'>
                                             {this.props.type === "warning" ?
                                                 <IoWarningOutline size="24px" className={this.props.type}/> : null}
-                                            {this.props.type === "danger" ?
+                                            {this.props.type === "error" ?
                                                 <FiAlertTriangle size="24px" className={this.props.type}/> : null}
                                             {this.props.type === "info" ?
                                                 <AiOutlineInfoCircle size="24px" className={this.props.type}/> : null}

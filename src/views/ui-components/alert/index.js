@@ -62,9 +62,7 @@ const AlertPage = () => {
                     text='Success Alert'
                     autoDismiss='0'
                 />
-            </div>
 
-            <div className="container-full">
                 <b>Warning alert</b>
                 <Alert
                     id='5'
@@ -73,9 +71,7 @@ const AlertPage = () => {
                     text='Warning Alert'
                     autoDismiss='0'
                 />
-            </div>
 
-            <div className="container-full">
                 <b>Info alert</b>
                 <Alert
                     id='6'
@@ -84,9 +80,7 @@ const AlertPage = () => {
                     autoDismiss='0'
                     text='Info Alert'
                 />
-            </div>
 
-            <div className="container-full">
                 <b>Info alert & autoDismiss 5 seconds</b>
                 <Alert
                     id='7'
@@ -95,27 +89,38 @@ const AlertPage = () => {
                     autoDismiss='5000'
                     text='Info Alert'
                 />
-            </div>
 
-            <div className="container-full">
                 <b>Danger alert</b>
                 <Alert
                     id='8'
                     option='secondary'
-                    type='danger'
+                    type='error'
                     text='Danger Alert'
                     autoDismiss='0'
                 />
-            </div>
 
-            <div className="container-full">
                 <b>Danger alert & autoDismiss 10 seconds</b>
                 <Alert
                     id='9'
                     option='secondary'
-                    type='danger'
+                    type='error'
                     text='Danger Alert'
                     autoDismiss='10000'
+                />
+            </div>
+
+            <hr/>
+
+            <h2>Message forms</h2>
+
+            <div className="container-full">
+                <b>Error Message</b>
+                <Alert
+                    id='10'
+                    option='message'
+                    type='error'
+                    text='Either your username or password is incorrect. Please try once again'
+                    autoDismiss='0'
                 />
             </div>
 

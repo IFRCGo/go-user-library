@@ -34,7 +34,7 @@
       background-color: $warning-color;
     }
 
-    &.danger {
+    &.error {
       background-color: $danger-color;
     }
 
@@ -56,7 +56,7 @@
         color: $warning-color;
       }
 
-      .danger {
+      .error {
         color: $danger-color;
       }
 
@@ -68,6 +68,11 @@
         color: $info-color;
       }
     }
+  }
+
+  &.message {
+    background-color: #FFF;
+    color: $danger-color
   }
 
   .text {
@@ -114,7 +119,7 @@
   }
 }
 
-.alert--danger {
+.alert--error {
   &::before {
     background: rgba($danger-color, 0.92);
   }
