@@ -84,6 +84,9 @@
 
   .secondary &__tab {
 
+    ul li {
+      background-color: $grey-mist;
+    }
     &-list {
       border-color: #F7F7F7;
 
@@ -110,7 +113,6 @@
     &--selected {
       background-color: $primary-color !important;
       color: white;
-      border-radius: 20px;
       box-shadow: none;
     }
   }
