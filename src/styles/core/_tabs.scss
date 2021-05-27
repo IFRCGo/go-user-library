@@ -7,34 +7,33 @@
   -webkit-tap-highlight-color: transparent;
 
   &__tab-list {
-    border-bottom: 1px solid $base-border-color;
     margin: 0 0 10px;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
-    width: 100%;
 
     @include media(small) {
       flex-direction: row;
     }
   }
 
+  //primary
   &__tab {
     color: $black;
     display: inline-block;
     font-family: $heading-font-family;
     text-transform: uppercase;
     letter-spacing: $letter-spacing-sm;
-    font-weight: $base-font-medium;
+    font-size: 14px;
     border: 1px solid transparent;
     border-bottom: none;
     background-color: $grey-mist;
     position: relative;
     list-style: none;
     padding: $spacing $spacing-2;
-    font-size: $font-size-sm;
+    font-size: $base-font-size;
     cursor: pointer;
     margin-inline-end: $spacing-half;
 
@@ -47,15 +46,15 @@
     }
 
     &:last-of-type {
-      margin-inline-end: 0;    
+      margin-inline-end: 0;
     }
 
     &--selected {
       background: #fff;
-      font-weight: $base-font-semi-bold;
+      font-size: $base-font-size;
       color: $primary-color;
       box-shadow: 0px 15px 1px -14px $primary-color;
-  
+
       @include media(small) {
         border-color: $base-border-color;
         bottom: -1px;
@@ -80,6 +79,41 @@
         bottom: -5px;
         background: #fff;
       }
+    }
+  }
+
+  .secondary &__tab {
+
+    ul li {
+      background-color: $grey-mist;
+    }
+    &-list {
+      border-color: #F7F7F7;
+
+      li:first-child {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+
+      li:last-child {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+      }
+
+      li {
+        border: hidden;
+        background: $grey-mist;
+        margin: 0px;
+        box-shadow: none;
+      }
+    }
+
+    border-bottom: hidden;
+
+    &--selected {
+      background-color: $primary-color !important;
+      color: white;
+      box-shadow: none;
     }
   }
 
