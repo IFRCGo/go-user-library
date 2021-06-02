@@ -1,5 +1,5 @@
-import React, {Component} from "react";
-import {NavLink, withRouter} from "react-router-dom";
+import React, { Component } from "react";
+import { NavLink, withRouter } from "react-router-dom";
 
 class LeftNavUi extends Component {
     state = {
@@ -9,6 +9,17 @@ class LeftNavUi extends Component {
     getMenu() {
         return (
             <ul className="left-nav">
+                <li>
+                    <NavLink
+                        to="/ui-components/alert"
+                        title="alert"
+                        activeClassName="active"
+                        className={this.state.className ? "active" : ""}
+                        exact
+                    >
+                        Alert
+                    </NavLink>
+                </li>
                 <li>
                     <NavLink
                         to="/ui-components/breadcrumbs"
@@ -68,16 +79,6 @@ class LeftNavUi extends Component {
                         exact
                     >
                         Modal
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/tabs"
-                        title="Tabs"
-                        activeClassName="active"
-                        exact
-                    >
-                        Tabs
                     </NavLink>
                 </li>
             </ul>
