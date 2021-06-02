@@ -21,6 +21,7 @@ import BreadcrumbsPage from "./views/ui-components/breadcrumbs";
 import FormsPage from "./views/ui-components/forms";
 import ModalPage from "./views/ui-components/modal";
 import CardsPage from "./views/ui-components/cards";
+import TabsPage from "./views/ui-components/tab-content";
 /** Brand Design **/
 import DesignPage from "./views/brand-design/intro";
 import ColoursPage from "./views/brand-design/colours";
