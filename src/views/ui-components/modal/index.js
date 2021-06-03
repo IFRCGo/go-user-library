@@ -25,7 +25,7 @@ const ModalPage = () => {
       <div className="inner">
         <div className="fold__header">
           <h1>Modal</h1>
-          <p>Placeholder text</p>
+          <p>Modals focus the user's attention exclusively on one piece of information or action through a window that opens up on top of the page content, with a faded out background.</p>
         </div>
         <div className="fold__header">
           <div className="fold__header__block">

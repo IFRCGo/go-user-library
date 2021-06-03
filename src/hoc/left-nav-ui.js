@@ -1,5 +1,6 @@
-import React, { Component } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import React, {Component} from "react";
+import {NavLink, withRouter} from "react-router-dom";
+import {ListData} from "./list";
 
 class LeftNavUi extends Component {
     state = {
@@ -7,80 +8,16 @@ class LeftNavUi extends Component {
     };
 
     getMenu() {
+        const menu = ListData.components;
         return (
             <ul className="left-nav">
-                <li>
-                    <NavLink
-                        to="/ui-components/alert"
-                        title="alert"
-                        activeClassName="active"
-                        className={this.state.className ? "active" : ""}
-                        exact
-                    >
-                        Alert
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/breadcrumbs"
-                        title="Breadcrumbs"
-                        activeClassName="active"
-                        className={this.state.className ? "active" : ""}
-                        exact
-                    >
-                        Breadcrumbs
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/buttons"
-                        title="Buttons"
-                        activeClassName="active"
-                        exact
-                    >
-                        Buttons
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/cards"
-                        title="Forms"
-                        activeClassName="active"
-                        exact
-                    >
-                        Cards
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/forms"
-                        title="Forms"
-                        activeClassName="active"
-                        exact
-                    >
-                        Forms
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/links"
-                        title="Links"
-                        activeClassName="active"
-                        exact
-                    >
-                        Links
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink
-                        to="/ui-components/modal"
-                        title="Links"
-                        activeClassName="active"
-                        exact
-                    >
-                        Modal
-                    </NavLink>
-                </li>
+                {menu.map((item, i) => (
+                    <li key={i}>
+                        <NavLink to={item.link} title={item.name} activeClassName="active" exact>
+                            {item.name}
+                        </NavLink>
+                    </li>
+                ))}
             </ul>
         );
     }
