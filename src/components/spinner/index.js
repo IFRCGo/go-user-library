@@ -1,4 +1,5 @@
 import React from 'react';
+import './spinner.scss';
 
 function Spinner (p) {
     return (
