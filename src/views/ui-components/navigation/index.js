@@ -2,9 +2,11 @@ import React from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 
-import Navigation from "./../../../components/navigation";
 import Code from "./../../../hoc/source-code";
 import Alert from "../alert/alert";
+
+import Header from "../../../hoc/header";
+import {ListData} from "../../../utils/list";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <div className="navigation__block">
@@ -23,6 +25,8 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 );
 
 const NavigationsPage = () => {
+    const menu = ListData;
+    console.log(menu.header);
     return (
         <React.Fragment>
             <div className="inner">
@@ -48,21 +52,12 @@ const NavigationsPage = () => {
 
                     <TabPanel>
                         <b>Top Navigation / Register</b>
-                        <Alert
-                            id='1'
-                            option='primary'
-                            type='warning'
-                            text='Warning Alert'
-                            autoDismiss='0'
-                        />
                         <b>Top Navigation / Logged In</b>
-                        <Alert
-                            id='1'
-                            option='primary'
-                            type='warning'
-                            text='Warning Alert'
-                            autoDismiss='0'
-                        />
+
+                        <Header
+                            lineItems={menu.demo}
+                            />
+
                         <b>Top Menu</b>
                         <Alert
                             id='1'

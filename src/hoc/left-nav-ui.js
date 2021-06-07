@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {NavLink, withRouter} from "react-router-dom";
-import {ListData} from "./list";
+import {ListData} from "../utils/list";
 
 class LeftNavUi extends Component {
     state = {
@@ -8,7 +8,7 @@ class LeftNavUi extends Component {
     };
 
     getMenu() {
-        const menu = ListData.components;
+        const menu = ListData.components.menu;
         return (
             <ul className="left-nav">
                 {menu.map((item, i) => (

@@ -4,7 +4,7 @@ import ReactDOMServer from "react-dom/server";
 import { Lines } from 'react-preloaders';
 import preloader from "./../../../components/preloader";
 import Code from "./../../../hoc/source-code";
-import Alert from "../alert/alert";
+import Spinner from "../../../components/spinner";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <div className="preloader__block">
@@ -48,6 +48,7 @@ const PreloadersPage = () => {
             <b>ICONS</b>
 
 
+            <Spinner />
           </TabPanel>
           <TabPanel>
             <Code source={`${htmlString}`} />

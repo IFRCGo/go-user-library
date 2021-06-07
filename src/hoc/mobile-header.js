@@ -1,7 +1,7 @@
 import React from "react";
 import {Link, NavLink, withRouter} from "react-router-dom";
 import c from "classnames";
-import {ListData} from "./list";
+import {ListData} from "../utils/list";
 import logo from "./../assets/graphics/layout/go-logo-2020.svg";
 
 class MobileHeader extends React.PureComponent {
@@ -26,9 +26,9 @@ class MobileHeader extends React.PureComponent {
 
     render() {
         const {pathname} = this.props.location;
-        const data = ListData.data;
-        const brand = ListData.brand;
-        const components = ListData.components;
+        const data = ListData.data.menu;
+        const brand = ListData.brand.menu;
+        const components = ListData.components.menu;
         return (
             <header className="page__header page__header--mobile" role="banner">
                 <div className="inner container-lg">
