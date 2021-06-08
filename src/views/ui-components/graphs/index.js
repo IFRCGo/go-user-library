@@ -51,24 +51,24 @@ const GraphsPage = () => {
                         <Alert
                             id='1'
                             option='primary'
-                            type='warning'
-                            text='Warning Alert'
+                            type='info'
+                            text='Coming soon'
                             autoDismiss='0'
                         />
                         <b>EMERGENCIES BY TYPE (YTD)</b>
                         <Alert
                             id='1'
                             option='primary'
-                            type='warning'
-                            text='Warning Alert'
+                            type='info'
+                            text='Coming soon'
                             autoDismiss='0'
                         />
                         <b>EMERGENCIES OVER TIME (YTD)</b>
                         <Alert
                             id='1'
                             option='primary'
-                            type='warning'
-                            text='Warning Alert'
+                            type='info'
+                            text='Coming soon'
                             autoDismiss='0'
                         />
                     </TabPanel>

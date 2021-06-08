@@ -62,16 +62,16 @@ const NavigationsPage = () => {
                         <Alert
                             id='1'
                             option='primary'
-                            type='warning'
-                            text='Warning Alert'
+                            type='info'
+                            text='Coming soon'
                             autoDismiss='0'
                         />
                         <b>Footer</b>
                         <Alert
                             id='1'
                             option='primary'
-                            type='warning'
-                            text='Warning Alert'
+                            type='info'
+                            text='Coming soon'
                             autoDismiss='0'
                         />
                     </TabPanel>

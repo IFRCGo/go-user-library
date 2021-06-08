@@ -4,6 +4,7 @@ import ReactDOMServer from "react-dom/server";
 
 import Tooltip from "./../../../components/tooltip";
 import Code from "./../../../hoc/source-code";
+import Alert from "../alert/alert";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <div className="tooltip__block">
@@ -45,6 +46,13 @@ const TooltipPage = () => {
 
                     <TabPanel>
                         <b>POP UPS</b>
+                        <Alert
+                            id='1'
+                            option='primary'
+                            type='info'
+                            text='Coming soon'
+                            autoDismiss='0'
+                        />
                     </TabPanel>
                     <TabPanel>
                         <Code source={`${htmlString}`}/>
