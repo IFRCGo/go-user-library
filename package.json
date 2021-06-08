@@ -53,7 +53,7 @@
     "hoist-non-react-statics": "^2.5.5",
     "node-sass": "^4.14.1",
     "prettier": "^2.2.1",
-    "prop-types": "^15.6.0",
+    "prop-types": "^15.7.2",
     "qs": "^6.5.1",
     "react": "^17.0.1",
     "react-breadcrumbs-dynamic": "^1.2.1",
