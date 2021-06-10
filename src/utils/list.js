@@ -22,9 +22,9 @@ export const ListData = {
         "logo": true,
         "menu": [
             {name: "Colours", link: "/brand-design/colours"},
-            {name: "Iconography", link: "/brand-design/iconography"},
-            {name: "Logo", link: "/brand-design/logo"},
-            {name: "Typography", link: "/brand-design/typography"},
+            {name: "iconography", link: "/brand-design/iconography"},
+            {name: "logo", link: "/brand-design/logo"},
+            {name: "typography", link: "/brand-design/typography"},
             {name: "IFRC Brand Guidelines", link: "/brand-design/brand"},
             {name: "Design/Usability Principles", link: "/brand-design/design"}
         ],
