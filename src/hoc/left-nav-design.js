@@ -1,41 +1,30 @@
-import React, { Component } from "react";
-import { NavLink, withRouter } from "react-router-dom";
+import React, {Component} from "react";
+import {NavLink, withRouter} from "react-router-dom";
+import {ListData} from "../utils/list.js"
 
 class LeftNavDesign extends Component {
-  state = {
-    addClass: false,
-  };
-  getMenu() {
-    return (
-      <ul className="left-nav">
-        <li>
-          <NavLink
-            to="/brand-design/intro"
-            title="some link"
-            activeClassName="active"
-            className={this.state.className ? "active" : ""}
-            exact
-          >
-            IFRC Brand Guidelines
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/brand-design/colours" title="colours" activeClassName="active" exact>
-            Colours
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/" title="some link" activeClassName="active" exact>
-            Some link4
-          </NavLink>
-        </li>
-      </ul>
-    );
-  }
+    state = {
+        addClass: false,
+    };
 
-  render() {
-    return <div className="">{this.getMenu()}</div>;
-  }
+    getMenu() {
+        const menu = ListData.brand.menu;
+        return (
+            <ul className="left-nav">
+                {menu.map((item, i) => (
+                    <li key={i}>
+                        <NavLink to={item.link} title={item.name} activeClassName="active" exact>
+                            {item.name}
+                        </NavLink>
+                    </li>
+                ))}
+            </ul>
+        );
+    }
+
+    render() {
+        return <div className="">{this.getMenu()}</div>;
+    }
 }
 
 export default withRouter(LeftNavDesign);

@@ -123,7 +123,16 @@ const AlertPage = () => {
                     autoDismiss='0'
                 />
             </div>
-
+            <div className="fold__body">
+                <h2 className="fold__title margin-reset">COMMENTS</h2>
+                <p>Alert boxes can be used in the primary. secondary or message form, depending on alert level.</p>
+                <ul>
+                    <li><strong>Informational:</strong> Provide additional information to users</li>
+                    <li><strong>Success:</strong> Confirm a task was completed as expected.</li>
+                    <li><strong>Warning:</strong> Inform users that they are taking actions that are not desirable.</li>
+                    <li><strong>Error:</strong> Inform users of an error or critical failure.</li>
+                </ul>
+            </div>
         </React.Fragment>
     );
 };

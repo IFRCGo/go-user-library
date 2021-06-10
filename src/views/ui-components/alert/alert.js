@@ -14,15 +14,6 @@ import Translate from '../../../components/Translate';
 
 import Code from "./../../../hoc/source-code";
 
-const AlertString = ReactDOMServer.renderToStaticMarkup(
-    <alert
-        id='1'
-        type='success'
-        text='Success Alert'
-        autoDismiss='0'
-    />
-);
-
 class Alert extends React.Component {
     constructor(props) {
         super(props);
@@ -54,6 +45,18 @@ class Alert extends React.Component {
         }
     }
 
+    sourceData(data) {
+        const AlertString = ReactDOMServer.renderToStaticMarkup(
+            <alert
+                id={data.id}
+                option={data.option}
+                type={data.type}
+                text={data.text}
+                autoDismiss='0'
+            />);
+        return AlertString;
+    }
+
     render() {
         let cl = c('alert', `alert--${this.props.type}`, {
             'alert--popover': this.props.popover
@@ -73,29 +76,29 @@ class Alert extends React.Component {
                         <TabPanel>
                             {this.state.isHidden && (
                                 <div className={cl + ' ' + this.props.option + ' ' + this.props.type} role='alert'>
-                                        <button className='alert__button-dismiss' title={strings.alertDismissTitle}
-                                                onClick={this.onDismissAlert}>
+                                    <button className='alert__button-dismiss' title={strings.alertDismissTitle}
+                                            onClick={this.onDismissAlert}>
                                                 <span>
                                                   <Translate stringId='alertDismiss'/>
                                                 </span>
-                                        </button>
+                                    </button>
 
-                                        <span className='icon'>
+                                    <span className='icon'>
                                             {this.props.type === "warning" ?
                                                 <IoWarningOutline size="24px" className={this.props.type}/> : null}
-                                            {this.props.type === "error" ?
-                                                <FiAlertTriangle size="24px" className={this.props.type}/> : null}
-                                            {this.props.type === "info" ?
-                                                <AiOutlineInfoCircle size="24px" className={this.props.type}/> : null}
-                                            {this.props.type === "success" ?
-                                                <CgCheckO size="24px" className={this.props.type}/> : null}
+                                        {this.props.type === "error" ?
+                                            <FiAlertTriangle size="24px" className={this.props.type}/> : null}
+                                        {this.props.type === "info" ?
+                                            <AiOutlineInfoCircle size="24px" className={this.props.type}/> : null}
+                                        {this.props.type === "success" ?
+                                            <CgCheckO size="24px" className={this.props.type}/> : null}
                                         </span>
-                                        <span className='text'>{this.props.text}</span>
+                                    <span className='text'>{this.props.text}</span>
                                 </div>
                             )}
                         </TabPanel>
                         <TabPanel>
-                            <Code source={`${AlertString}`}/>
+                            <Code source={this.sourceData(this.props)}/>
                         </TabPanel>
                     </Tabs>
                 </div>

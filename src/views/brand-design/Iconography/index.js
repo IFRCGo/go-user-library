@@ -1,11 +1,11 @@
 import React from "react";
 
-const MapPage = () => {
+const IconographyPage = () => {
   return (
     <div className="inner">
       <div className="fold__body">
         <div className="container-full">
-          <h1>This is a map page</h1>
+          <h1>IconoGraphy</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
             dictum elit ac tincidunt consectetur. Sed malesuada sapien at turpis
@@ -32,4 +32,4 @@ const MapPage = () => {
     </div>
   );
 };
-export default MapPage;
+export default IconographyPage;

@@ -14,7 +14,7 @@ const PageLayoutContent = (props) => (
         <header className="inpage__header">
           <div className="inpage__headline">
             <h1 className="inpage__title inpage__title--home container-lg">
-              Content
+              Data Viz
             </h1>
           </div>
         </header>
