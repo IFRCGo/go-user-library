@@ -1,12 +1,8 @@
 import React from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
-
-import Tables from "./../../../components/tables";
 import Code from "./../../../hoc/source-code";
-import DisplayTable, {SortHeader, FilterHeader} from "../../../components/tables";
-import Alert from "../alert/alert";
-import {SFPComponent} from '../../../utils/extendables';
+import DisplayTable, {SortHeader} from "../../../components/tables";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <div className="tables__block">
@@ -126,7 +122,6 @@ const rows2 = [
 ];
 
 
-
 const headings3 = [
     {
         id: 'national_society',
@@ -177,7 +172,7 @@ const rows3 = [
         national_society: 'British RC',
         start_end_dates: '2020-06-01 - 2020-08-30',
         appeal_code: 'Covid-19 Response',
-        project_sector:'Health',
+        project_sector: 'Health',
         total_budget: '30,000 CHF',
         programme_type: 'Bilateral',
         disaster_type: 'Epidemic,',
@@ -188,7 +183,7 @@ const rows3 = [
         national_society: 'British RC',
         start_end_dates: '2020-06-01 - 2020-08-30',
         appeal_code: 'Covid-19 Response',
-        project_sector:'Health',
+        project_sector: 'Health',
         total_budget: '30,000 CHF',
         programme_type: 'Bilateral',
         disaster_type: 'Epidemic,',

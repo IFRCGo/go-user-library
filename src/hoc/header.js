@@ -2,6 +2,7 @@ import React from "react";
 import {Link, withRouter} from "react-router-dom";
 import {ListData} from "../utils/list";
 import Logo from "../assets/graphics/layout/go-logo-2020.svg";
+import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
 
 function Header(props) {
     const data = props.lineItems ? props.lineItems : ListData.header;
@@ -49,16 +50,29 @@ function Header(props) {
                                 <div className='page__meta-nav col' role='navigation'>
                                     {data.right_menu.map((item, i) => (
                                         <div>
-                                            {item.dropdown ? (
-                                                <div>{item.name} - D</div>
-                                            ) : null}
-                                            {item.link ? (
+                                            {item.type === 'link' ? (
                                                 <Link
                                                     to={item.link}
                                                     title={item.name}
-                                                >
+                                                    className='page__meta-nav-elements'>
                                                     {item.name}
                                                 </Link>
+                                            ) : null}
+                                            {item.type === 'dropdown' ? (
+                                                <DropdownMenu text={'testing'}>
+                                                    <MenuItem text="English" location="/English" />
+                                                    <MenuItem text="French" location="/French" />
+                                                    <MenuItem text="Spanish" location="/Spanish" />
+                                                    <MenuItem text="Arabic" location="/Arabic" />
+                                                </DropdownMenu>
+                                            ) : null}
+                                            {item.type === 'user' ? (
+                                            <DropdownMenu userName={item.name}>
+                                                <MenuItem text="Home" location="/home" />
+                                                <MenuItem text="Edit Profile" location="/profile" />
+                                                <MenuItem text="Change Password" location="/change-password" />
+                                                <MenuItem text="Privacy Settings" location="/privacy-settings" />
+                                            </DropdownMenu>
                                             ) : null}
                                         </div>
                                     ))}

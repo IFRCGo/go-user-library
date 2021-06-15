@@ -1,8 +1,6 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
-import { Lines } from 'react-preloaders';
-import preloader from "./../../../components/preloader";
 import Code from "./../../../hoc/source-code";
 import Spinner from "../../../components/spinner";
 
