@@ -1,5 +1,3 @@
-import React from 'react';
-
 export const ListData = {
     "header": {
         "logo": true,
@@ -22,9 +20,9 @@ export const ListData = {
         "logo": true,
         "menu": [
             {name: "Colours", link: "/brand-design/colours"},
-            {name: "iconography", link: "/brand-design/iconography"},
-            {name: "logo", link: "/brand-design/logo"},
-            {name: "typography", link: "/brand-design/typography"},
+            {name: "Iconography", link: "/brand-design/iconography"},
+            {name: "Logo", link: "/brand-design/logo"},
+            {name: "Typography", link: "/brand-design/typography"},
             {name: "IFRC Brand Guidelines", link: "/brand-design/brand"},
             {name: "Design/Usability Principles", link: "/brand-design/design"}
         ],
@@ -80,19 +78,43 @@ export const ListData = {
             }
         ]
     },
-    "demo": {
+    "demoOne": {
         "logo": true,
         "right_menu": [
             {
+                type: 'dropdown',
                 name: "language",
                 dropdown: ["English, French, Spainish"],
             },
             {
+                type: 'link',
                 name: "Resources",
                 link: '/GO-UI-Library/resources'
             },
             {
+                type: 'link',
                 name: "Login",
+                link: 'https://www.redcross.org.uk/'
+            }
+        ],
+        "goto": false
+    },
+    "demoTwo": {
+        "logo": true,
+        "right_menu": [
+            {
+                type: 'dropdown',
+                name: "language",
+                dropdown: ["English, French, Spainish"],
+            },
+            {
+                type: 'link',
+                name: "Resources",
+                link: '/GO-UI-Library/resources'
+            },
+            {
+                type: 'user',
+                name: "Mariam",
                 link: 'https://www.redcross.org.uk/'
             }
         ],

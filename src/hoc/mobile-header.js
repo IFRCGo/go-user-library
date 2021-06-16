@@ -1,5 +1,5 @@
 import React from "react";
-import {Link, NavLink, withRouter} from "react-router-dom";
+import {Link, withRouter} from "react-router-dom";
 import c from "classnames";
 import {ListData} from "../utils/list";
 import logo from "./../assets/graphics/layout/go-logo-2020.svg";

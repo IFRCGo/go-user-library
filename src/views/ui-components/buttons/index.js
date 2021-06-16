@@ -9,7 +9,6 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
     <Button
         type="submit"
         size="small"
-        type="primary-filled"
         name="primary filled button"
     />
 );
@@ -39,7 +38,7 @@ const ButtonsPage = () => {
 
                     <TabPanel>
                         <div className="buttons-page">
-                            <h3>Primary</h3>
+                            <h3>Primary / Normal</h3>
                             <Button size="small" type="primary-filled">
                                 primary filled button
                             </Button>
@@ -47,11 +46,31 @@ const ButtonsPage = () => {
                                 primary filled disabled button
                             </Button>
                             <br/>
+                            <h3>Secondary / Normal</h3>
                             <Button size="small" type="primary-bounded">
                                 primary bounded button
                             </Button>
                             <Button size="small" type="primary-bounded disabled">
                                 primary bounded button
+                            </Button>
+                            <h3>Secondary / Normal icon</h3>
+                            <Button size="small" type="primary-bounded">
+                                <span className='f-icon-download font-size-sm spacing-half-r'></span>
+                                Button
+                            </Button>
+                            <h3>Tertiary / Normal icon</h3>
+                            <Button size="small">
+                                <span className='f-icon-chevron-left font-size-sm spacing-half-r'></span>
+                                Back
+                            </Button>
+                            <h3>Icon Buttons</h3>
+                            <Button size="sm all" type="primary-bounded">
+                                <span className='underline f-icon-arrow-down'></span>
+                            </Button>
+                            <h3>Button dropdown / normal / hover</h3>
+                            <Button size="small" type="primary-bounded">
+                                Create a Report
+                                <span className="f-icon-sm-triangle-down spacing-half-l"></span>
                             </Button>
                         </div>
                     </TabPanel>

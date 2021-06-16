@@ -52,11 +52,16 @@ const NavigationsPage = () => {
 
                     <TabPanel>
                         <b>Top Navigation / Register</b>
+
+                            <Header
+                                lineItems={menu.demoOne}
+                            />
+
                         <b>Top Navigation / Logged In</b>
 
-                        <Header
-                            lineItems={menu.demo}
-                            />
+                            <Header
+                                lineItems={menu.demoTwo}
+                                />
 
                         <b>Top Menu</b>
                         <Alert

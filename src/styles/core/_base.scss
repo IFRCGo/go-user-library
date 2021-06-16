@@ -159,6 +159,16 @@ a:focus {
   }
 }
 
+.button .underline {
+  border-bottom: 1px solid red;
+}
+
+.button {
+  color: $primary-color;
+  font-weight: $base-font-medium;
+  font-size: $font-size-heading-sm;
+}
+
 .link--with-icon {
   display: flex;
   align-items: center;
