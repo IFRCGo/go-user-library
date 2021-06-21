@@ -2,11 +2,12 @@ import React from "react";
 import {Link, withRouter} from "react-router-dom";
 import {ListData} from "../utils/list";
 import Logo from "../assets/graphics/layout/go-logo-2020.svg";
-import { DropdownMenu, MenuItem } from 'react-bootstrap-dropdown-menu';
+import { DropdownMenu, MenuItem,  } from 'react-bootstrap-dropdown-menu';
+import DropdownButton from 'react-bootstrap/DropdownButton'
+import Dropdown from 'react-bootstrap/Dropdown'
 
 function Header(props) {
     const data = props.lineItems ? props.lineItems : ListData.header;
-
     return (
         <div className="desktop__header">
             <header className="page__header" role="banner">
@@ -27,9 +28,17 @@ function Header(props) {
                                     <ul className="nav-global-menu">
                                         {data.menu.map((item, i) => (
                                             <li key={i}>
-                                                <Link to={item.link} title={item.name}>
-                                                    {item.name}
-                                                </Link>
+                                                {item.type === 'dropdown' ? (
+                                                    <div>{item.name} (->D)</div>
+                                                ) : null}
+                                                {item.type === 'link' ? (
+                                                    <Link
+                                                        to={item.link}
+                                                        title={item.name}
+                                                        className='page__meta-nav-elements'>
+                                                        {item.name}
+                                                    </Link>
+                                                ) : null}
                                             </li>
                                         ))}
                                     </ul>
@@ -59,19 +68,17 @@ function Header(props) {
                                                 </Link>
                                             ) : null}
                                             {item.type === 'dropdown' ? (
-                                                <DropdownMenu text={'testing'}>
-                                                    <MenuItem text="English" location="/English" />
-                                                    <MenuItem text="French" location="/French" />
-                                                    <MenuItem text="Spanish" location="/Spanish" />
-                                                    <MenuItem text="Arabic" location="/Arabic" />
-                                                </DropdownMenu>
+                                                <DropdownButton id="dropdown-basic-button" title="language" id='header-dropdown-lang'>
+                                                    {item.dropdown.map((item, i) => (
+                                                        <Dropdown.Item href={item.name}>{item.name}</Dropdown.Item>
+                                                    ))}
+                                                </DropdownButton>
                                             ) : null}
                                             {item.type === 'user' ? (
                                             <DropdownMenu userName={item.name}>
-                                                <MenuItem text="Home" location="/home" />
-                                                <MenuItem text="Edit Profile" location="/profile" />
-                                                <MenuItem text="Change Password" location="/change-password" />
-                                                <MenuItem text="Privacy Settings" location="/privacy-settings" />
+                                                {item.menu.map((item, i) => (
+                                                    <MenuItem text={item.name} location={item.location} />
+                                                ))}
                                             </DropdownMenu>
                                             ) : null}
                                         </div>

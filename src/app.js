@@ -1,6 +1,7 @@
 import React from "react";
 import {Route, Switch} from "react-router-dom";
 import "./styles/main.scss";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 /** Layouts **/
 import PageLayoutUi from "./hoc/page-layout-ui";

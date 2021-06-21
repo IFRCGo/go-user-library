@@ -1,3 +1,6 @@
+import {MenuItem} from "react-bootstrap-dropdown-menu";
+import React from "react";
+
 export const ListData = {
     "header": {
         "logo": true,
@@ -83,8 +86,12 @@ export const ListData = {
         "right_menu": [
             {
                 type: 'dropdown',
-                name: "language",
-                dropdown: ["English, French, Spainish"],
+                name: "Language",
+                dropdown: [
+                    {"name": "English"},
+                    {"name": "French"},
+                    {"name": "Spainish"}
+                ]
             },
             {
                 type: 'link',
@@ -104,8 +111,12 @@ export const ListData = {
         "right_menu": [
             {
                 type: 'dropdown',
-                name: "language",
-                dropdown: ["English, French, Spainish"],
+                name: "Language",
+                dropdown: [
+                    {"name": "English"},
+                    {"name": "French"},
+                    {"name": "Spainish"}
+                ]
             },
             {
                 type: 'link',
@@ -115,8 +126,121 @@ export const ListData = {
             {
                 type: 'user',
                 name: "Mariam",
-                link: 'https://www.redcross.org.uk/'
+                link: 'https://www.redcross.org.uk/',
+                menu: [
+                    {"name": "Home", "location": "/home"},
+                    {"name": "Edit Profile", "location": "/profile"},
+                    {"name": "Change Password", "location": "/change-password"},
+                    {"name": "Privacy Settings", "location": "/privacy-settings"}
+                ]
             }
+        ],
+        "goto": false
+    },
+    "demoThree": {
+        "logo": false,
+        "menu": [
+            {
+                type: 'link',
+                name: "Home",
+                link: '/'
+            },
+            {
+                type: 'dropdown',
+                name: "Regions",
+            },
+            {
+                type: 'link',
+                name: "All Emergencies",
+                link: '/emergencies'
+            },
+            {
+                type: 'link',
+                name: "Surge",
+                link: '/surge'
+            },
+            {
+                type: 'link',
+                name: "Preparedness",
+                link: '/preparedness'
+            }
+        ],
+        "goto": false
+    },
+    "footer": {
+        "logo": false,
+        "copyright": '© IFRC 2020',
+        "col": [
+            {
+                type: 'text',
+                name: "ABOUT GO",
+                text: 'IFRC GO is a Red Cross Red Crescent platform to connect information on emergency needs with the right response.'
+            },
+            {
+                type: 'list',
+                name: "FIND OUT MORE",
+                list:[
+                    {
+                        name: 'ifrc.org',
+                        link: 'https://ifrc.org/'
+                    },
+                    {
+                        name: 'rcrcsims',
+                        link: 'https://rcrcsims.org/'
+                    },
+                    {
+                        name: 'data.ifrc.org',
+                        link: 'https://data.ifrc.org/'
+                    },
+                ]
+            },
+            {
+                type: 'list',
+                name: "HELPFUL LINKS",
+                list:[
+                    {
+                        name: 'Open Source Code',
+                        link: 'https://github.com/ifrcgo/go-frontend'
+                    },
+                    {
+                        name: 'API Documentation',
+                        link: 'https://dscgocdnapi.azureedge.net/docs'
+                    },
+                    {
+                        name: 'Other Resources',
+                        link: '/about'
+                    },
+                ]
+            },
+            {
+                type: 'social',
+                name: "CONTACT US",
+                social:
+                    {
+                        name: 'ifrc',
+                        link: 'mailto:im@ifrc.org'
+
+                    }
+                ,
+                list:[
+                    {
+                        type: 'f-icon-medium footer-social-icon',
+                        link: 'im@ifrc.org'
+                    },
+                    {
+                        type: 'f-icon-facebook  footer-social-icon',
+                        link: 'https://www.facebook.com/IFRC'
+                    },
+                    {
+                        type: 'f-icon-twitter  footer-social-icon',
+                        link: 'https://twitter.com/ifrcgo'
+                    },
+                    {
+                        type: 'f-icon-youtube  footer-social-icon',
+                        link: 'https://www.youtube.com/watch?v=dwPsQzla9A4'
+                    },
+                ],
+            },
         ],
         "goto": false
     }

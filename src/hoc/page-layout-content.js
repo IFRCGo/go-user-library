@@ -4,6 +4,7 @@ import Header from "./header";
 import Footer from "./footer";
 import MobileHeader from "./mobile-header";
 import LeftNavContent from "./left-nav-content";
+import {ListData} from "../utils/list";
 
 const PageLayoutContent = (props) => (
   <React.Fragment>
@@ -31,7 +32,9 @@ const PageLayoutContent = (props) => (
         </div>
       </section>
     </main>
-    <Footer />
+    <Footer
+        lineItems={ListData.footer}
+    />
   </React.Fragment>
 );
 
