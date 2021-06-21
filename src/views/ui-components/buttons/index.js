@@ -39,39 +39,61 @@ const ButtonsPage = () => {
                     <TabPanel>
                         <div className="buttons-page">
                             <h3>Primary / Normal</h3>
-                            <Button size="small" type="primary-filled">
-                                primary filled button
-                            </Button>
-                            <Button size="small" type="primary-filled disabled">
-                                primary filled disabled button
-                            </Button>
+                            <Button
+                                size="small"
+                                type="primary-filled"
+                                text='primary filled button'
+                            />
+
+                            <Button
+                                size="small"
+                                type="primary-filled"
+                                text='primary filled button'
+                            />
+                            <Button
+                                size="small"
+                                type="primary-filled disabled"
+                                text='primary filled disabled button'
+                                />
                             <br/>
                             <h3>Secondary / Normal</h3>
-                            <Button size="small" type="primary-bounded">
-                                primary bounded button
-                            </Button>
-                            <Button size="small" type="primary-bounded disabled">
-                                primary bounded button
-                            </Button>
+                            <Button
+                                size="small"
+                                type="primary-bounded"
+                                text='primary bounded button'
+                            />
+                            <Button
+                                size="small"
+                                type="primary-bounded disabled"
+                                text='primary bounded button'
+                                />
                             <h3>Secondary / Normal icon</h3>
-                            <Button size="small" type="primary-bounded">
-                                <span className='f-icon-download font-size-sm spacing-half-r'></span>
+                            <Button
+                                size="small"
+                                type="primary-bounded"
+                                icon="download"
+                            >
                                 Button
                             </Button>
                             <h3>Tertiary / Normal icon</h3>
-                            <Button size="small">
-                                <span className='f-icon-chevron-left font-size-sm spacing-half-r'></span>
-                                Back
-                            </Button>
+                            <Button
+                                size="small"
+                                text='Back'
+                                icon="back"
+                            />
                             <h3>Icon Buttons</h3>
-                            <Button size="sm all" type="primary-bounded">
-                                <span className='underline f-icon-arrow-down'></span>
-                            </Button>
+                            <Button
+                                size="sm all"
+                                type="primary-bounded"
+                                icon="down"
+                            />
                             <h3>Button dropdown / normal / hover</h3>
-                            <Button size="small" type="primary-bounded">
-                                Create a Report
-                                <span className="f-icon-sm-triangle-down spacing-half-l"></span>
-                            </Button>
+                            <Button
+                                size="small"
+                                type="primary-bounded"
+                                text='Create a Report'
+                                icon="dropdown"
+                            />
                         </div>
                     </TabPanel>
                     <TabPanel>

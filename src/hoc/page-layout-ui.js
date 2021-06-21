@@ -4,6 +4,7 @@ import Header from "./header";
 import Footer from "./footer";
 import MobileHeader from "./mobile-header";
 import LeftNavUi from "./left-nav-ui";
+import {ListData} from "../utils/list";
 
 const PageLayoutUi = (props) => (
   <React.Fragment>
@@ -30,7 +31,9 @@ const PageLayoutUi = (props) => (
         </div>
       </section>
     </main>
-    <Footer />
+    <Footer
+        lineItems={ListData.footer}
+    />
   </React.Fragment>
 );
 
