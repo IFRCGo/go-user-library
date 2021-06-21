@@ -5,11 +5,31 @@ export const ListData = {
     "header": {
         "logo": true,
         "menu": [
-            {name: "Get Started", link: "/get-started"},
-            {name: "Brand & Design Guidelines", link: "/brand-design/colours"},
-            {name: "Ui Components", link: "/ui-components/alert"},
-            {name: "Data Viz", link: "/data/goapi"},
-            {name: "Resources", link: "/resources"}
+            {
+                type: 'link',
+                name: "Get Started",
+                link: "/get-started"
+            },
+            {
+                type: 'link',
+                name: "Brand & Design Guidelines",
+                link: "/brand-design/colours"
+            },
+            {
+                type: 'link',
+                name: "Ui Components",
+                link: "/ui-components/alert"
+            },
+            {
+                type: 'link',
+                name: "Data Viz",
+                link: "/data/goapi"
+            },
+            {
+                type: 'link',
+                name: "Resources",
+                link: "/resources"
+            }
         ],
         "login": false,
         "goto":

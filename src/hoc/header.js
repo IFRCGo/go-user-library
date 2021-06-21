@@ -15,7 +15,7 @@ function Header(props) {
                     <div className="container-lg spacing-v">
                         <div className="inner row flex">
                             {data.logo ? (
-                                <div className="page__headline col">
+                                <div className="page__headline">
                                     <h1 className="page__title">
                                         <Link to="/" title="title">
                                             <img src={Logo} alt="text" className="logo-main"/>
