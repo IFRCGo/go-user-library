@@ -3,12 +3,19 @@ IFRC DESIGN SYSTEM
 ## Introduction 
 This React app contains the latest UI elements and design of the IFRC Go Platform. 
 
-  
+## WIKI: IFRC Go UI Library - Brief
+https://brcdigital.atlassian.net/wiki/spaces/IGUL/pages/1459486721/IFRC+Go+UI+Library+-+Brief
+
+## GO-UI-Library
+https://ifrcgo.org/GO-UI-Library (Master Branch)
+
+## Design Guidelines
+https://www.figma.com/file/n2D5xvtXBZ9XCejRXeDeUq/IFRC-GO_UI-Library-%5Bshared%5D?node-id=752%3A6558
+
 ## Front-end build 
 The front-end build has been produced by BRC 
 
-The code for this sits within the src folder 
-
+The code for this sits within the src folder
   
 ## Local development environment setup 
 Clone this repository 
@@ -17,7 +24,13 @@ Check out the Master branch.
 
 All NPM is defined in the package.json for Run, Build & Deployment. 
 
+## Before you install npm
+GO-UI-Library version using: v14.17.0
 
+Switch your node version to v14.17.0 e.g: 
+``` 
+nvm use v14.17.0
+``` 
 ## Set up the FED by running the install and then run the development server  
 ``` 
 
