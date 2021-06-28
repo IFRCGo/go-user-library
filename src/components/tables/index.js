@@ -20,6 +20,8 @@ function Table({columns, data}) {
         useSortBy
     )
 
+    console.log(columns[0].Footer);
+
     // Render the UI for your table
     return (
         <table className='tc-table table table--border-bottom'>
@@ -56,15 +58,21 @@ function Table({columns, data}) {
                 )
             })}
             </tbody>
-            <tfoot>
-            {footerGroups.map(group => (
-                <tr {...group.getFooterGroupProps()}>
-                    {group.headers.map(column => (
-                        <td {...column.getFooterProps()}>{column.render('Footer')}</td>
-                    ))}
-                </tr>
-            ))}
-            </tfoot>
+            {(() => {
+                if (columns[0].Footer) {
+                    return (
+                        <tfoot>
+                                {footerGroups.map(group => (
+                                    <tr {...group.getFooterGroupProps()}>
+                                        {group.headers.map(column => (
+                                            <td {...column.getFooterProps()}>{column.render('Footer')}</td>
+                                        ))}
+                                    </tr>
+                                ))}
+                        </tfoot>
+                    );
+                }
+            })()}
         </table>
     )
 }

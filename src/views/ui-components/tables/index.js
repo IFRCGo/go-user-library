@@ -23,17 +23,14 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 const headingsOne = [
     {
         Header: 'Table / Label & Body 56px',
-        Footer: 'Name',
         columns: [
             {
                 Header: 'Label',
                 accessor: 'label',
-                Footer: 'Label',
             },
             {
                 Header: 'Label',
                 accessor: 'label2',
-                Footer: 'Label',
             }
         ],
     },
@@ -53,7 +50,6 @@ const rowsOne = [
 const headingsTwo = [
     {
         Header: 'Table / Body 56px',
-        Footer: 'Footer Text',
         columns: [
             {
                 Header: 'Entry',
@@ -73,7 +69,7 @@ const headingsTwo = [
 
 const rowsTwo = [
     {
-        "entry": "1"
+        "na": "1"
     }
 ];
 
@@ -81,7 +77,6 @@ const rowsTwo = [
 const headingsThree = [
     {
         Header: 'Table / Body 72px',
-        Footer: 'Footer Text',
         columns: [
             {
                 Header: 'Entry',
@@ -101,7 +96,7 @@ const headingsThree = [
 
 const rowsThree = [
     {
-        "entry": "1"
+        "na": "1"
     }
 ];
 
@@ -153,7 +148,7 @@ const rowsFour = [
         coverage: '80%'
     },
     {
-        start_date: '2018-09-18',
+        start_date: '2018-10-18',
         appeal_type: 'DREF',
         appeal_code: 'MDRUA010',
         operations: 'Venezuela: Conflict',
