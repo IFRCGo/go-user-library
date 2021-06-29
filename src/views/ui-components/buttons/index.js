@@ -3,6 +3,8 @@ import ReactDOMServer from "react-dom/server";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 
 import Button from "../../../components/button";
+import Dropdown from 'react-bootstrap/Dropdown'
+import DropdownButton from 'react-bootstrap/DropdownButton';
 import Code from "./../../../hoc/source-code";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
@@ -37,7 +39,7 @@ const ButtonsPage = () => {
                     </TabList>
 
                     <TabPanel>
-                        <div className="buttons-page">
+                        <div>
                             <h3>Primary / Normal</h3>
                             <Button
                                 size="small"
@@ -54,7 +56,7 @@ const ButtonsPage = () => {
                                 size="small"
                                 type="primary-filled disabled"
                                 text='primary filled disabled button'
-                                />
+                            />
                             <br/>
                             <h3>Secondary / Normal</h3>
                             <Button
@@ -66,15 +68,14 @@ const ButtonsPage = () => {
                                 size="small"
                                 type="primary-bounded disabled"
                                 text='primary bounded button'
-                                />
+                            />
                             <h3>Secondary / Normal icon</h3>
                             <Button
                                 size="small"
                                 type="primary-bounded"
                                 icon="download"
-                            >
-                                Button
-                            </Button>
+                                text='Button'
+                            />
                             <h3>Tertiary / Normal icon</h3>
                             <Button
                                 size="small"
@@ -88,11 +89,24 @@ const ButtonsPage = () => {
                                 icon="down"
                             />
                             <h3>Button dropdown / normal / hover</h3>
+                            <Dropdown>
+                                <Dropdown.Toggle
+                                    className="drop__toggle--caret button button--primary-bounded button--small drop__toggle--field-report-new tc-dropdown-menu"
+                                >
+                                    Create a Report
+                                </Dropdown.Toggle>
+
+                                <Dropdown.Menu className='drop__menu drop__menu__field__report'>
+                                    <Dropdown.Item href="#/action-1" className='drop__menu-item'>Action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2" className='drop__menu-item'>Another action</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3" className='drop__menu-item'>Something else</Dropdown.Item>
+                                </Dropdown.Menu>
+                            </Dropdown>
+                            <h3>Other / normal</h3>
                             <Button
                                 size="small"
-                                type="primary-bounded"
-                                text='Create a Report'
-                                icon="dropdown"
+                                text='All countries'
+                                icon="double-back"
                             />
                         </div>
                     </TabPanel>
