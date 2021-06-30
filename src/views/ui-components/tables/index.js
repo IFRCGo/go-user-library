@@ -2,7 +2,7 @@ import React from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 import Code from "./../../../hoc/source-code";
-import DisplayTable, {SortHeader} from "../../../components/tables";
+import DisplayTable from "../../../components/tables";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <div className="tables__block">
@@ -20,89 +20,126 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
     </div>
 );
 
-const table = {
-    table: {
-        page: 1,
-        sort: {
-            field: '',
-            direction: 'asc'
-        },
-        filters: {
-            startDateInterval: 'all',
-            type: 'all'
-        }
-    }
-};
-
-
-const headings = [
+const headingsOne = [
     {
-        id: 'id',
-        label: 'Label'
-    },
-    {
-        id: 'name',
-        label:
-            <SortHeader
-                id='name'
-                title='Label'
-                sort={table.sort}
-                onClick='id'
-            />
-    }
-];
-
-const rows = [
-    {
-        id: '1',
-        name: '2'
-    },
-    {
-        id: '3',
-        name: '4'
-    }
-];
-
-const headings2 = [
-    {
-        id: 'date',
-        label: 'Start Date'
-    },
-    {
-        id: 'appeal_type',
-        label:
-            <SortHeader
-                id='name'
-                title='Appeal Type'
-                sort={table.sort}
-                onClick='id'
-            />
-    },
-    {
-        id: 'appeal_code',
-        label: 'Appeal Code'
-    },
-    {
-        id: 'operations',
-        label: 'Active Operations'
-    },
-    {
-        id: 'disaster',
-        label: 'Disaster Type'
-    },
-    {
-        id: 'requirements',
-        label: 'Funding Requirements'
-    },
-    {
-        id: 'coverage',
-        label: 'Funding Coverage'
+        Header: 'Table / Label & Body 56px',
+        columns: [
+            {
+                Header: 'Label',
+                accessor: 'label',
+            },
+            {
+                Header: 'Label',
+                accessor: 'label2',
+            }
+        ],
     },
 ];
 
-const rows2 = [
+const rowsOne = [
     {
-        date: '2018-09-18',
+        "label": "1",
+        "label2": "1",
+    },
+    {
+        "label": "2",
+        "label2": "2",
+    }
+];
+
+const headingsTwo = [
+    {
+        Header: 'Table / Body 56px',
+        columns: [
+            {
+                Header: 'Entry',
+                accessor: 'entry',
+            },
+            {
+                Header: 'Entry Link',
+                accessor: 'entryLink',
+            },
+            {
+                Header: 'Entry',
+                accessor: 'percent',
+            }
+        ],
+    },
+];
+
+const rowsTwo = [
+    {
+        "na": "1"
+    }
+];
+
+
+const headingsThree = [
+    {
+        Header: 'Table / Body 72px',
+        columns: [
+            {
+                Header: 'Entry',
+                accessor: 'entry',
+            },
+            {
+                Header: 'Entry Link',
+                accessor: 'entryLink',
+            },
+            {
+                Header: 'Entry',
+                accessor: 'percent',
+            }
+        ],
+    },
+];
+
+const rowsThree = [
+    {
+        "na": "1"
+    }
+];
+
+const headingsFour = [
+    {
+        Header: 'Table - 56px',
+        Footer: 'Footer text',
+        columns: [
+            {
+                Header: 'Start Date',
+                accessor: 'start_date'
+            },
+            {
+                Header: 'Appeal Type',
+                accessor: 'appeal_type'
+            },
+            {
+                Header: 'Appeal Code',
+                accessor: 'appeal_code'
+            },
+            {
+                Header: 'Active Operations',
+                accessor: 'operations'
+            },
+            {
+                Header: 'Disaster Type',
+                accessor: 'disaster'
+            },
+            {
+                Header: 'Funding Requirements',
+                accessor: 'requirements'
+            },
+            {
+                Header: 'Funding Coverage',
+                accessor: 'coverage'
+            }
+        ]
+    },
+];
+
+const rowsFour = [
+    {
+        start_date: '2018-09-18',
         appeal_type: 'DREF',
         appeal_code: 'MDRUA010',
         operations: 'Venezuela: Conflict',
@@ -111,7 +148,7 @@ const rows2 = [
         coverage: '80%'
     },
     {
-        date: '2018-09-18',
+        start_date: '2018-10-18',
         appeal_type: 'DREF',
         appeal_code: 'MDRUA010',
         operations: 'Venezuela: Conflict',
@@ -122,52 +159,53 @@ const rows2 = [
 ];
 
 
-const headings3 = [
+
+const headingsFive = [
     {
-        id: 'national_society',
-        label: 'National Society'
+        Header: 'Table collapse - 56px',
+        Footer: 'Footer Text',
+        columns: [
+            {
+                accessor: 'national_society',
+                Header: 'National Society'
+            },
+            {
+                accessor: 'start_end_dates',
+                Header:'Start-End Dates'
+            },
+            {
+                accessor: 'appeal_code',
+                Header: 'Appeal Code'
+            },
+            {
+                accessor: 'project_sector',
+                Header: 'Project Sector'
+            },
+            {
+                accessor: 'total_budget',
+                Header: 'Total Budget'
+            },
+            {
+                accessor: 'programme_type',
+                Header: 'Programme Type'
+            },
+            {
+                accessor: 'disaster_type',
+                Header: 'Disaster Type'
+            },
+            {
+                accessor: 'people_target',
+                Header: 'People Target'
+            },
+            {
+                accessor: 'people_reached',
+                Header: 'People Reached'
+            }
+        ],
     },
-    {
-        id: 'start_end_dates',
-        label:
-            <SortHeader
-                id='start_end_dates'
-                title='Start-End Dates'
-                sort={table.sort}
-                onClick='id'
-            />
-    },
-    {
-        id: 'appeal_code',
-        label: 'Appeal Code'
-    },
-    {
-        id: 'project_sector',
-        label: 'Project Sector'
-    },
-    {
-        id: 'total_budget',
-        label: 'Total Budget'
-    },
-    {
-        id: 'programme_type',
-        label: 'Programme Type'
-    },
-    {
-        id: 'disaster_type',
-        label: 'Disaster Type'
-    },
-    {
-        id: 'people_target',
-        label: 'People Target'
-    },
-    {
-        id: 'people_reached',
-        label: 'People Reached'
-    }
 ];
 
-const rows3 = [
+const rowsFive = [
     {
         national_society: 'British RC',
         start_end_dates: '2020-06-01 - 2020-08-30',
@@ -195,56 +233,109 @@ const rows3 = [
 const TablesPage = () => {
     return (
         <React.Fragment>
-            <div className="inner">
-                <div className="fold__header">
-                    <div className="fold__header__block">
-                        <h2 className="fold__title margin-reset">tables</h2>
+            <div>
+                <div className="inner">
+                    <div className="fold__header">
+                        <div className="fold__header__block">
+                            <h2 className="fold__title margin-reset">tables</h2>
+                        </div>
                     </div>
+                    <div className="fold__body">
+                        <div className="container-full">
+                            <p>Tables are used to organise and display data efficiently. The data table component allows
+                                for
+                                customization with additional functionality.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className="tab__wrap">
+                    <Tabs>
+                        <TabList>
+                            <Tab>Example</Tab>
+                            <Tab>Code</Tab>
+                        </TabList>
+
+                        <TabPanel>
+
+                            <DisplayTable
+                                type='data'
+                                columns={headingsOne}
+                                rows={rowsOne}
+                            />
+
+                            <DisplayTable
+                                type='data'
+                                columns={headingsTwo}
+                                rows={rowsTwo}
+                            />
+
+                            <DisplayTable
+                                type='data'
+                                columns={headingsThree}
+                                rows={rowsThree}
+                            />
+
+                        </TabPanel>
+                        <TabPanel>
+                            <Code source={`${htmlString}`}/>
+                        </TabPanel>
+                    </Tabs>
                 </div>
                 <div className="fold__body">
-                    <div className="container-full">
-                        <p>Tables are used to organise and display data efficiently. The data table component allows for
-                            customization with additional functionality.</p>
+                    <h2 className="fold__title margin-reset">COMMENTS</h2>
+                    <p>Table elements are organised in groups to facilitate the creation of patterns. Table can be
+                        single-lined (56px) or double-lined (72px).</p>
+                </div>
+
+            </div>
+            <div className="box_space">
+
+                <div className="inner">
+                    <div className="fold__header">
+                        <div className="fold__header__block">
+                            <h2 className="fold__title margin-reset">Tables example</h2>
+                        </div>
+                    </div>
+                    <div className="fold__body">
+                        <div className="container-full">
+                            <p>Tables are used to organise and display data efficiently. The data table component allows
+                                for
+                                customization with additional functionality.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div className="tab__wrap">
-                <Tabs>
-                    <TabList>
-                        <Tab>Example</Tab>
-                        <Tab>Code</Tab>
-                    </TabList>
+                <div className="tab__wrap">
+                    <Tabs>
+                        <TabList>
+                            <Tab>Example</Tab>
+                            <Tab>Code</Tab>
+                        </TabList>
 
-                    <TabPanel>
-                        <b>Table / Label & Body 56px</b>
+                        <TabPanel>
 
-                        <DisplayTable
-                            headings={headings}
-                            rows={rows}
-                        />
+                            <DisplayTable
+                                type='data'
+                                columns={headingsFour}
+                                rows={rowsFour}
+                            />
 
-                        <b>Table - 56px</b>
-                        <DisplayTable
-                            headings={headings2}
-                            rows={rows2}
-                        />
+                            <DisplayTable
+                                type='data'
+                                columns={headingsFive}
+                                rows={rowsFive}
+                            />
 
-                        <b>Table collapse - 56px</b>
-                        <DisplayTable
-                            headings={headings3}
-                            rows={rows3}
-                        />
-
-                    </TabPanel>
-                    <TabPanel>
-                        <Code source={`${htmlString}`}/>
-                    </TabPanel>
-                </Tabs>
-            </div>
-            <div className="fold__body">
-                <h2 className="fold__title margin-reset">COMMENTS</h2>
-                <p>Table elements are organised in groups to facilitate the creation of patterns. Table can be
-                    single-lined (56px) or double-lined (72px).</p>
+                        </TabPanel>
+                        <TabPanel>
+                            <Code source={`${htmlString}`}/>
+                        </TabPanel>
+                    </Tabs>
+                </div>
+                <div className="fold__body">
+                    <h2 className="fold__title margin-reset">COMMENTS</h2>
+                    <p>Pagination will always stay at the bottom of a table or inside the collapsable group. It will be
+                        aligned to the right side of the screen. </p>
+                </div>
             </div>
         </React.Fragment>
     );
