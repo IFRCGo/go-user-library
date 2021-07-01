@@ -2,6 +2,7 @@ import React from "react";
 import Button from "../../../components/button";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import {Link} from 'react-router-dom';
+import {ListData} from "../../../utils/list";
 
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
@@ -23,6 +24,10 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 );
 
 const IconographyPage = () => {
+
+    const data = ListData.footer.col[3].list;
+    console.log(data);
+
     return (
         <div className="inner">
             <div className="fold__body">
@@ -111,20 +116,11 @@ const IconographyPage = () => {
 
             <div className="box_space">
                 <div className="container-full">
-                    <h1>general system icons</h1>
-                    <p>
-                        This section contains the iconography used on the GO platform. The icons follow OCHA iconography
-                        guidelines, especially when referring to hazards and emergencies (see the OCHA icons here).
-                        Some icons from the IFRC Brand Guidelines will also be used according to specific needs, they
-                        are also integrated in this section.
-                    </p>
-
-
                     <div className="box_space">
 
                         <div className="fold__header">
                             <div className="fold__header__block">
-                                <h2 className="fold__title margin-reset">Buttons</h2>
+                                <h2 className="fold__title margin-reset">General System Icons</h2>
                             </div>
                         </div>
 
@@ -140,9 +136,34 @@ const IconographyPage = () => {
 
                                     <span className='icon-demo f-icon-arrow-down'></span>
 
-                                    <span className='icon-demo f-icon-arrow-left'></span>
+                                    <span className='icon-demo f-icon-circle-information'></span>
 
-                                    <span className='icon-demo f-icon-arrow-right'></span>
+                                    <span className='icon-demo f-icon-pencil'></span>
+
+                                    <span className='icon-demo f-icon-circle-tick'></span>
+
+                                    <span className='icon-demo f-icon-cash-bag'></span>
+
+                                    <span className='icon-demo f-icon-calendar'></span>
+
+                                </div>
+
+                                <div>
+
+                                            <div className="icon-demo">
+                                                {data.map((list, i) => (
+                                                    <a
+                                                        href={list.link}
+                                                        className="footer-social-each"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        <span className={list.type}></span>
+                                                    </a>
+                                                ))}
+                                            </div>
+
+
                                 </div>
                             </TabPanel>
                             <TabPanel>
