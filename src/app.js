@@ -137,14 +137,19 @@ const App = () => (
             component={TooltipPage}
         />
         <AppRoute
-            path="/brand-design/design"
+            path="/brand-design/brand/"
             layout={PageLayoutDesign}
-            component={DesignPage}
+            component={BrandPage}
         />
         <AppRoute
             path="/brand-design/colours/"
             layout={PageLayoutDesign}
             component={ColoursPage}
+        />
+        <AppRoute
+            path="/brand-design/design"
+            layout={PageLayoutDesign}
+            component={DesignPage}
         />
         <AppRoute
             path="/brand-design/iconography"

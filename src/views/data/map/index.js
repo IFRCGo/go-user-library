@@ -1,4 +1,16 @@
 import React from "react";
+import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
+import Code from "../../../hoc/source-code";
+import ReactDOMServer from "react-dom/server";
+import Button from "../../../components/button";
+
+const htmlString = ReactDOMServer.renderToStaticMarkup(
+    <Button
+        type="submit"
+        size="small"
+        name="primary filled button"
+    />
+);
 
 const MapPage = () => {
     return (
@@ -17,6 +29,37 @@ const MapPage = () => {
                         They should also look good when projected or on screen.
                     </p>
 
+                </div>
+
+                <div className="box_space">
+
+                    <div className="fold__header">
+                        <div className="fold__header__block">
+                            <h2 className="fold__title margin-reset">WORLD MAP</h2>
+                        </div>
+                    </div>
+
+                    <Tabs>
+                        <TabList>
+                            <Tab>Example</Tab>
+                            <Tab>Code</Tab>
+                        </TabList>
+
+                        <TabPanel>
+                            <div className="box_space">
+                                MAP
+                            </div>
+
+                        </TabPanel>
+                        <TabPanel>
+                            <Code source={`${htmlString}`}/>
+                        </TabPanel>
+                    </Tabs>
+                    <div className="box_space">
+                        <h2 className="fold__title margin-reset">Mapbox guidelines</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis
+                            fermentum eget quis tortor. </p>
+                    </div>
                 </div>
             </div>
         </div>
