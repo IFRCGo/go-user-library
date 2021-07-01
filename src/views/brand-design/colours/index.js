@@ -9,13 +9,17 @@ export default function ColoursPage() {
         <h1>Colours</h1>
         <p>The following are the main colors used on the IFRC GO platform. When following this style, ensure the adherence to primary colors, avoiding using additional colors not in this palette.</p>
       </div>
+      <br/><br/>
+
       <div className="fold__header">
-        <div className="fold__header__block">
-          <h2 className="fold__title margin-reset">Primary</h2>
+        <div className="container-mid">
+          <div className="fold__header__block">
+            <h2 className="fold__title margin-reset">Primary</h2>
+          </div>
         </div>
       </div>
       <div className="fold__body">
-        <div className="container-full">
+        <div className="container-mid">
           <div className="colours">
             <div className="colour">
               <ColourItem
@@ -44,62 +48,65 @@ export default function ColoursPage() {
               />
             </div>
           </div>
+          <h2 className="fold__title margin-reset">Primary Colour Guidelines</h2>
+          <br /><p>The main colors used on the platform are the primary colors, following IFRC guidelines.</p>
         </div>
       </div>
-      <div className="container-full">
-        <h2 className="fold__title margin-reset">Primary Colour Guidelines</h2>
-        <br /><p>The main colors used on the platform are the primary colors, following IFRC guidelines.</p>
-      </div>
-      <br /><br /><br />
-      <div className="fold__header">
-        <div className="fold__header__block">
-          <h2 className="fold__title margin-reset">Semantic</h2>
-        </div>
-      </div>
-      <div className="fold__body">
-        <div className="container-full">
-          <div className="colours">
-            <div className="colour">
-              <ColourItem
-                class="positive"
-                name="Positive"
-                hex="#7fb845"
-                rgb="rgb(127, 184, 69)"
-              />
-              <ColourItem
-                class="informational"
-                name="Informational"
-                hex="#3FA2F7"
-                rgb="rgb(63, 162, 247)"
-              />
-              <ColourItem
-                class="negative"
-                name="Negative"
-                hex="#f75c65"
-                rgb="rgb(247, 92, 101)"
-              />
-              <ColourItem
-                class="warning"
-                name="Warning"
-                hex="#ffb443"
-                rgb="rgb(255, 180, 67)"
-              />
+        
+
+      <div className="fold">
+        <div className="fold__header">
+          <div className="container-mid">
+            <div className="fold__header__block">
+              <h2 className="fold__title margin-reset">Semantic</h2>
             </div>
           </div>
         </div>
+        <div className="fold__body">
+          <div className="container-mid">
+            <div className="colours">
+              <div className="colour">
+                <ColourItem
+                  class="positive"
+                  name="Positive"
+                  hex="#7fb845"
+                  rgb="rgb(127, 184, 69)"
+                />
+                <ColourItem
+                  class="informational"
+                  name="Informational"
+                  hex="#3FA2F7"
+                  rgb="rgb(63, 162, 247)"
+                />
+                <ColourItem
+                  class="negative"
+                  name="Negative"
+                  hex="#f75c65"
+                  rgb="rgb(247, 92, 101)"
+                />
+                <ColourItem
+                  class="warning"
+                  name="Warning"
+                  hex="#ffb443"
+                  rgb="rgb(255, 180, 67)"
+                />
+              </div>
+            </div>
+            <h2 className="fold__title margin-reset">Semantic Colour Guidelines</h2>
+            <br /><p>The semantic colours are for highlighting specific information, such as alerts, error messaging, confirmations and warnings.</p>
+          </div>
+        </div>
       </div>
-      <div className="container-full">
-        <h2 className="fold__title margin-reset">Semantic Colour Guidelines</h2>
-        <br /><p>The semantic colors are for highlighting specific information, such as alerts, error messaging, confirmations, and others.</p>
-      </div>
-      <br /><br /><br />
+      
       <div className="fold__header">
-        <div className="fold__header__block">
-          <h2 className="fold__title margin-reset">Greyscale</h2>
+        <div className="container-mid">
+          <div className="fold__header__block">
+            <h2 className="fold__title margin-reset">Greyscale</h2>
+          </div>
         </div>
       </div>
       <div className="fold__body">
-        <div className="container-full">
+        <div className="container-mid">
           <div className="colours">
             <div className="colour">
               <ColourItem
@@ -166,12 +173,12 @@ export default function ColoursPage() {
               />
             </div>
           </div>
+          
+          <h2 className="fold__title margin-reset">Greyscale Colour Guidelines</h2>
+          <br /><p>Greyscale colours are used throughout the website as a complement to the primary colours and for gradient purposes. </p>
         </div>
       </div>
-      <div className="container-full">
-        <h2 className="fold__title margin-reset">Greyscale Colour Guidelines</h2>
-        <br /><p>Placeholder text.</p>
-      </div>
+      
     </div>
     </React.Fragment>
   );

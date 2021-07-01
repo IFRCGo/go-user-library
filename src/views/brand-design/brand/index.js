@@ -70,7 +70,6 @@ const BrandPage = () => {
                     organisation. Also, updating and consolidating the IFRC’s branding guidelines and promoting them
                     internally serves to bring greater coherence to the IFRC’s brand identity.</p>
             </div>
-
         </div>
     );
 };

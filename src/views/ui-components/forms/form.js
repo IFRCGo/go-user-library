@@ -269,7 +269,7 @@ class Form extends React.Component {
                   value={this.state.selectedValue}
                   onChange={this.handleSelect}
                   options={selectList}
-                  autoFocus={true}
+                  autoFocus={false}
                 />
               </TabPanel>
               <TabPanel>

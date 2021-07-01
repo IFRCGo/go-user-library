@@ -156,7 +156,6 @@ const IconographyPage = () => {
                 <h2 className="fold__title margin-reset">COMMENTS</h2>
                 <p>These general icons are used in menus, tables and reports. </p>
             </div>
-
         </div>
     );
 };

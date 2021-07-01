@@ -6,7 +6,7 @@ import BreadCrumb from "./../../../components/breadcrumb";
 import Code from "./../../../hoc/source-code";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
-    <div className="breadcrumb__block">
+  <div className="breadcrumb__block">
     <span>
       <span>
         <a className="breadcrumb" order="1" href="/get-started">
@@ -18,46 +18,42 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
         BreadCrumb
       </b>
     </span>
-    </div>
+  </div>
 );
 
 const BreadcrumbsPage = () => {
-    return (
-        <React.Fragment>
-            <div className="inner">
-                <div className="fold__header">
-                    <div className="fold__header__block">
-                        <h2 className="fold__title margin-reset">Breadcrumbs</h2>
-                    </div>
-                </div>
-                <div className="fold__body">
-                    <div className="container-full">
-                        <p>Breadcrumbs are a secondary navifation pattern that help users understand the hierachy
-                            between levels and navigate through them.</p>
-                    </div>
-                </div>
-            </div>
-            <div className="tab__wrap">
-                <Tabs>
-                    <TabList>
-                        <Tab>Example</Tab>
-                        <Tab>Code</Tab>
-                    </TabList>
+  return (
+    <React.Fragment>
+      <div className="inner">
+        <div className="fold__header">
+          <h1>BREADCRUMBS</h1>
+          <p>Breadcrumbs are a secondary navifation pattern that help users understand the hierachy between levels and navigate through them.</p>
+        </div>
+      </div>
 
-                    <TabPanel>
-                        <BreadCrumb
-                            crumbs={[
-                                {link: "/ui-components/buttons", name: "Buttons"},
-                                {link: "/get-started", name: "Home"},
-                            ]}
-                        />
-                    </TabPanel>
-                    <TabPanel>
-                        <Code source={`${htmlString}`}/>
-                    </TabPanel>
-                </Tabs>
-            </div>
-        </React.Fragment>
-    );
+      <div className="container-mid">
+        <div className="tab__wrap">
+          <Tabs>
+            <TabList>
+              <Tab>Example</Tab>
+              <Tab>Code</Tab>
+            </TabList>
+
+            <TabPanel>
+              <BreadCrumb
+                  crumbs={[
+                      {link: "/ui-components/buttons", name: "Buttons"},
+                      {link: "/get-started", name: "Home"},
+                  ]}
+              />
+            </TabPanel>
+            <TabPanel>
+              <Code source={`${htmlString}`}/>
+            </TabPanel>
+          </Tabs>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 };
 export default BreadcrumbsPage;
