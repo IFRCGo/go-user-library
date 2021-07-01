@@ -13,7 +13,7 @@ export const ListData = {
             {
                 type: 'link',
                 name: "Brand & Design Guidelines",
-                link: "/brand-design/colours"
+                link: "/brand-design/Colours"
             },
             {
                 type: 'link',
