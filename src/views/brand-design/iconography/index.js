@@ -5,6 +5,14 @@ import {Link} from 'react-router-dom';
 
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
+// import Logo from "../../../assets/graphics/layout/go-logo-2020.svg";
+
+import DREF from "../../../assets/graphics/layout/logo-dref.svg";
+import Emergency from "../../../assets/graphics/layout/emergency-brand.svg";
+import Appeals from "../../../assets/graphics/layout/logo-appeals.svg";
+import Population from "../../../assets/graphics/layout/targeted-population.svg";
+import Funding from "../../../assets/graphics/layout/funding-requirements.svg";
+import FundingCoverage from "../../../assets/graphics/layout/funding-coverage.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <Button
@@ -64,8 +72,27 @@ const IconographyPage = () => {
                             </TabList>
 
                             <TabPanel>
-                                <div>
-                                    Icons here....
+                                <div className='box__global__content'>
+                                    <div className='row flex-xs'>
+                                      <span>
+                                        <img src={DREF} alt="text" className="icon-demo"/>
+                                      </span>
+                                        <span>
+                                          <img src={Emergency} alt="text" className="icon-demo"/>
+                                      </span>
+                                        <span>
+                                        <img src={Appeals} alt="text" className="icon-demo"/>
+                                      </span>
+                                        <span>
+                                          <img src={Population} alt="text" className="icon-demo"/>
+                                      </span>
+                                        <span>
+                                          <img src={Funding} alt="text" className="icon-demo"/>
+                                      </span>
+                                        <span>
+                                          <img src={FundingCoverage} alt="text" className="icon-demo"/>
+                                      </span>
+                                    </div>
                                 </div>
                             </TabPanel>
                             <TabPanel>
@@ -109,7 +136,13 @@ const IconographyPage = () => {
 
                             <TabPanel>
                                 <div>
-                                    Icons here....
+                                    <span className='icon-demo f-icon-arrow-up'></span>
+
+                                    <span className='icon-demo f-icon-arrow-down'></span>
+
+                                    <span className='icon-demo f-icon-arrow-left'></span>
+
+                                    <span className='icon-demo f-icon-arrow-right'></span>
                                 </div>
                             </TabPanel>
                             <TabPanel>
