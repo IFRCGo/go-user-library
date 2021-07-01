@@ -27,9 +27,12 @@ const ModalPage = () => {
           <h1>Modal</h1>
           <p>Modals focus the user's attention exclusively on one piece of information or action through a window that opens up on top of the page content, with a faded out background.</p>
         </div>
+        <br/><br/>
         <div className="fold__header">
-          <div className="fold__header__block">
-            <h2 className="fold__title margin-reset">Modal box</h2>
+          <div className="container-mid">
+            <div className="fold__header__block">
+              <h2 className="fold__title margin-reset">Modal box</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -44,6 +47,7 @@ const ModalPage = () => {
             <Button
               size="small"
               type="primary-filled"
+              text="Open Modal"
               onClick={() => {
                 setModalReveal(true);
               }}
@@ -65,7 +69,7 @@ const ModalPage = () => {
         </Tabs>
       </div>
 
-      <div className="container-full">
+      <div className="container-mid">
         <h2 className="fold__title margin-reset">Comments</h2>
         <br /><p>Placeholder text</p>
       </div>
