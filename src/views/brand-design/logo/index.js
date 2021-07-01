@@ -4,6 +4,11 @@ import Button from "../../../components/button";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
+import DREF from "../../../assets/graphics/layout/logo-dref.svg";
+import Icon from "../../../assets/graphics/layout/logo-icon.svg";
+import GoIcon from "../../../assets/graphics/layout/go-logo-2020.svg";
+
+
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <Button
@@ -40,12 +45,22 @@ const LogoPage = () => {
                             <TabPanel>
                                 <div className="box_space">
                                     <h4>Page</h4>
+                                    <span>
+                                        <img src={Icon} alt="text" className="icon-demo1"/><br/>
+                                        <img src={GoIcon} alt="text" className="icon-demo1"/>
+                                      </span>
                                 </div>
                                 <div className="box_space">
                                     <h4>Top navigation</h4>
+                                    <span>
+                                        <img src={GoIcon} alt="text" className="icon-demo1"/>
+                                      </span>
                                 </div>
                                 <div className="box_space">
                                     <h4>Favicon</h4>
+                                    <span>
+                                        <img src={Icon} alt="text" className="icon-demo1"/>
+                                      </span>
                                 </div>
                             </TabPanel>
                             <TabPanel>

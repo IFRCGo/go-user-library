@@ -6,7 +6,6 @@ import {ListData} from "../../../utils/list";
 
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
-// import Logo from "../../../assets/graphics/layout/go-logo-2020.svg";
 
 import DREF from "../../../assets/graphics/layout/logo-dref.svg";
 import Emergency from "../../../assets/graphics/layout/emergency-brand.svg";
