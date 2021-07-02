@@ -2,13 +2,42 @@ import React from "react";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
-import Button from "../../../components/button";
+import Map from "../../../components/map";
+
+const MapListing = [
+    {
+        iframe: 'https://app.powerbi.com/view?r=eyJrIjoiMTExYTlmZDMtMTNkZi00MmY5LTkyYTYtNTczZGU0MmQxYjE3IiwidCI6ImEyYjUzYmU1LTczNGUtNGU2Yy1hYjBkLWQxODRmNjBmZDkxNyIsImMiOjh9',
+        title: 'testing',
+        frameBorder: '0',
+        width: '100%',
+        height: '2240px'
+    },
+    {
+        iframe: 'https://app.powerbi.com/view?r=eyJrIjoiMDQ5YzBlODItOTQ3Yy00Y2Q2LWFjZmEtZWIxMTAwZjkxZGU2IiwidCI6ImEyYjUzYmU1LTczNGUtNGU2Yy1hYjBkLWQxODRmNjBmZDkxNyIsImMiOjh9',
+        title: 'testing1',
+        frameBorder: '0',
+        width: '100%',
+        height: '2240px'
+    },
+    {
+        iframe: 'https://app.powerbi.com/view?r=eyJrIjoiYmQxZjFhMzItYzRlNy00ZTQzLWE5ZTEtZDZhNDliNjY4OWEwIiwidCI6ImEyYjUzYmU1LTczNGUtNGU2Yy1hYjBkLWQxODRmNjBmZDkxNyIsImMiOjh9',
+        title: 'testing2',
+        frameBorder: '0',
+        width: '100%',
+        height: '2240px'
+    },
+    {
+        iframe: 'https://app.powerbi.com/view?r=eyJrIjoiMTM4Y2ZhZGEtNGZmMS00ODZhLWFjZjQtMTE2ZTIyYTI0ODc4IiwidCI6ImEyYjUzYmU1LTczNGUtNGU2Yy1hYjBkLWQxODRmNjBmZDkxNyIsImMiOjh9&pageName=ReportSectionfa0be9512521e929ae4a',
+        title: 'testing3',
+        frameBorder: '0',
+        width: '100%',
+        height: '2240px'
+    }
+];
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
-    <Button
-        type="submit"
-        size="small"
-        name="primary filled button"
+    <Map
+        list = {MapListing}
     />
 );
 
@@ -47,7 +76,9 @@ const MapPage = () => {
 
                         <TabPanel>
                             <div className="box_space">
-                                MAP
+                                <Map
+                                    list={MapListing}
+                                />
                             </div>
 
                         </TabPanel>
