@@ -8,8 +8,6 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-import 'react-accessible-accordion/dist/fancy-example.css';
-
 const GoApiPage = () => {
     return (
         <div className="inner">
