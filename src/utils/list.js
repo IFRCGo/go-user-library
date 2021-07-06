@@ -68,6 +68,7 @@ export const ListData = {
             {name: "Filters", link: "/ui-components/filters"},
             {name: "Forms", link: "/ui-components/forms"},
             {name: "Graphs", link: "/ui-components/graphs"},
+            {name: "Header", link: "/ui-components/headers"},
             {name: "Links", link: "/ui-components/links"},
             {name: "Modal", link: "/ui-components/modal"},
             {name: "Navigation", link: "/ui-components/navigation"},
