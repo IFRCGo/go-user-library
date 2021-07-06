@@ -3,7 +3,7 @@ import InfoIcon from "./info-icon";
 import ReactTooltip from "react-tooltip";
 
 const Tooltip = ({type, title, description}) => {
-    console.log(type);
+    // console.log(type);
     return (
         <React.Fragment>
             {type === 'popup' ? (

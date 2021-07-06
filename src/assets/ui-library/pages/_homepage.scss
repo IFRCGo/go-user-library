@@ -1,13 +1,18 @@
 ﻿// Home Page styles
 
 .homepage {
-  background: url('./../../graphics/content/homepage_bg.png') no-repeat left -30px;
-  background-size: 98%;
+  background: url('./../../graphics/content/homepage_bg.png') no-repeat 0;
+  background-size: cover;
   padding: 0;
   min-height: 555px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include media(large) {
+    background: url('./../../graphics/content/homepage_bg.png') no-repeat 0;
+    background-size: contain;
+  }
 
   &__body {
     padding: 20px 0;  

@@ -27,8 +27,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Resources",
-                link: "/resources"
+                name: "Templates",
+                link: "/templates"
             }
         ],
         "login": false,
@@ -116,8 +116,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Resources",
-                link: '/GO-UI-Library/resources'
+                name: "Templates",
+                link: '/GO-UI-Library/templates'
             },
             {
                 type: 'link',
@@ -141,8 +141,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Resources",
-                link: '/GO-UI-Library/resources'
+                name: "Templates",
+                link: '/GO-UI-Library/templates'
             },
             {
                 type: 'user',
@@ -238,7 +238,7 @@ export const ListData = {
                 name: "CONTACT US",
                 social:
                     {
-                        name: 'ifrc',
+                        name: 'im@ifrc.org',
                         link: 'mailto:im@ifrc.org'
 
                     }

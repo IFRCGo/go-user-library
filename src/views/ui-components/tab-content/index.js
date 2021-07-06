@@ -7,7 +7,7 @@ import ConfirmModal from "../../../components/modal";
 
 const tabOne = {
     type: "primary",
-    name: "MAIN TABS - Selected / Unselected",
+    name: "Selected / Unselected",
     list: [
         {id: 1, title: 'EMERGENCY DETAILS', content: 'Welcome EMERGENCY DETAILS.'},
         {id: 2, title: 'EMERGENCY DETAILS', content: 'Welcome EMERGENCY DETAILS 2.'}
@@ -56,86 +56,103 @@ const tabFive = {
 };
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
-    <ConfirmModal
-        type="primary / secondary"
-        name="headline title"
-        list="array -> id/title/content"
-    />
+  <div className="fold tab_content">
+    <div>
+      <h3>Selected / Unselected</h3>
+      <div className="primary" data-tabs="true">
+        <ul className="react-tabs__tab-list" role="tablist">
+          <li aria-controls="react-tabs-363" aria-disabled="false" aria-selected="true" className="react-tabs__tab react-tabs__tab--selected" id="react-tabs-362" role="tab" tabIndex={0}>EMERGENCY DETAILS</li>
+          <li aria-controls="react-tabs-365" aria-disabled="false" aria-selected="false" className="react-tabs__tab" id="react-tabs-364" role="tab">EMERGENCY DETAILS</li>
+        </ul>
+        <div aria-labelledby="react-tabs-362" className="react-tabs__tab-panel react-tabs__tab-panel--selected" id="react-tabs-363" role="tabpanel">
+          <div className="tabs-page">
+            Welcome EMERGENCY DETAILS.
+          </div>
+        </div>
+        <div aria-labelledby="react-tabs-364" className="react-tabs__tab-panel" id="react-tabs-365" role="tabpanel" />
+      </div>
+    </div>
+  </div>
 );
 
 const TabsPage = () => {
-    return (
-        <React.Fragment>
-            <div className="inner">
-                <div className="fold__header">
-                    <div className="fold__header__block">
-                        <h2 className="fold__title margin-reset">TABS</h2>
-                    </div>
+  return (
+    <React.Fragment>
+      <div className="inner">
+        <div className="fold__header">
+          <h1>TABS</h1>
+          <p>Tabs are used to allow an easy navigation between views within the same context</p>
+        </div>
+        <br/><br/>
+
+        <div className="fold__header">
+          <div className="container-mid">
+            <div className="fold__header__block">
+              <h2 className="fold__title margin-reset">Main tabs</h2>
+            </div>
+          </div>
+        </div>
+
+        <div className="fold__body">
+          <div className="container-mid">
+            <Tabs>
+              <TabList>
+                <Tab>Example</Tab>
+                <Tab>Code</Tab>
+              </TabList>
+
+              <TabPanel>
+                <div className="fold tab_content">
+                  <TabsContent
+                      tabs={tabOne}
+                  >
+                  </TabsContent>
                 </div>
-                <div className="fold__body">
-                    <div className="container-full">
-                        <p>Tabs are used to allow an easy navigation between views within the same context</p>
-                    </div>
+
+                <div className="tab_content">
+                  <TabsContent
+                      tabs={tabTwo}
+                  >
+                  </TabsContent>
                 </div>
-            </div>
 
-            <div className="tab__wrap">
-                <Tabs>
-                    <TabList>
-                        <Tab>Example</Tab>
-                        <Tab>Code</Tab>
-                    </TabList>
+                <div className="fold tab_content">
+                  <TabsContent
+                      tabs={tabThree}
+                  >
+                  </TabsContent>
+                </div>
 
-                    <TabPanel>
-                        <div className="tab_content">
-                            <TabsContent
-                                tabs={tabOne}
-                            >
-                            </TabsContent>
-                        </div>
+                <div className="tab_content">
+                  <TabsContent
+                      tabs={tabFour}
+                  >
+                  </TabsContent>
+                </div>
 
-                        <div className="tab_content">
-                            <TabsContent
-                                tabs={tabTwo}
-                            >
-                            </TabsContent>
-                        </div>
-
-                        <div className="tab_content">
-                            <TabsContent
-                                tabs={tabThree}
-                            >
-                            </TabsContent>
-                        </div>
-
-                        <div className="tab_content">
-                            <TabsContent
-                                tabs={tabFour}
-                            >
-                            </TabsContent>
-                        </div>
-
-                        <div className="tab_content">
-                            <TabsContent
-                                tabs={tabFive}
-                            >
-                            </TabsContent>
-                        </div>
-                    </TabPanel>
-                    <TabPanel>
-                        <Code source={`${htmlString}`}/>
-                    </TabPanel>
-                </Tabs>
-            </div>
-
-            <div className="fold__body">
-                    <h2 className="fold__title margin-reset">COMMENTS</h2>
-                    <p>Primary tabs are used on the majority of the pages, while secondary - when there are more views
-                        inside a specific primary tab.</p>
-            </div>
-
-        </React.Fragment>
-    );
+                <div className="fold tab_content">
+                  <TabsContent
+                    tabs={tabFive}
+                  >
+                  </TabsContent>
+                </div>
+              </TabPanel>
+              <TabPanel>
+                <Code source={`${htmlString}`}/>
+              </TabPanel>
+            </Tabs>
+          </div>
+        </div>
+        <div className="fold container-mid">
+          <div className="container-mid">
+            <h2 className="fold__title margin-reset">COMMENTS</h2>
+            <br/>
+            <p>Primary tabs are used on the majority of the pages, while secondary - when there are more views inside a specific primary tab.</p>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
 };
 export default TabsPage;
 

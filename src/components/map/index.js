@@ -2,7 +2,7 @@ import React from "react";
 
 function Map({children, ...props}) {
 
-    console.log(props);
+    // console.log(props);
     return (
         <div className='inpage__body'>
             <div className='inner'>
