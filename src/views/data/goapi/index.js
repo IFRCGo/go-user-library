@@ -14,8 +14,6 @@ import GoTokenGenerator from "./../../../assets/graphics/content/go token genera
 import GoTokenGeneratorTwo from "./../../../assets/graphics/content/go token generator 2.png";
 import PowerBiApi from "./../../../assets/graphics/content/example1_powerbi_api.png";
 
-
-
 const GoApiPage = () => {
   return (
     <div className="inner">

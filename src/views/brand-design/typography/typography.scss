@@ -1,0 +1,34 @@
+@import "../../../styles/settings/_variables.scss";
+
+/* ==========================================================================
+   Demo
+   ========================================================================== */
+
+.poppins_40 {
+  font-size: $font-size-heading-widget;
+}
+
+.poppins_30 {
+  font-size: $font-size-l-heading-widget;
+}
+
+.poppins_24 {
+  font-size: $font-size-heading;
+}
+
+.font_weight_600 {
+  font-weight: $base-font-semi-bold;
+}
+
+.font_weight_500 {
+  font-weight: $base-font-medium;
+}
+
+
+.font_weight_400 {
+  font-weight: $base-font-regular;
+}
+
+.font_weight_300 {
+  font-weight: $base-font-light;
+}
