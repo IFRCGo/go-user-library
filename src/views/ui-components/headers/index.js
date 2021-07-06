@@ -3,21 +3,18 @@ import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 import Code from "./../../../hoc/source-code";
 import Alert from "../alert/alert";
+import Headers from "../../../components/headers";
+import DataOne from "./dataOne";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
-    <div className="headers__block">
-    <span>
-      <span>
-        <a className="headers" order="1" href="/get-started">
-          Home
-        </a>
-        <span className="headers__next"> &gt; </span>
-      </span>
-      <b order="0" to="/ui-components/buttons" className="headers">
-        Headers
-      </b>
-    </span>
-    </div>
+        <Headers
+            breadcrumb={false}
+            id='1'
+            title='IFRC Disaster Response and Preparedness'
+            url='/'
+            description='"IFRC GO aims to make all disaster information universally accessible and useful to IFRC responders for better decision making."'
+            data={DataOne}
+        />
 );
 
 const HeadersPage = () => {
@@ -44,23 +41,47 @@ const HeadersPage = () => {
                     </TabList>
 
                     <TabPanel>
-                        <b>IFRC Disaster Response and Preparedness</b>
-                        <Alert
+                        <Headers
+                            breadcrumb={false}
                             id='1'
-                            option='primary'
-                            type='info'
-                            text='Coming soon'
-                            autoDismiss='0'
+                            title='IFRC Disaster Response and Preparedness'
+                            url='/'
+                            description='"IFRC GO aims to make all disaster information universally accessible and useful to IFRC responders for better decision making."'
+                            data={DataOne}
                         />
-                        <b>Emergencies</b>
-                        <Alert
-                            id='1'
-                            option='primary'
-                            type='info'
-                            text='Coming soon'
-                            autoDismiss='0'
+                        <Headers
+                            breadcrumb={true}
+                            id='2'
+                            title='Emergencies'
+                            url='/emergencies'
+                            urlText='All Emergencies'
+                            data={DataOne}
                         />
-                        <b>Philippines</b>
+                        <Headers
+                            breadcrumb={true}
+                            id='2'
+                            title='Philippines'
+                            url='/emergencies'
+                            urlText='Region: Asia Pacific'
+                            data={DataOne}
+                        />
+                    </TabPanel>
+                    <TabPanel>
+                        <Code source={`${htmlString}`}/>
+                    </TabPanel>
+                </Tabs>
+            </div>
+
+
+            <div className="tab__wrap">
+                <h1>Header Tabs</h1>
+                <Tabs>
+                    <TabList>
+                        <Tab>Example</Tab>
+                        <Tab>Code</Tab>
+                    </TabList>
+
+                    <TabPanel>
                         <Alert
                             id='1'
                             option='primary'
