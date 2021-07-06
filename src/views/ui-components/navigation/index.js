@@ -27,7 +27,7 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 
 const NavigationsPage = () => {
   const menu = ListData;
-  console.log(menu.header);
+  // console.log(menu.header);
   return (
     <React.Fragment>
       <div className="inner">

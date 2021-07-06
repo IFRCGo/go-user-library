@@ -108,7 +108,7 @@ code {
 .nav-global-menu {
   padding-top: 2px;
   > li {
-    margin: 0 0.7rem;
+    margin: 0;
   }
 
   a.button {
@@ -135,4 +135,10 @@ code {
 .page__header__inner__wrap {
   border-bottom: none;
   box-shadow: 0px 3px 8px rgba($grey-boxshadow, 0.24);
+}
+#map { 
+  position: absolute; 
+  top: 0; 
+  bottom: 0; 
+  width: 100%; 
 }

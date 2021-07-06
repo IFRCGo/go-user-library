@@ -20,7 +20,7 @@ function Table({columns, data}) {
         useSortBy
     )
 
-    console.log(columns[0].Footer);
+    // console.log(columns[0].Footer);
 
     // Render the UI for your table
     return (

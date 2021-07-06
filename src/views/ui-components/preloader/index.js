@@ -20,7 +20,7 @@ const PreloadersPage = () => {
     <React.Fragment>
       <div className="inner">
         <div className="fold__header">
-          <h1>preloaders</h1>
+          <h1>PRELOADERS</h1>
           <p>Preloaders appear before the main content of the platform (or indicidual sections) is loaded.</p>
         </div>
         <br/><br/>

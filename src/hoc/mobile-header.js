@@ -69,7 +69,7 @@ class MobileHeader extends React.PureComponent {
                         <ul className="nav-block-menu">
                             <li>
                                 <Link
-                                    to="/resources"
+                                    to="/templates"
                                     title="title"
                                     className="button button--small button--primary-filled"
                                 >

@@ -30,7 +30,7 @@ const htmlStringIcons = ReactDOMServer.renderToStaticMarkup(
 const IconographyPage = () => {
 
   const data = ListData.footer.col[3].list;
-  console.log(data);
+  // console.log(data);
 
   return (
     <div className="inner">

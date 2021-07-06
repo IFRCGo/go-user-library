@@ -43,7 +43,7 @@ const FiltersPage = () => {
             <div>
               <Tabs>
                 <TabPanel>
-                  <b>Filter for tables and maps</b>
+                  <p className="poppins_16 font_weight_500">Filter for tables and maps</p>
                   <Alert
                       id='1'
                       option='primary'
@@ -51,7 +51,7 @@ const FiltersPage = () => {
                       text='Coming soon'
                       autoDismiss='0'
                   />
-                  <b>Filter/tab for graphs</b>
+                  <p className="poppins_16 font_weight_500">Filter/tab for graphs</p>
                   <Alert
                       id='1'
                       option='primary'

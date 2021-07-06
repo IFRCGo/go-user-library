@@ -66,8 +66,7 @@ const CardsPage = () => {
       
         <div className="tab__wrap">
           <div className="container-mid">
-            <strong>Highlighted emergencies</strong>
-            <br/><br/>
+            <p className="poppins_16 font_weight_500">Highlighted emergencies</p>
             <Tabs>
               <TabList>
                 <Tab>Example</Tab>
@@ -101,8 +100,7 @@ const CardsPage = () => {
           
 
             <div className="tab__wrap">
-              <strong>Key figures</strong>
-              <br/><br/>
+              <p className="poppins_16 font_weight_500">Key figures</p>
               <Tabs>
                 <TabList>
                   <Tab>Example</Tab>
@@ -122,8 +120,7 @@ const CardsPage = () => {
             </div>
 
             <div className="tab__wrap">
-              <strong>Key figures</strong>
-              <br/><br/>
+              <p className="poppins_16 font_weight_500">Key figures</p>
               <Tabs>
                 <TabList>
                   <Tab>Example</Tab>

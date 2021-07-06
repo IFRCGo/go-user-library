@@ -39,7 +39,7 @@ class Alert extends React.Component {
     }
 
     componentWillUnmount() {
-        console.log('timeout');
+        // console.log('timeout');
         if (this.timeout) {
             clearTimeout(this.timeout);
         }
