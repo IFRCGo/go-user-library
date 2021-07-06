@@ -6,7 +6,7 @@ export default function ColoursPage() {
     <React.Fragment>
     <div className="inner">
       <div className="fold__header">
-        <h1>Colours</h1>
+        <h1>COLOURS</h1>
         <p>The following are the main colors used on the IFRC GO platform. When following this style, ensure the adherence to primary colors, avoiding using additional colors not in this palette.</p>
       </div>
       <br/><br/>
