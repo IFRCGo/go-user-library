@@ -19,6 +19,12 @@ body {
     padding: 0 10px;
   }
 
+  @include media(small-down) {
+    .main {
+      border: 0;
+    }
+  }
+
   .fold {
     box-shadow: none;
   }

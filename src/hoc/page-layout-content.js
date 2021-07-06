@@ -22,7 +22,7 @@ const PageLayoutContent = (props) => (
 
         <div className="fold">
           <div className="container-lg">
-            <div className="flex flex-lg">
+            <div className=" flex-lg">
               <div className="col-3-xs col-2-mid mobile">
                 <LeftNavContent />
               </div>
