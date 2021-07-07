@@ -1,6 +1,6 @@
 {
-  "homepage": "/GO-UI-Library",
-  "name": "go-ui-library",
+  "homepage": "/go-user-library",
+  "name": "go-user-library",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
