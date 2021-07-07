@@ -29,28 +29,38 @@ const BreadcrumbsPage = () => {
           <h1>BREADCRUMBS</h1>
           <p>Breadcrumbs are a secondary navifation pattern that help users understand the hierachy between levels and navigate through them.</p>
         </div>
-      </div>
+        <br/><br/>
 
-      <div className="container-mid">
-        <div className="tab__wrap">
-          <Tabs>
-            <TabList>
-              <Tab>Example</Tab>
-              <Tab>Code</Tab>
-            </TabList>
+        <div className="fold__header">
+          <div className="container-mid">
+            <div className="fold__header__block">
+              <h2 className="fold__title margin-reset">Breadcrumbs</h2>
+            </div>
+          </div>
+        </div>
 
-            <TabPanel>
-              <BreadCrumb
-                  crumbs={[
-                      {link: "/ui-components/buttons", name: "Buttons"},
-                      {link: "/get-started", name: "Home"},
-                  ]}
-              />
-            </TabPanel>
-            <TabPanel>
-              <Code source={`${htmlString}`}/>
-            </TabPanel>
-          </Tabs>
+        <div className="container-mid">
+          <div>
+            <Tabs>
+              <TabList>
+                <Tab>Example</Tab>
+                <Tab>Code</Tab>
+              </TabList>
+
+              <TabPanel>
+              <br/>
+                <BreadCrumb
+                    crumbs={[
+                        {link: "/ui-components/buttons", name: "Buttons"},
+                        {link: "/get-started", name: "Home"},
+                    ]}
+                />
+              </TabPanel>
+              <TabPanel>
+                <Code source={`${htmlString}`}/>
+              </TabPanel>
+            </Tabs>
+          </div>
         </div>
       </div>
     </React.Fragment>

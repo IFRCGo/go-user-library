@@ -36,42 +36,40 @@ const ModalPage = () => {
           </div>
         </div>
       </div>
-      <div className="tab__wrap">
-        <Tabs>
-          <TabList>
-            <Tab>Example</Tab>
-            <Tab>Code</Tab>
-          </TabList>
+      <div className="fold__body">
+        <div className="container-mid">
+          <Tabs>
+            <TabList>
+              <Tab>Example</Tab>
+              <Tab>Code</Tab>
+            </TabList>
 
-          <TabPanel>
-            <Button
-              size="small"
-              type="primary-filled"
-              text="Open Modal"
-              onClick={() => {
-                setModalReveal(true);
-              }}
-            >
-              Open modal
-            </Button>
-            {modalReveal ? (
-              <ConfirmModal
-                title="this is a modal"
-                message="This is the content"
-                okText="OK"
-                onClose={handleDeleteConfirmed}
-              />
-            ) : null}
-          </TabPanel>
-          <TabPanel>
-            <Code source={`${htmlString}`} />
-          </TabPanel>
-        </Tabs>
-      </div>
-
-      <div className="container-mid">
-        <h2 className="fold__title margin-reset">Comments</h2>
-        <br /><p>Placeholder text</p>
+            <TabPanel>
+            <br/><br/>
+              <Button
+                size="small"
+                type="primary-filled"
+                text="Open Modal"
+                onClick={() => {
+                  setModalReveal(true);
+                }}
+              >
+                Open modal
+              </Button>
+              {modalReveal ? (
+                <ConfirmModal
+                  title="this is a modal"
+                  message="This is the content"
+                  okText="OK"
+                  onClose={handleDeleteConfirmed}
+                />
+              ) : null}
+            </TabPanel>
+            <TabPanel>
+              <Code source={`${htmlString}`} />
+            </TabPanel>
+          </Tabs>
+        </div>
       </div>
       
     </React.Fragment>

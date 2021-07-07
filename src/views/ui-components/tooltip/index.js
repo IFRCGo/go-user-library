@@ -91,7 +91,7 @@ const TooltipPage = () => {
           </div>
         </div>
 
-        <div className="fold container-mid">
+        <div className="container-mid">
           <div className="container-mid">
             <h2 className="fold__title margin-reset">COMMENTS</h2>
             <br/>
