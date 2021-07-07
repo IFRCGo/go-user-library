@@ -65,7 +65,7 @@ This creates the Build folder
 ```   
 The deployment will deploy to Github pages here: 
 
-https://ifrcgo.org/GO-UI-Library/ 
+https://ifrcgo.org/go-user-library/ 
 For Production deployments a release should be created inside release/ folder and then that release (ex 4.0.1) should have a PR against the Master branch.  
 
 ## Important Deployment note!!! 
