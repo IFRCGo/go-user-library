@@ -259,16 +259,18 @@ const GetStarted = () => {
             </div>
           </section>
         </section>
-        <div className="fold container-mid text-center">
-          <p className="logo__title">
-            If you have a suggestion or question, please contact:
-          </p>
-          <LinkButton
-            href="mailto:im@ifrc.org"
-            classSize="small"
-            classType="primary-filled"
-            name="im@ifrc.org"
-          />
+        <div className="container-lg homepage-note">
+          <div className="container-mid text-center">
+            <p className="poppins_16 font_weight_500">
+              If you have a suggestion or question, please contact:
+            </p>
+            <p><LinkButton
+              href="mailto:im@ifrc.org"
+              classSize="small"
+              classType="primary-filled"
+              name="im@ifrc.org"
+            /></p>
+          </div>
         </div>
       </div>
     </React.Fragment>

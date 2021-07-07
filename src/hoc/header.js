@@ -44,17 +44,10 @@ function Header(props) {
                                     </ul>
                                 </nav>
                             ) : null}
-                            {data.goto['status'] ? (
-                                <div className="page__nav-actions">
-                                    <Link
-                                        to= {data.goto['link']}
-                                        title= {data.goto['title']}
-                                        className="button button--small button--primary-filled"
-                                    >
-                                        {data.goto['title']}
-                                    </Link>
-                                </div>
-                            ) : null}
+
+                            <div className="page__nav-actions">
+                                <a title="Go to GO" class="button button--small button--primary-filled" href="https://go.ifrc.org/">Go to GO</a>
+                            </div>
                             {data.right_menu ? (
                                 <div className='page__meta-nav col' role='navigation'>
                                     {data.right_menu.map((item, i) => (
