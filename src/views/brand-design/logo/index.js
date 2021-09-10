@@ -6,6 +6,7 @@ import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
 import DREF from "../../../assets/graphics/layout/logo-dref.svg";
 import Icon from "../../../assets/graphics/layout/logo-icon.svg";
+import FavIcon from "../../../assets/graphics/meta/favicon.ico";
 import GoIcon from "../../../assets/graphics/layout/go-logo-2020.svg";
 
 
@@ -60,7 +61,7 @@ const LogoPage = () => {
               <div className="box_space">
                 <h4>Favicon</h4>
                 <span>
-                  <img src={Icon} alt="text" className="icon-demo1"/>
+                  <img src={FavIcon} alt="text" className="icon-demo1"/>
                 </span>
               </div>
             </TabPanel>

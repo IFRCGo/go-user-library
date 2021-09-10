@@ -14,6 +14,15 @@
   line-height: 1.5;
   margin: 0 0 $global-spacing 0;
 
+
+  &.alert--alert.banner.alert {
+    background: #F75C65;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    padding-top: 10px !important;
+  }
+
   > *:last-child {
     margin-bottom: 0;
   }
@@ -113,15 +122,22 @@
   }
 }
 
-.alert--warning {
+.alert--warning.primary, .alert--warning.secondary, .banner {
   &::before {
     background: rgba($warning-color, 0.92);
   }
 }
 
-.alert--error {
+.alert--error.primary, .alert--error.secondary {
   &::before {
     background: rgba($danger-color, 0.92);
+
+  }
+}
+
+.alert--error.message {
+  &::before {
+    background: unset;
   }
 }
 

@@ -5,7 +5,7 @@
    ========================================================================== */
 
 .poppins_40 {
-  font-size: $font-size-heading-widget;
+  font-size: $font-size--xl-heading-widget;
 }
 
 .poppins_30 {
@@ -13,7 +13,11 @@
 }
 
 .poppins_24 {
-  font-size: $font-size-heading;
+  font-size: $font-size-heading-widget;
+}
+
+.poppins_18 {
+  font-size: $font-size-xxl;
 }
 
 .font_weight_600 {
@@ -31,4 +35,29 @@
 
 .font_weight_300 {
   font-weight: $base-font-light;
+}
+
+.typography {
+
+  &.medium {
+    font-size: medium;
+  }
+
+  &.medium12 {
+    font-size: medium;
+    font-size: 12px;
+  }
+
+  &.caps {
+    text-transform: uppercase;
+  }
+
+  &.bold {
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
 }

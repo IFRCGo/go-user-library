@@ -119,36 +119,39 @@ const TypographyPage = () => {
           <TabPanel>
             <div className="container-mid">
             <br/>
-              <h1>H1 - Semibold 40px</h1>
-              
-              <h2>H2 - Semibold 30px</h2>
+              <h1 class="poppins_40">H1 - Semibold 40px</h1>
+
+              <h2 class="poppins_30">H2 - Semibold 30px</h2>
             
-              <h3>H3 - Semibold 24px</h3>
+              <h3 class="poppins_24">H3 - Semibold 24px</h3>
             
-              <h4>H4 - Semibold 20px</h4>
+              <h4 class="poppins_20">H4 - Semibold 20px</h4>
             
-              <h5>H5 - Semibold 18px</h5>
+              <h5 class="poppins_18">H5 - Semibold 18px</h5>
             
-              <p className=''>Subtitle/Text button - Medium 14px</p>
+              <p className='typography medium'>Subtitle/Text button - Medium 14px</p>
+
+              <p className='typography medium caps'>caps medium 14px</p>
             
-              <p><Link to="/" title="Links - Semibold 14px">
+              <p className='typography medium'><Link to="/" title="Links - Semibold 14px">
                   Links - Semibold 14px
               </Link></p>
             
-              <p><Link to="/" title="Links - Semibold 14px">
+              <p className='typography medium'><Link to="/" title="Links - Semibold 14px">
                   Links - Medium 14px
               </Link></p>
             
-              <p className=''>Body/Text - Semibold 14px</p>
+              <p className='typography medium bold'>Body/Text - Semibold 14px</p>
             
-              <p className=''>Body/Text - Medium 14px</p>
+              <p className='typography medium'>Body/Text - Medium 14px</p>
             
-              <p className=''>Body/Text - Regular 14px</p>
+              <p className='typography medium'>Body/Text - Regular 14px</p>
             
-              <p className=''>Body/Text - Light 14px</p>
+              <p className='typography medium'>Body/Text - Light 14px</p>
 
-              <p className=''>Subtitle/Text - Medium 12px</p>
-              <p className=''>Subtitle/Text - Medium 12px</p>
+              <p className='typography medium12 bold'>Subtitle/Text - Medium 12px</p>
+
+              <p className='typography medium12'>Subtitle/Text - Medium 12px</p>
             </div>
           </TabPanel>
           <TabPanel>
