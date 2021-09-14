@@ -77,5 +77,4 @@ function Footer(props) {
     );
 }
 
-
 export default withRouter(Footer);
