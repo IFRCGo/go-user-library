@@ -91,7 +91,7 @@ const GetStarted = () => {
                         </p>
                         <br/><br/>
                         <Link
-                          href="/ui-components/breadcrumbs"
+                          href="/ui-components/alert"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the UI Components section"
