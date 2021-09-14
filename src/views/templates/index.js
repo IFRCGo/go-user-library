@@ -38,12 +38,11 @@ const Templates = () => {
             <div className="container-mid">
               <div className="about__resources">
                 <div className="about__resources__row row flex-mid">
-                  
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          Power BI Template - text 
+                          Power BI Template - text
                         </div>
                       </div>
                       <div className="box__global__content">
@@ -119,7 +118,7 @@ const Templates = () => {
               <div className="fold__header">
                 <div className="fold__header__block">
                   <h2 className="fold__title margin-reset">Presentations</h2>
-                </div>              
+                </div>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor. </p>
             </div>
