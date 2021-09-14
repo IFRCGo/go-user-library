@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/go-user-library/static/css/main.5fa37cfc.chunk.css",
-    "main.js": "/go-user-library/static/js/main.f3430522.chunk.js",
-    "main.js.map": "/go-user-library/static/js/main.f3430522.chunk.js.map",
+    "main.js": "/go-user-library/static/js/main.7c3f63d6.chunk.js",
+    "main.js.map": "/go-user-library/static/js/main.7c3f63d6.chunk.js.map",
     "runtime-main.js": "/go-user-library/static/js/runtime-main.746e71c1.js",
     "runtime-main.js.map": "/go-user-library/static/js/runtime-main.746e71c1.js.map",
     "static/css/2.0817ad80.chunk.css": "/go-user-library/static/css/2.0817ad80.chunk.css",
@@ -35,6 +35,6 @@
     "static/css/2.0817ad80.chunk.css",
     "static/js/2.f5516fd5.chunk.js",
     "static/css/main.5fa37cfc.chunk.css",
-    "static/js/main.f3430522.chunk.js"
+    "static/js/main.7c3f63d6.chunk.js"
   ]
 }
