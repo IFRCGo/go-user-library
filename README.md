@@ -138,7 +138,7 @@ This contains all the files that are compiled and ready to be deployed. The fold
 The source-code is implemented on the page, not on the components files. 
 
 ## Homepage
-the homepage is inside the get started fplder: src/views/get-started
+the homepage is inside the get started folder: src/views/get-started
 
 ## TODO
 Node version:
