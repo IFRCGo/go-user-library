@@ -34,7 +34,7 @@ const GetStarted = () => {
                     </p>
                     <div className="inner spacing-t">
                       <LinkButton
-                        href="/brand-design/Colours"
+                        href="/go-user-library/brand-design/Colours"
                         classSize="small"
                         classType="home-filled"
                         name="Learn More"
@@ -69,7 +69,7 @@ const GetStarted = () => {
                         </p>
                         <br/><br/>
                         <Link
-                          href="/brand-design/Colours"
+                          href="/go-user-library/brand-design/Colours"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Brand & Design Guidelines section"
@@ -91,7 +91,7 @@ const GetStarted = () => {
                         </p>
                         <br/><br/>
                         <Link
-                          href="/ui-components/alert"
+                          href="/go-user-library/ui-components/alert"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the UI Components section"
@@ -113,7 +113,7 @@ const GetStarted = () => {
                         <p>Access the guidelines for maps and infographics across the platform. Here you can also discover the guidance on how to use the GO API.</p>
                         <br/><br/>
                         <Link
-                          href="/data/goapi"
+                          href="/go-user-library/data/goapi"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Data Viz section"
@@ -130,7 +130,7 @@ const GetStarted = () => {
                         <p>Download various IFRC templates in use for emergency operations such as reports, presentations, and others.</p>
                         <br/><br/>
                         <Link
-                          href="/templates"
+                          href="/go-user-library/templates"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Templates section"
@@ -153,7 +153,7 @@ const GetStarted = () => {
               <ul className="logo__list row-lg flex-sm">
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.org/"
+                    href="https://www.redcross.org/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -166,7 +166,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.org.uk/"
+                    href="https://www.redcross.org.uk/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -179,7 +179,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.jrc.or.jp/english/"
+                    href="https://www.jrc.or.jp/english/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -192,7 +192,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.ca/"
+                    href="https://www.redcross.ca/"
                     target="_blank"
                     rel="noreferrer"
                   >
