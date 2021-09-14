@@ -34,7 +34,7 @@ const GetStarted = () => {
                     </p>
                     <div className="inner spacing-t">
                       <LinkButton
-                        href="https://ifrcgo.org/go-user-library/brand-design/Colours"
+                        href="/brand-design/Colours"
                         classSize="small"
                         classType="home-filled"
                         name="Learn More"
@@ -69,7 +69,7 @@ const GetStarted = () => {
                         </p>
                         <br/><br/>
                         <Link
-                          href="https://ifrcgo.org/go-user-library/brand-design/Colours"
+                          href="/brand-design/Colours"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Brand & Design Guidelines section"
@@ -91,7 +91,7 @@ const GetStarted = () => {
                         </p>
                         <br/><br/>
                         <Link
-                          href="https://ifrcgo.org/go-user-library/ui-components/alert"
+                          href="/ui-components/alert"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the UI Components section"
@@ -113,7 +113,7 @@ const GetStarted = () => {
                         <p>Access the guidelines for maps and infographics across the platform. Here you can also discover the guidance on how to use the GO API.</p>
                         <br/><br/>
                         <Link
-                          href="https://ifrcgo.org/go-user-library/data/goapi"
+                          href="/data/goapi"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Data Viz section"
@@ -130,7 +130,7 @@ const GetStarted = () => {
                         <p>Download various IFRC templates in use for emergency operations such as reports, presentations, and others.</p>
                         <br/><br/>
                         <Link
-                          href="https://ifrcgo.org/go-user-library/templates"
+                          href="/templates"
                           icon="chevron-right"
                           class="link--with-icon"
                           name="Explore the Templates section"
