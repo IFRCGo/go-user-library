@@ -229,7 +229,7 @@ export const ListData = {
                     },
                     {
                         name: 'Other Resources',
-                        link: '/about'
+                        link: 'https://go.ifrc.org/about'
                     },
                 ]
             },
