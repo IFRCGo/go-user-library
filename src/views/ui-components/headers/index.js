@@ -3,8 +3,10 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 import Code from "./../../../hoc/source-code";
 import Alert from "../alert/alert";
+import Sections from "./sections";
 import Headers from "../../../components/headers";
 import DataOne from "./dataOne";
+import DataTwo from "./dataTwo";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <Headers
@@ -97,18 +99,14 @@ const HeadersPage = () => {
           <div className="fold__body">
             <div className="container-mid">
               <Tabs>
-                {/*<TabList>
+                <TabList>
                   <Tab>Example</Tab>
                   <Tab>Code</Tab>
-                </TabList>*/}
+                </TabList>
 
                 <TabPanel>
-                  <Alert
-                    id="1"
-                    option="primary"
-                    type="info"
-                    text="Coming soon"
-                    autoDismiss="0"
+                  <Sections
+                      data={DataTwo.data.sectionOne}
                   />
                 </TabPanel>
                 <TabPanel>
@@ -139,19 +137,34 @@ const HeadersPage = () => {
         
           <div className="fold__body">
             <div className="container-mid">
+
               <Tabs>
-                {/*<TabList>
+                <TabList>
                   <Tab>Example</Tab>
                   <Tab>Code</Tab>
-                </TabList>*/}
+                </TabList>
 
                 <TabPanel>
-                  <Alert
-                    id="1"
-                    option="primary"
-                    type="info"
-                    text="Coming soon"
-                    autoDismiss="0"
+
+                  <Sections
+                      data={DataTwo.data.sectionTwo}
+                  />
+
+                </TabPanel>
+                <TabPanel>
+                  <Code source={`${htmlString}`} />
+                </TabPanel>
+              </Tabs>
+
+              <Tabs>
+                <TabList>
+                  <Tab>Example</Tab>
+                  <Tab>Code</Tab>
+                </TabList>
+
+                <TabPanel>
+                  <Sections
+                      data={DataTwo.data.sectionThree}
                   />
                 </TabPanel>
                 <TabPanel>

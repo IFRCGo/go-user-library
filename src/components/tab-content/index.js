@@ -5,7 +5,7 @@ import {PropTypes as T} from 'prop-types';
 const TabsContent = (props) => {
 
     return (
-        <div>
+        <div className={props.tabs.align}>
             <h3>{props.tabs.name}</h3>
             <Tabs className={props.tabs.type}>
                 <TabList>
