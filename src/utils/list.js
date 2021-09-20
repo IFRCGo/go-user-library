@@ -246,7 +246,7 @@ export const ListData = {
                 list:[
                     {
                         type: 'f-icon-medium footer-social-icon',
-                        link: 'im@ifrc.org'
+                        link: 'https://ifrc.medium.com'
                     },
                     {
                         type: 'f-icon-facebook  footer-social-icon',

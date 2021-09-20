@@ -1,11 +1,9 @@
 import React from "react";
-import {Link, NavLink, withRouter} from "react-router-dom";
-import {ListData} from "../utils/list";
-import Logo from "../assets/graphics/layout/go-logo-2020.svg";
+// import {Link, withRouter} from "react-router-dom";
 
 function Footer(props) {
     const data = props.lineItems.col;
-    const copyright = props.lineItems.copyright;
+    // const copyright = props.lineItems.copyright;
     return (
         <footer className="page__footer" role="contentinfo">
             <div className="container-lg">
@@ -28,13 +26,10 @@ function Footer(props) {
                                 {item.type === 'list' ? (
                                     <div className="base-font-medium">
                                         {item.list.map((list, i) => (
-                                            <span className="">
-                                              <Link
-                                                  to={list.link}
-                                                  title={list.name}
-                                                  className="footer-section-link">
-                                                    {list.name}
-                                                </Link>
+                                            <span className="footer-section-link">
+                                              <a href={list.link}> {/* github.com/remix-run/react-router/issues/1147#issuecomment-113180174 */}
+                                                {list.name}
+                                              </a>
                                           </span>
                                         ))}
                                     </div>
@@ -77,4 +72,4 @@ function Footer(props) {
     );
 }
 
-export default withRouter(Footer);
+export default Footer;
