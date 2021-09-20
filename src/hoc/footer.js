@@ -1,5 +1,5 @@
 import React from "react";
-// import {Link, withRouter} from "react-router-dom";
+import {withRouter} from "react-router-dom";
 
 function Footer(props) {
     const data = props.lineItems.col;
@@ -72,4 +72,4 @@ function Footer(props) {
     );
 }
 
-export default Footer;
+export default withRouter(Footer);
