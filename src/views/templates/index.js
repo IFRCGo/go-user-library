@@ -56,7 +56,7 @@ const Templates = () => {
                 </div>
               <br/>
               <p>
-                There is currently one managed style that is kept up-to-date with the data on GO for country (admin 0) and district (admin 1). By styling across zoom levels, the aim is that one style meets all use cases. Explore the style below or you can use this preview link to view in full screen.
+                There is currently one managed style that is kept up-to-date with the data on GO for country (admin 0) and district (admin 1). By styling across zoom levels, the aim is that one style meets all use cases. Explore the style below or you can <a title="Mapbox preview" href="https://api.mapbox.com/styles/v1/go-ifrc/ckrfe16ru4c8718phmckdfjh0.html?fresh=true&title=view&access_token=pk.eyJ1IjoiZ28taWZyYyIsImEiOiJjamlybHUzNmMwZDUxM3Fwa215YjJ1dzk5In0.OhqEybDX303sHjHzq3nFYQ#1.86/14.69/14.13">use this preview link</a> to view in full screen.
               </p>
               <p>
                 Note: country labels do not appear until zoom level 1 (z1) to simplify the map when viewed at global scale.
@@ -89,7 +89,7 @@ const Templates = () => {
               <p>
                 Updates to the style will be drafted and the preview link shared on SIMS Slack and emailed to the Mapbox user group (**please sign up here if you'd like to receive these**). Users will then have an opportunity to feedback on the style changes before they are pushed live.
               </p>
-              <p>If you have any feedback or suggestions to improve the style, please email <b>im@ifrc.org</b>.</p>
+              <p>If you have any feedback or suggestions to improve the style, please email <b><a title="Email im@ifrc.org" href="mailto:im@ifrc.org">im@ifrc.org</a></b>.</p>
             </div>
           </div>
 
@@ -145,7 +145,7 @@ const Templates = () => {
                 Tilesets are the name used for datasets in Mapbox that are used to build the style. These include the data exported from GO, added from ICRC and from other sources such as OpenStreetMap.
               </p>
               <p>
-                You will need more detail about the Tilesets to be able to link to the data in Mapbox. For example, you might want to join your data to the Mapbox countries in order to [to create a choropleth map in PowerBI](https://docs.mapbox.com/help/tutorials/power-bi-choropleth-map/). 
+                You will need more detail about the Tilesets to be able to link to the data in Mapbox. For example, you might want to join your data to the Mapbox countries in order to <a title="Mapbox PowerBI choropleth" href="https://docs.mapbox.com/help/tutorials/power-bi-choropleth-map/">to create a choropleth map in PowerBI.</a> 
               </p>
               <p>
                 Countries and districts are imported directly from GO. You can access the latest data from the API with the following link and view the data dictionary of the fields:
@@ -161,8 +161,8 @@ const Templates = () => {
                   <td>GO Countries</td>
                   <td><code>go-ifrc.go-countries</code></td>                
                   <td>Polygon</td>
-                  <td rowspan="2">Download CSV</td>
-                  <td rowspan="2">View data dictionary</td>
+                  <td rowspan="2"><a title="Countries CSV" href="https://goadmin.ifrc.org/api/v2/country/?format=csv&limit=500">Download CSV</a></td>
+                  <td rowspan="2"><a title="Countries data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565" target="_blank">View data dictionary</a></td>
                 </tr>
                 <tr>
                   <td>GO Country Centroids</td>
@@ -173,8 +173,8 @@ const Templates = () => {
                   <td>GO Districts 1</td>
                   <td><code>go-ifrc.go-country-centroids</code></td>
                   <td>Polygon</td>
-                  <td rowspan="2">Download CSV</td>
-                  <td rowspan="2">View data dictionary</td>
+                  <td rowspan="2"><a title="Districts CSV" href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000">Download CSV</a></td>
+                  <td rowspan="2"><a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank">View data dictionary</a></td>
                 </tr>
                 <tr>
                   <td>GO District Centroids</td>
