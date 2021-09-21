@@ -1,10 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import Button from "../../../components/button";
+// import {Link} from "react-router-dom";
+// import Button from "../../../components/button";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
-import DREF from "../../../assets/graphics/layout/logo-dref.svg";
+// import DREF from "../../../assets/graphics/layout/logo-dref.svg";
 import Icon from "../../../assets/graphics/layout/logo-icon.svg";
 import GoIcon from "../../../assets/graphics/layout/go-logo-2020.svg";
 

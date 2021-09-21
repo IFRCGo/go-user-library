@@ -1,12 +1,11 @@
 import React from 'react'
 import {useTable, useSortBy} from 'react-table'
-
-import makeData from '../../utils/makeData'
+// import makeData from '../../utils/makeData'
 
 function Table({columns, data}) {
     // Use the state and functions returned from useTable to build your UI
     const {
-        getTableProps,
+//      getTableProps,
         getTableBodyProps,
         headerGroups,
         footerGroups,
@@ -79,7 +78,7 @@ function Table({columns, data}) {
 
 function DisplayTable(props) {
 
-    const type = props.type;
+//  const type = props.type;
     let columns = props.columns;
     let rows = props.rows;
 

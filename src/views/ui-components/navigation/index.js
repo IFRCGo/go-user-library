@@ -1,29 +1,29 @@
 import React from "react";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
-import ReactDOMServer from "react-dom/server";
+// import ReactDOMServer from "react-dom/server";
 
 import Code from "./../../../hoc/source-code";
-import Alert from "../alert/alert";
+// import Alert from "../alert/alert";
 
 import Header from "../../../hoc/header";
 import Footer from "../../../hoc/footer";
 import {ListData} from "../../../utils/list";
 
-const htmlString = ReactDOMServer.renderToStaticMarkup(
-  <div className="navigation__block">
-    <span>
-      <span>
-        <a className="navigation" order="1" href="/get-started">
-          Home
-        </a>
-        <span className="navigation__next"> &gt; </span>
-      </span>
-      <b order="0" to="/ui-components/buttons" className="navigation">
-        Navigation
-      </b>
-    </span>
-  </div>
-);
+// const htmlString = ReactDOMServer.renderToStaticMarkup(
+//   <div className="navigation__block">
+//     <span>
+//       <span>
+//         <a className="navigation" order="1" href="/get-started">
+//           Home
+//         </a>
+//         <span className="navigation__next"> &gt; </span>
+//       </span>
+//       <b order="0" to="/ui-components/buttons" className="navigation">
+//         Navigation
+//       </b>
+//     </span>
+//   </div>
+// );
 
 const NavigationsPage = () => {
   const menu = ListData;

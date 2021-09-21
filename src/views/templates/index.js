@@ -1,13 +1,13 @@
 import React from "react";
 
-import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
-import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
-import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
-import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
-import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
-import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
-import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
-import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
+// import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
+// import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
+// import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
+// import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
+// import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
+// import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
+// import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
+// import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 
 const Templates = () => {
   return (
