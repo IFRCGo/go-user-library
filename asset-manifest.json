@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/go-user-library/static/css/main.5fa37cfc.chunk.css",
-    "main.js": "/go-user-library/static/js/main.06d9d602.chunk.js",
-    "main.js.map": "/go-user-library/static/js/main.06d9d602.chunk.js.map",
+    "main.css": "/go-user-library/static/css/main.0772f98d.chunk.css",
+    "main.js": "/go-user-library/static/js/main.4516a491.chunk.js",
+    "main.js.map": "/go-user-library/static/js/main.4516a491.chunk.js.map",
     "runtime-main.js": "/go-user-library/static/js/runtime-main.746e71c1.js",
     "runtime-main.js.map": "/go-user-library/static/js/runtime-main.746e71c1.js.map",
     "static/css/2.0817ad80.chunk.css": "/go-user-library/static/css/2.0817ad80.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.43058e74.chunk.js.map": "/go-user-library/static/js/2.43058e74.chunk.js.map",
     "index.html": "/go-user-library/index.html",
     "static/css/2.0817ad80.chunk.css.map": "/go-user-library/static/css/2.0817ad80.chunk.css.map",
-    "static/css/main.5fa37cfc.chunk.css.map": "/go-user-library/static/css/main.5fa37cfc.chunk.css.map",
+    "static/css/main.0772f98d.chunk.css.map": "/go-user-library/static/css/main.0772f98d.chunk.css.map",
     "static/js/2.43058e74.chunk.js.LICENSE.txt": "/go-user-library/static/js/2.43058e74.chunk.js.LICENSE.txt",
     "static/media/aurc_logo.1953d658.jpg": "/go-user-library/static/media/aurc_logo.1953d658.jpg",
     "static/media/main.scss": "/go-user-library/static/media/x-thin.1b5dbf5a.svg",
@@ -18,11 +18,13 @@
     "static/media/create new.2be03728.png": "/go-user-library/static/media/create new.2be03728.png",
     "static/media/emergency-brand.b9954477.svg": "/go-user-library/static/media/emergency-brand.b9954477.svg",
     "static/media/example1_powerbi_api.c5b05eb7.png": "/go-user-library/static/media/example1_powerbi_api.c5b05eb7.png",
+    "static/media/favicon.c080b647.ico": "/go-user-library/static/media/favicon.c080b647.ico",
     "static/media/funding-coverage.63b5d26e.svg": "/go-user-library/static/media/funding-coverage.63b5d26e.svg",
     "static/media/funding-requirements.0d0083c0.svg": "/go-user-library/static/media/funding-requirements.0d0083c0.svg",
     "static/media/go token generator 2.b0677259.png": "/go-user-library/static/media/go token generator 2.b0677259.png",
     "static/media/go token generator.388274ee.png": "/go-user-library/static/media/go token generator.388274ee.png",
     "static/media/go-logo-2020.2b68182f.svg": "/go-user-library/static/media/go-logo-2020.2b68182f.svg",
+    "static/media/ifrc_logo_2020.2463e384.svg": "/go-user-library/static/media/ifrc_logo_2020.2463e384.svg",
     "static/media/laptop.54818dce.png": "/go-user-library/static/media/laptop.54818dce.png",
     "static/media/logo-appeals.444c0497.svg": "/go-user-library/static/media/logo-appeals.444c0497.svg",
     "static/media/logo-dref.c435d1a9.svg": "/go-user-library/static/media/logo-dref.c435d1a9.svg",
@@ -34,7 +36,7 @@
     "static/js/runtime-main.746e71c1.js",
     "static/css/2.0817ad80.chunk.css",
     "static/js/2.43058e74.chunk.js",
-    "static/css/main.5fa37cfc.chunk.css",
-    "static/js/main.06d9d602.chunk.js"
+    "static/css/main.0772f98d.chunk.css",
+    "static/js/main.4516a491.chunk.js"
   ]
 }
