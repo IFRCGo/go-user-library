@@ -6,21 +6,21 @@ import Code from "./../../../hoc/source-code";
 import ApexChart from "./apexchart";
 import ChartData from "./list.js"
 
-const htmlString = ReactDOMServer.renderToStaticMarkup(
-  <div className="graphs__block">
-    <span>
-      <span>
-        <a className="graphs" order="1" href="/get-started">
-          Home
-        </a>
-        <span className="graphs__next"> &gt; </span>
-      </span>
-      <b order="0" to="/ui-components/graphs" className="graphs">
-        Graphs
-      </b>
-    </span>
-  </div>
-);
+// const htmlString = ReactDOMServer.renderToStaticMarkup(
+//   <div className="graphs__block">
+//     <span>
+//       <span>
+//         <a className="graphs" order="1" href="/get-started">
+//           Home
+//         </a>
+//         <span className="graphs__next"> &gt; </span>
+//       </span>
+//       <b order="0" to="/ui-components/graphs" className="graphs">
+//         Graphs
+//       </b>
+//     </span>
+//   </div>
+// );
 
 function sourceData(data) {
   const AlertString = ReactDOMServer.renderToStaticMarkup(

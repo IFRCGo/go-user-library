@@ -61,7 +61,7 @@ function Header(props) {
                                                 </Link>
                                             ) : null}
                                             {item.type === 'dropdown' ? (
-                                                <DropdownButton id="dropdown-basic-button" title="language" id='header-dropdown-lang'>
+                                                <DropdownButton title="language" id='header-dropdown-lang'>
                                                     {item.dropdown.map((item, i) => (
                                                         <Dropdown.Item href={item.name}>{item.name}</Dropdown.Item>
                                                     ))}

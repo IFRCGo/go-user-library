@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React /*, { useContext } */ from 'react';
 // import c from 'classnames';
-import { percent, shortenLargeNumber } from '../common/format';
+import { percent /* , shortenLargeNumber */ } from '../common/format';
 // import BlockLoading from '#components/block-loading';
 import { PropTypes as T } from 'prop-types';
 import Tooltip from '../tooltip';
@@ -40,10 +40,10 @@ export default function KeyFiguresHeader (props) {
     const {
         data: {
             stats
-        } = {},
-        fetched,
+        } = {}
+        // fetched,
         // fetching,
-        error
+        // error
     } = props.appealsListStats;
 
     // const { strings } = useContext(LanguageContext);
@@ -84,7 +84,7 @@ export default function KeyFiguresHeader (props) {
         return Object.keys(stats).map(stat => {
             let value = stats[stat];
             // Applies common util to long numbers
-            const statsToShorten = ['budget', 'targetPop', 'amountFunded', 'amountRequested', ''];
+            // const statsToShorten = ['budget', 'targetPop', 'amountFunded', 'amountRequested', ''];
             // if (statsToShorten.includes(stat)) {
             //     value = value;
             // }
@@ -117,7 +117,7 @@ export default function KeyFiguresHeader (props) {
                                 <div className='sumstats__item'>
                                     {/* <span className={c(`${keyFigure.icon}`, 'sumstats__icon')}></span> */}
                                     <span className='sumstats__icon_wrapper'>
-                    <img className='sumstats__icon_2020' src={keyFigure.icon} />
+                    <img alt='Key Figure' className='sumstats__icon_2020' src={keyFigure.icon} />
                   </span>
                                     <span className='sumstats__value'>{keyFigure.value}</span>
                                     <span className='sumstats__key'>

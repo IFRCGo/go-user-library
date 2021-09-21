@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Button from "../../../components/button";
+// import Button from "../../../components/button";
 import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
 import "./typography.scss";
-import Logo from "../../../assets/graphics/layout/go-logo-2020.svg";
+// import Logo from "../../../assets/graphics/layout/go-logo-2020.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <div>

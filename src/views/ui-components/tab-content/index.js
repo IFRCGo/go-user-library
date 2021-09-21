@@ -3,7 +3,7 @@ import ReactDOMServer from "react-dom/server";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import Code from "./../../../hoc/source-code";
 import TabsContent from "../../../components/tab-content";
-import ConfirmModal from "../../../components/modal";
+// import ConfirmModal from "../../../components/modal";
 
 const tabOne = {
     type: "primary",
