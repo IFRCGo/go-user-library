@@ -108,7 +108,7 @@ const GoApiPage = () => {
                         <li>In the window that pops up, click on <code>Request</code></li>
                       </ol>
                     </div>
-                    <p><img alt="image" src={CreateNew} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
+                    <p><img alt="some meaningful text" src={CreateNew} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
                     <div className="container-mid">
                       <ol start="3" className="container-mid">
                         <li>In the main window that appears, click <code>GET</code> and from the dropdown, select <code>POST</code></li>
@@ -120,12 +120,12 @@ const GoApiPage = () => {
                       </ol>
                     </div>
                     <p>
-                      <img alt="image" src={GoTokenGenerator} style={{width:'100%', maxWidth:'100%', height:'auto'}} />
+                      <img alt="other meaningful text" src={GoTokenGenerator} style={{width:'100%', maxWidth:'100%', height:'auto'}} />
                       </p>
                     <ol start="6">
                       <li>Click <code>Body</code>, then select <code>raw</code> from the menu below. The last element should say <code>JSON</code> - if not, select it. Then enter <code>{'{"username": "your-username", "password": "your-password"}'}</code>, changing where you see "your-username" and "your-password" to match the credentials you use to log into GO. Remember to keep quotes around all of those elements!</li>
                     </ol>
-                    <p><img alt="image" src={GoTokenGeneratorTwo} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
+                    <p><img alt="the last text" src={GoTokenGeneratorTwo} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
                     <div className="container-mid">
                       <ol start="7" className="container-mid">
                         <li>Click <code>Send</code> at the top right. If everything was entered correctly, you should get a response from the server with the following:</li>
@@ -1147,7 +1147,7 @@ const GoApiPage = () => {
               </AccordionItem>
           </Accordion>
           <div className="fold">
-            <p><strong><a href="https://goadmin.ifrc.org/docs/" target="_blank"><span class="icon-demo f-icon-pages"></span>Documentation</a></strong></p>
+            <p><strong><a href="https://goadmin.ifrc.org/docs/" target="_blank" rel="noreferrer"><span class="icon-demo f-icon-pages"></span>Documentation</a></strong></p>
           </div>
         </div>
       </div>

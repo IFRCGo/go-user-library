@@ -16,7 +16,7 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
           <th colSpan={1} role="columnheader" style={{cursor: 'pointer'}} title="Toggle SortBy">Label<span /></th>
         </tr>
       </thead>
-      <tbody role="rowgroup">
+      <tbody>
         <tr role="row">
           <td role="cell">1</td>
           <td role="cell">1</td>
@@ -47,7 +47,7 @@ const tableTwo = ReactDOMServer.renderToStaticMarkup(
           <th colSpan={1} role="columnheader" style={{cursor: 'pointer'}} title="Toggle SortBy">Funding Coverage<span /></th>
         </tr>
       </thead>
-      <tbody role="rowgroup">
+      <tbody>
         <tr role="row">
           <td role="cell">2018-09-18</td>
           <td role="cell">DREF</td>

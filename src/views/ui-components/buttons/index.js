@@ -4,7 +4,7 @@ import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 
 import Button from "../../../components/button";
 import Dropdown from 'react-bootstrap/Dropdown'
-import DropdownButton from 'react-bootstrap/DropdownButton';
+// import DropdownButton from 'react-bootstrap/DropdownButton';
 import Code from "./../../../hoc/source-code";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
