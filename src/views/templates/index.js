@@ -8,6 +8,8 @@ import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
 import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
 import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
 import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
+import MapboxDiagram from "./../../assets/graphics/content/Mapbox-data-flow.png"
+
 
 const Templates = () => {
   return (
@@ -17,7 +19,7 @@ const Templates = () => {
           <div className="">
             <div className="inpage__headline">
               <h1 className="inpage__title inpage__title--home container-lg">
-                Templates
+                Maps
               </h1>
             </div>
           </div>
@@ -28,28 +30,87 @@ const Templates = () => {
           <div className="container-mid">
             <div>
               <div className="fold__header__block">
-                <h2 className="fold__title margin-reset">Power BI and Tableau Colour Templates</h2>
+                <h2 className="fold__title margin-reset">Mapbox</h2>
               </div>
             </div><br/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor.</p>
+            <p>
+              We use Mapbox to host base maps that are used on GO and available for any mapping application across the Movement. The purpose is to provide consistent styling that also meets the IFRC standards for country names and boundaries.
+            </p>
+            <p>
+              The IFRC Mapbox basemap can be used in other applications to add additional data on top, for example in web maps, PowerBI and Tableau. The basic information you will need for any application is the style URL and token:
+            </p>
+            <p>
+              <b>Style URL</b><br/>
+              <code>mapbox://styles/go-ifrc/ckrfe16ru4c8718phmckdfjh0</code><br/>
+            </p>
+            <p>
+              <b>Access token</b><br/>
+              <code>pk.eyJ1IjoiZ28taWZyYyIsImEiOiJja3E2bGdvb3QwaXM5MnZtbXN2eGtmaWgwIn0.llipq3Spc_PPA2bLjPwIPQ</code><br/>
+            </p>
           </div>
 
-          <section className="about__resources__block">
-            <div className="container-mid">
+          <div className="container-mid">
+            <div className="fold">
+                <div className="fold__header__block">
+                  <h2 className="fold__title margin-reset">IFRC Basemap Style</h2>
+                </div>
+              <br/>
+              <p>
+                There is currently one managed style that is kept up-to-date with the data on GO for country (admin 0) and district (admin 1). By styling across zoom levels, the aim is that one style meets all use cases. Explore the style below or you can use this preview link to view in full screen.
+              </p>
+              <p>
+                Note: country labels do not appear until zoom level 1 (z1) to simplify the map when viewed at global scale.
+              </p><br/>
+              <iframe
+                src="https://api.mapbox.com/styles/v1/go-ifrc/ckrfe16ru4c8718phmckdfjh0.html?fresh=true&title=view&access_token=pk.eyJ1IjoiZ28taWZyYyIsImEiOiJjamlybHUzNmMwZDUxM3Fwa215YjJ1dzk5In0.OhqEybDX303sHjHzq3nFYQ#1.86/14.69/14.13"
+                width='100%'
+                height= '500em'
+              />
+              <br/>
+            </div>
+          </div>
+
+          <div className="container-mid">
+            <div>
+              <div className="fold__header__block">
+                <h2 className="fold__title margin-reset">Style updates</h2>
+              </div>
+              <br/>
+              <p>
+                The style will frequently be updated and any application using the styles will automatically reflect any changes. The main reason for changes are:
+              </p>
+              <div className="container-mid">
+                <ul className="container-mid">
+                  <li>Updates to the data on GO - e.g. country name or admin 1 boundaries</li>
+                  <li>Bugs or style improvements - e.g. making borders clearer</li>
+                  <li>Adding new features - e.g. waterways, cities, roads</li>
+                </ul>
+              </div>
+              <p>
+                Updates to the style will be drafted and the preview link shared on SIMS Slack and emailed to the Mapbox user group (**please sign up here if you'd like to receive these**). Users will then have an opportunity to feedback on the style changes before they are pushed live.
+              </p>
+              <p>If you have any feedback or suggestions to improve the style, please email <b>im@ifrc.org</b>.</p>
+            </div>
+          </div>
+
+          <div className="container-mid">
+            <div className="fold">
+              <div className="fold__header__block">
+                <h2 className="fold__title margin-reset">Templates and instructions</h2>
+              </div>
+              <br/>
               <div className="about__resources">
                 <div className="about__resources__row row flex-mid">
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          Power BI Template - text
+                          Power BI - COMING SOON
                         </div>
                       </div>
                       <div className="box__global__content">
                         <p>
-                          Here you can find visual guidelines for IFRC and the
-                          GO platform, including design building blocks, such as
-                          colors, typography, logo, icons, and others.
+                          Here you can find a template and instructions for using the Mapbox plugin in PowerBI. The template includes a basic point map and choropleth map so that you can see how it is setup and apply this to your own projects.
                         </p>
                       </div>
                     </div>
@@ -59,73 +120,86 @@ const Templates = () => {
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          Tableau Template - text
+                          Tableau - CAN YOU HELP CREATE THIS?
                         </div>
                       </div>
                       <div className="box__global__content">
                         <p>
-                          This section outlines the specific UI components (such
-                          as headers, navigation, forms, and others) that form
-                          IFRC GO. Each component includes design and
-                          development specifications.
+                          We're looking to provide a template and instructions to use Mapbox in Tableau. Can you help us create this documentation? If so, please email im@ifrc.org.
                         </p>
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
-          </section>
+          </div>
 
           <div className="container-mid">
             <div>
-              <div className="fold__header__block">
-                <h2 className="fold__title margin-reset">Emergency Response Dashboard Template (Power BI)</h2>
-              </div>
-            </div>
-            <br/>
-            <p>A dashboard to show the key elements of an Emergency operation. The dashboard includes the following sections and content: </p>
-            <br/>
-            <p class="poppins_16 font_weight_500">Section 1:</p>
-            <p>Overview tab with</p>
-            <ol className="container-mid">
-              <li>Situation overview</li>
-              <li>Key figures (people affected, appeal amount and funding received) </li>
-              <li>Map of affected areas</li>
-            </ol>
-
-            <p class="poppins_16 font_weight_500">Section 2:</p>
-            <p>3W of RCRC NS supporting the emergency response, showing number of activities by sector and number of activities by RCRC actors. </p>
-
-            <p class="poppins_16 font_weight_500">Section 3:</p>
-            <p>HAC data - desegregated figures of number of people affected, figures on impact of the disaster.</p>
-
-            <p class="poppins_16 font_weight_500">Section 4:</p>
-            <p>Funding</p>
-            <ol className="container-mid">
-              <li>Total funding desegregated by Soft, Hard Pledges and Bilateral support.</li>
-              <li>Funding by donors.</li>
-            </ol>
-
-            <p class="poppins_16 font_weight_500">Section 5:</p>
-            <p>Aid distribution tracker (items distributed by distributions site), target HH by geographical area.</p>
-
-            <p class="poppins_16 font_weight_500">Section 6:</p>
-            <p>SDR (Secondary Data Review) tab</p>
-
-            <div className="fold">
-              <div className="fold__header">
                 <div className="fold__header__block">
-                  <h2 className="fold__title margin-reset">Presentations</h2>
+                  <h2 className="fold__title margin-reset">Tileset data</h2>
                 </div>
+              <br/>
+              <p>
+                Tilesets are the name used for datasets in Mapbox that are used to build the style. These include the data exported from GO, added from ICRC and from other sources such as OpenStreetMap.
+              </p>
+              <p>
+                You will need more detail about the Tilesets to be able to link to the data in Mapbox. For example, you might want to join your data to the Mapbox countries in order to [to create a choropleth map in PowerBI](https://docs.mapbox.com/help/tutorials/power-bi-choropleth-map/). 
+              </p>
+              <p>
+                Countries and districts are imported directly from GO. You can access the latest data from the API with the following link and view the data dictionary of the fields:
+              </p>
+              <table>
+                <tr>
+                  <th>Mapbox name</th>
+                  <th>Tileset ID</th>
+                  <th>Type</th>
+                  <th colspan="2">Data details</th>
+                </tr>
+                <tr>
+                  <td>GO Countries</td>
+                  <td><code>go-ifrc.go-countries</code></td>                
+                  <td>Polygon</td>
+                  <td rowspan="2">Download CSV</td>
+                  <td rowspan="2">View data dictionary</td>
+                </tr>
+                <tr>
+                  <td>GO Country Centroids</td>
+                  <td><code>go-ifrc.go-country-centroids</code></td>
+                  <td>Point</td>
+                </tr>
+                <tr>
+                  <td>GO Districts 1</td>
+                  <td><code>go-ifrc.go-country-centroids</code></td>
+                  <td>Polygon</td>
+                  <td rowspan="2">Download CSV</td>
+                  <td rowspan="2">View data dictionary</td>
+                </tr>
+                <tr>
+                  <td>GO District Centroids</td>
+                  <td><code>go-ifrc.go-country-centroids</code></td>
+                  <td>Point</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div className="container-mid">
+            <div className="fold">
+              <div className="fold__header__block">
+                <h2 className="fold__title margin-reset">Setup</h2>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor. </p>
+              <br/>
+              <p>
+                The diagram below shows the data flow and processes from source files, to GO and then to Mapbox. 
+              </p>
+              <p><img alt="image" src={MapboxDiagram} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
             </div>
           </div>
 
         </div>
-      </section>
+        </section>
     </div>
   );
 };
