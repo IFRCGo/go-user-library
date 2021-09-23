@@ -77,7 +77,7 @@ class Alert extends React.Component {
                             {this.state.isHidden && (
                                 <div className={cl + ' ' + this.props.option + ' ' + this.props.type} role='alert'>
 
-                                {this.props.option != "banner" ?
+                                {this.props.option !== "banner" ?
                                     <button className='alert__button-dismiss' title={strings.alertDismissTitle}
                                             onClick={this.onDismissAlert}>
                                                 <span>

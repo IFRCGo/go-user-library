@@ -2,7 +2,6 @@ import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 import Code from "./../../../hoc/source-code";
-import Alert from "../alert/alert";
 import Sections from "./sections";
 import Headers from "../../../components/headers";
 import DataOne from "./dataOne";

@@ -14,9 +14,9 @@ class Sections extends React.Component {
     render() {
 
         const backLink = this.state.backLink;
-        const center = false;
-        const columns = 'twoColumn';
-        const sections = 'fold__center'
+        this.center = false;
+        this.columns = 'twoColumn';
+        this.sections = 'fold__center'
         if (backLink) {
             this.center = 'center';
         }
