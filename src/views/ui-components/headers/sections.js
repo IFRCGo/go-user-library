@@ -83,20 +83,9 @@ export default Sections;
 Sections.contextType = LanguageContext;
 
 Sections.propTypes = {
-    option: T.string
-    ,
-    type: T.string
-    ,
-    autoDismiss: T.string
-    ,
-    popover: T.bool
-    ,
-    children: T.node
-    ,
-    text: T.string
-    ,
-    _hide: T.func
-    ,
+    backLink: T.string,
+    title: T.string,
+    description: T.string,
+    right: T.string,
+    list: T.string,
 }
-
-;
