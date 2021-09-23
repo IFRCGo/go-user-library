@@ -1,13 +1,13 @@
 import React from "react";
 
-import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
-import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
-import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
-import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
-import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
-import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
-import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
-import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
+// import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
+// import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
+// import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
+// import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
+// import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
+// import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
+// import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
+// import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 
 const Templates = () => {
   return (
@@ -38,12 +38,11 @@ const Templates = () => {
             <div className="container-mid">
               <div className="about__resources">
                 <div className="about__resources__row row flex-mid">
-                  
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          Power BI Template - text 
+                          Power BI Template - text
                         </div>
                       </div>
                       <div className="box__global__content">
@@ -119,7 +118,7 @@ const Templates = () => {
               <div className="fold__header">
                 <div className="fold__header__block">
                   <h2 className="fold__title margin-reset">Presentations</h2>
-                </div>              
+                </div>
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor. </p>
             </div>

@@ -116,6 +116,7 @@ temp
 tmp
 .tmp
 dist
+.zshrc
 
 ################################################
 # Node Package Manager

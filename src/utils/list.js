@@ -1,5 +1,5 @@
-import {MenuItem} from "react-bootstrap-dropdown-menu";
-import React from "react";
+// import {MenuItem} from "react-bootstrap-dropdown-menu";
+// import React from "react";
 
 export const ListData = {
     "header": {
@@ -229,7 +229,7 @@ export const ListData = {
                     },
                     {
                         name: 'Other Resources',
-                        link: '/about'
+                        link: 'https://go.ifrc.org/about'
                     },
                 ]
             },
@@ -246,7 +246,7 @@ export const ListData = {
                 list:[
                     {
                         type: 'f-icon-medium footer-social-icon',
-                        link: 'im@ifrc.org'
+                        link: 'https://ifrc.medium.com'
                     },
                     {
                         type: 'f-icon-facebook  footer-social-icon',

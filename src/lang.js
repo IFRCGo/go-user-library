@@ -1,4 +1,4 @@
-export default {
+const texts = {
     rcActivities: 'Red Cross / Red Crescent Activities',
     langSelectLabel: 'Language: {currentLanguage}',
 
@@ -1479,3 +1479,4 @@ export default {
     searchSelectTypeToSearch: 'Type to search',
     searchSelectNoOptionsAvailable: 'No options available',
 };
+export default texts;

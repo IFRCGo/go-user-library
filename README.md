@@ -65,7 +65,7 @@ This creates the Build folder
 ```   
 The deployment will deploy to Github pages here: 
 
-https://ifrcgo.org/GO-UI-Library/ 
+https://ifrcgo.org/go-user-library/ 
 For Production deployments a release should be created inside release/ folder and then that release (ex 4.0.1) should have a PR against the Master branch.  
 
 ## Important Deployment note!!! 
@@ -138,7 +138,7 @@ This contains all the files that are compiled and ready to be deployed. The fold
 The source-code is implemented on the page, not on the components files. 
 
 ## Homepage
-the homepage is inside the get started fplder: src/views/get-started
+the homepage is inside the get started folder: src/views/get-started
 
 ## TODO
 Node version:
