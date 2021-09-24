@@ -153,7 +153,7 @@ const GetStarted = () => {
               <ul className="logo__list row-lg flex-sm">
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.org/"
+                    href="https://www.redcross.org/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -166,7 +166,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.org.uk/"
+                    href="https://www.redcross.org.uk/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -179,7 +179,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.jrc.or.jp/english/"
+                    href="https://www.jrc.or.jp/english/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -192,7 +192,7 @@ const GetStarted = () => {
                 </li>
                 <li className="logo__item col-lg col-6-xs col-4-sm col-3-mid">
                   <a
-                    href="http://www.redcross.ca/"
+                    href="https://www.redcross.ca/"
                     target="_blank"
                     rel="noreferrer"
                   >
