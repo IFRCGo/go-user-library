@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/go-user-library/static/css/main.0772f98d.chunk.css",
-    "main.js": "/go-user-library/static/js/main.4516a491.chunk.js",
-    "main.js.map": "/go-user-library/static/js/main.4516a491.chunk.js.map",
+    "main.css": "/go-user-library/static/css/main.6188d91d.chunk.css",
+    "main.js": "/go-user-library/static/js/main.a7353aad.chunk.js",
+    "main.js.map": "/go-user-library/static/js/main.a7353aad.chunk.js.map",
     "runtime-main.js": "/go-user-library/static/js/runtime-main.746e71c1.js",
     "runtime-main.js.map": "/go-user-library/static/js/runtime-main.746e71c1.js.map",
     "static/css/2.0817ad80.chunk.css": "/go-user-library/static/css/2.0817ad80.chunk.css",
@@ -10,15 +10,15 @@
     "static/js/2.43058e74.chunk.js.map": "/go-user-library/static/js/2.43058e74.chunk.js.map",
     "index.html": "/go-user-library/index.html",
     "static/css/2.0817ad80.chunk.css.map": "/go-user-library/static/css/2.0817ad80.chunk.css.map",
-    "static/css/main.0772f98d.chunk.css.map": "/go-user-library/static/css/main.0772f98d.chunk.css.map",
+    "static/css/main.6188d91d.chunk.css.map": "/go-user-library/static/css/main.6188d91d.chunk.css.map",
     "static/js/2.43058e74.chunk.js.LICENSE.txt": "/go-user-library/static/js/2.43058e74.chunk.js.LICENSE.txt",
+    "static/media/apple-touch-icon-114x114.e4367525.png": "/go-user-library/static/media/apple-touch-icon-114x114.e4367525.png",
     "static/media/aurc_logo.1953d658.jpg": "/go-user-library/static/media/aurc_logo.1953d658.jpg",
     "static/media/main.scss": "/go-user-library/static/media/x-thin.1b5dbf5a.svg",
     "static/media/brc_logo.929136f2.png": "/go-user-library/static/media/brc_logo.929136f2.png",
     "static/media/create new.2be03728.png": "/go-user-library/static/media/create new.2be03728.png",
     "static/media/emergency-brand.b9954477.svg": "/go-user-library/static/media/emergency-brand.b9954477.svg",
     "static/media/example1_powerbi_api.c5b05eb7.png": "/go-user-library/static/media/example1_powerbi_api.c5b05eb7.png",
-    "static/media/favicon.c080b647.ico": "/go-user-library/static/media/favicon.c080b647.ico",
     "static/media/funding-coverage.63b5d26e.svg": "/go-user-library/static/media/funding-coverage.63b5d26e.svg",
     "static/media/funding-requirements.0d0083c0.svg": "/go-user-library/static/media/funding-requirements.0d0083c0.svg",
     "static/media/go token generator 2.b0677259.png": "/go-user-library/static/media/go token generator 2.b0677259.png",
@@ -36,7 +36,7 @@
     "static/js/runtime-main.746e71c1.js",
     "static/css/2.0817ad80.chunk.css",
     "static/js/2.43058e74.chunk.js",
-    "static/css/main.0772f98d.chunk.css",
-    "static/js/main.4516a491.chunk.js"
+    "static/css/main.6188d91d.chunk.css",
+    "static/js/main.a7353aad.chunk.js"
   ]
 }
