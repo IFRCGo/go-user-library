@@ -177,6 +177,62 @@ li.links-list-design--2 {
   }
 }
 
+.fold__center {
+  /* Create three equal columns that floats next to each other */
+
+  width: 100%;
+
+  .twoColumn {
+    float: left;
+    width: 50%;
+    padding: 10px;
+  }
+
+  .threeColumn {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+  }
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .center {
+    text-align: center;
+  }
+
+  .right {
+    text-align: right;
+    text-align: right;
+  }
+
+  .fold__description {
+    margin-left: 10px;
+  }
+
+  .row.block {
+    border-bottom: 1px solid #c9c3c1;
+    padding-bottom: 12px;
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+}
+
+.fold__tabs {
+  width: 100%;
+  text-align: center;
+
+  .react-tabs {
+    &__tab-list {
+      justify-content: center !important;
+    }
+  }
+}
+
 .fold__title__linkwrap {  
   font-size: $font-size-sm;
   flex-shrink: 0;
