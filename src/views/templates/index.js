@@ -87,7 +87,7 @@ const Templates = () => {
                 </ul>
               </div>
               <p>
-                Updates to the style will be drafted and the preview link shared on SIMS Slack and emailed to the Mapbox user group (**please sign up here if you'd like to receive these**). Users will then have an opportunity to feedback on the style changes before they are pushed live.
+                Updates to the style will be drafted and the preview link shared on SIMS Slack and emailed to the Mapbox user group. Users will then have an opportunity to feedback on the style changes before they are pushed live. <b><a title="Mapbox signup" href="https://forms.office.com/Pages/ResponsePage.aspx?id=5Tu1ok5zbE6rDdGE9g_ZF8UfRpPFjdpDuqMSJeXmwA9UMElJTElON1VDTkg4REZHVVUzN1g5M0JOOSQlQCN0PWcu">Complete this form to join the Mapbox user group.</a></b>
               </p>
               <p>If you have any feedback or suggestions to improve the style, please email <b><a title="Email im@ifrc.org" href="mailto:im@ifrc.org">im@ifrc.org</a></b>.</p>
             </div>
