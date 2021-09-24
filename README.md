@@ -7,7 +7,7 @@ This React app contains the latest UI elements and design of the IFRC Go Platfor
 https://brcdigital.atlassian.net/wiki/spaces/IGUL/pages/1459486721/IFRC+Go+UI+Library+-+Brief
 
 ## GO-UI-Library
-https://ifrcgo.org/GO-UI-Library (Master Branch)
+https://go-user-library.ifrc.org (Master Branch)
 
 ## Design Guidelines
 https://www.figma.com/file/n2D5xvtXBZ9XCejRXeDeUq/IFRC-GO_UI-Library-%5Bshared%5D?node-id=752%3A6558
@@ -57,7 +57,7 @@ nvm use v14.17.0
 This creates the Build folder 
 
 
-## Deployment to Github pages 
+## Deployment to Github pages
 ``` 
 
     npm run deploy 
@@ -65,11 +65,11 @@ This creates the Build folder
 ```   
 The deployment will deploy to Github pages here: 
 
-https://ifrcgo.org/go-user-library/ 
+https://go-user-library.ifrc.org
 For Production deployments a release should be created inside release/ folder and then that release (ex 4.0.1) should have a PR against the Master branch.  
 
 ## Important Deployment note!!! 
-The homepage route in package.json needs to be “/GO-UI-Library” when we deploy to Github pages.    
+The homepage route in package.json needs to be “/” when we deploy to Github pages.    
 
 ## All dependencies defined in package.json  
 The SCSS is compiled into a main CSS file in the Public folder. 
