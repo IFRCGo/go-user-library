@@ -68,8 +68,8 @@ The deployment will deploy to Github pages here:
 https://go-user-library.ifrc.org
 For Production deployments a release should be created inside release/ folder and then that release (ex 4.0.1) should have a PR against the Master branch.  
 
-## Important Deployment note!!! 
-The homepage route in package.json needs to be “/” when we deploy to Github pages.
+## Important Deployment note
+Do not use homepage row in package.json when the domain name is the root.
 
 ## All dependencies defined in package.json  
 The SCSS is compiled into a main CSS file in the Public folder. 
