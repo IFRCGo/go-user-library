@@ -9,7 +9,7 @@ import React from "react";
 // import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
 // import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 
-const Templates = () => {
+const Maps = () => {
   return (
     <div className="page--homepage">
       <section className="inpage">
@@ -17,7 +17,7 @@ const Templates = () => {
           <div className="">
             <div className="inpage__headline">
               <h1 className="inpage__title inpage__title--home container-lg">
-                Templates
+                Maps
               </h1>
             </div>
           </div>
@@ -31,7 +31,7 @@ const Templates = () => {
                 <h2 className="fold__title margin-reset">Power BI and Tableau Colour Templates</h2>
               </div>
             </div><br/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor.</p>
+            <p>Hey, are you sure that this is the relevant content here? Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet leo vel nunc iaculis fermentum eget quis tortor.</p>
           </div>
 
           <section className="about__resources__block">
@@ -129,4 +129,4 @@ const Templates = () => {
     </div>
   );
 };
-export default Templates;
+export default Maps;

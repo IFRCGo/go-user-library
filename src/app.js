@@ -10,7 +10,7 @@ import PageLayout from "./hoc/page-layout";
 
 /** Views **/
 import GetStarted from "./views/get-started/";
-import Templates from "./views/templates/";
+import Maps from "./views/maps/";
 
 /** Pages **/
 /** UI Components **/
@@ -188,7 +188,7 @@ const App = () => (
                 component={MapPage}
             />
 
-            <AppRoute path="/templates" layout={PageLayout} component={Templates}/>
+            <AppRoute path="/maps" layout={PageLayout} component={Maps}/>
         </Switch>
     </Router>
 );

@@ -124,16 +124,16 @@ const GetStarted = () => {
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
-                        <div className="base-font-semi-bold">Templates</div>
+                        <div className="base-font-semi-bold">Maps</div>
                       </div>
                       <div className="box__global__content">
                         <p>Download various IFRC templates in use for emergency operations such as reports, presentations, and others.</p>
                         <br/><br/>
                         <Link
-                          href="/templates"
+                          href="/maps"
                           icon="chevron-right"
                           class="link--with-icon"
-                          name="Explore the Templates section"
+                          name="Explore the Maps section"
                         />
                       </div>
                     </div>
