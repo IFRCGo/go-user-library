@@ -27,8 +27,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: "/templates"
+                name: "Maps",
+                link: "/maps"
             }
         ],
         "login": false,
@@ -116,8 +116,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: '/GO-UI-Library/templates'
+                name: "Maps",
+                link: '/maps'
             },
             {
                 type: 'link',
@@ -141,8 +141,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: '/GO-UI-Library/templates'
+                name: "Maps",
+                link: '/maps'
             },
             {
                 type: 'user',
