@@ -1,8 +1,13 @@
 import React from "react";
-import { Tabs, TabPanel } from "react-tabs";
+import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
+
 import Code from "./../../../hoc/source-code";
 import Alert from "../alert/alert";
+
+import Search from "../../../assets/graphics/layout/search.svg";
+import Calendar from "../../../assets/graphics/layout/calendar.svg";
+import Arrow from "../../../assets/graphics/layout/arrow-dropdown.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <div className="filters__block">
@@ -44,13 +49,29 @@ const FiltersPage = () => {
               <Tabs>
                 <TabPanel>
                   <p className="poppins_16 font_weight_500">Filter for tables and maps</p>
-                  <Alert
-                      id='1'
-                      option='primary'
-                      type='info'
-                      text='Coming soon'
-                      autoDismiss='0'
-                  />
+                    <Tabs>
+                      <TabList>
+                        <Tab>Example</Tab>
+                        <Tab>Code</Tab>
+                      </TabList>
+                      <TabPanel>
+                        <p>
+                          <span>
+                            <img src={Search} alt="Search" className="icon-demo"/>
+                          </span>
+                          <span>
+                            <img src={Calendar} alt="Date" className="icon-demo"/>
+                          </span>
+                          <span>
+                            <img src={Arrow} alt="Select" className="icon-demo"/>
+                          </span>
+                          More coming soon...
+                        </p>
+                      </TabPanel>
+                      <TabPanel>
+                        <Code source="{sourceData(ChartData.line)}"/>
+                      </TabPanel>
+                    </Tabs>
                   <p className="poppins_16 font_weight_500">Filter/tab for graphs</p>
                   <Alert
                       id='1'
