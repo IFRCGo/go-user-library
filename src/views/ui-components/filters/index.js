@@ -65,7 +65,9 @@ const FiltersPage = () => {
                           <span>
                             <img src={Arrow} alt="Select" className="icon-demo"/>
                           </span>
-                          More coming soon...
+                          <span style={{color: '8D8D8D', fontFamily: 'Poppins', fontSize: '14px', fontStyle: 'normal', fontWeight: '400', lineHeight: '26px', letterSpacing: '0', textAlign: 'left'}}>
+                          [Search | Date Range | Select Provinces | Select Types | Select Sectors ] &nbsp; <i>Work in progress...</i>
+                          </span>
                         </p>
                       </TabPanel>
                       <TabPanel>
