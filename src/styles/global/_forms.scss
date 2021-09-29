@@ -134,7 +134,7 @@ select.form__control {
   }
 
   input.search-query {
-    padding-left:26px;
+    padding-left:30px;
   }
 
   form.form-search {
@@ -143,16 +143,10 @@ select.form__control {
 
   form.form-search:before {
     content:'';
-    display: block;
-    width: 14px;
-    height: 14px;
-    background-image: url('http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png');
-    background-position: -48px 0;
     position: absolute;
-    top:5px;
-    left:8px;
-    opacity: .5;
-    z-index: 1000;
+    width: 24px;
+    height: 24px;
+    background-image: url('/assets/graphics/layout/search.svg');
   }
 
   input {
