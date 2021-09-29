@@ -65,7 +65,7 @@ const FiltersPage = () => {
                                                             </form>
                                                         </li>
                                                         <li>
-                                                            <Dropdown className="filter-dropdown">
+                                                            <Dropdown className="filter-dropdown spacing20">
                                                                 <Dropdown.Toggle
                                                                     className="filter-dropdown-menu form__control--filter "
                                                                 >

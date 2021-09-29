@@ -115,6 +115,10 @@ select.form__control {
     margin: none;
   }
 
+  .spacing20 {
+    padding-left: 20px;
+  }
+
   .x {
     list-style: none;
     padding-top: 10px;
@@ -122,9 +126,11 @@ select.form__control {
     padding-right: 10px;
     display: flex;
   }
+
   .x li {
     margin-right: 1em;
   }
+
   .x li:first-child {
     margin-right: auto;
   }
@@ -159,8 +165,6 @@ select.form__control {
     position: absolute;
     right: 10px;
   }
-
-
 }
 
 .filter-dropdown-menu {
@@ -178,11 +182,6 @@ select.form__control {
   color: $grey-silver;
   height: 30px;
 
-  &.form__control--brand.form__control {
-    background-image: url('/assets/icons/collecticons/triangle-down-grey.svg');
-    background-size: 8px;
-  }
-
   &.form__control--medium {
     padding-top: 0.18rem;
     height: 30px;
@@ -191,6 +190,8 @@ select.form__control {
   .Select-multi-value-wrapper {
     padding: $spacing-half 0;
   }
+
+// background-image: url('/assets/icons/collecticons/calendar.svg');
 
   .Select-control {
     height: 30px;
