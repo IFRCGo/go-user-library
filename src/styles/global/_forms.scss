@@ -181,6 +181,12 @@ select.form__control {
 .form__control--filter {
   color: $grey-silver;
   height: 30px;
+  padding-top: 0.18rem;
+
+  &.form__control--brand.form__control {
+    background-image: url('/assets/icons/collecticons/triangle-down-grey.svg');
+    background-size: 8px;
+  }
 
   &.form__control--medium {
     padding-top: 0.18rem;
