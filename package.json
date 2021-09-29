@@ -64,6 +64,7 @@
     "react-bootstrap-dropdown-menu": "^1.1.23",
     "react-breadcrumbs-dynamic": "^1.2.1",
     "react-contenteditable": "^3.3.5",
+    "react-datepicker": "^4.2.1",
     "react-device-detect": "^1.11.14",
     "react-dom": "^17.0.1",
     "react-dropdown-button": "^1.0.11",

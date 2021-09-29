@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import DatePicker from "react-datepicker";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
 import ReactDOMServer from "react-dom/server";
 import Code from "./../../../hoc/source-code";
@@ -6,6 +7,7 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Header from "../../../hoc/header";
 import {ListData} from "../../../utils/list";
 
+import "react-datepicker/dist/react-datepicker.css";
 import searchImg from "../../../assets/graphics/layout/search.svg";
 import calendarImg from "../../../assets/graphics/layout/calendar.svg";
 
@@ -27,6 +29,8 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
 
 const FiltersPage = () => {
     const menu = ListData;
+    const [startDate, setStartDate] = useState(new Date());
+
     return (
         <React.Fragment>
             <div className="inner">
@@ -70,26 +74,15 @@ const FiltersPage = () => {
                                                             </form>
                                                         </li>
                                                         <li>
-                                                            <Dropdown className="filter-dropdown spacing20">
-                                                                <Dropdown.Toggle
-                                                                    className="filter-dropdown-menu form__control--filter "
-                                                                >
-                                                                    Date Range
-                                                                    <img src={calendarImg} alt="text" className="CalendarIcon"/>
-                                                                </Dropdown.Toggle>
+                                                            <form className="form-search form-date-popup">
+                                                                <DatePicker
+                                                                    className='btn'
+                                                                    selected={startDate}
+                                                                            onChange={(date) => setStartDate(date)}
+                                                                />
+                                                                <img src={calendarImg} alt="text" className="CalendarIcon"/>
+                                                            </form>
 
-                                                                <Dropdown.Menu
-                                                                    className='drop__menu drop__menu__field__report'>
-                                                                    <Dropdown.Item href="#/action-1"
-                                                                                   className='drop__menu-item'>Action</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-2"
-                                                                                   className='drop__menu-item'>Another
-                                                                        action</Dropdown.Item>
-                                                                    <Dropdown.Item href="#/action-3"
-                                                                                   className='drop__menu-item'>Something
-                                                                        else</Dropdown.Item>
-                                                                </Dropdown.Menu>
-                                                            </Dropdown>
                                                         </li>
 
                                                         {/*Select Provinces*/}

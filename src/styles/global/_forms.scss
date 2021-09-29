@@ -115,6 +115,11 @@ select.form__control {
     margin: none;
   }
 
+  .form-date-popup {
+    input {
+      color: grey;
+    }
+  }
   .spacing20 {
     padding-left: 20px;
   }
@@ -167,18 +172,37 @@ select.form__control {
   }
 }
 
-.filter-dropdown-menu {
-  background-color: lightgray;
+.filter-dropdown-menu, .form-date-popup {
   min-width: 150px;
   height: 24px;
   border: none;
   font-size: 14px;
   font-weight: 400;
   padding: 5px;
+
+    .CalendarIcon {
+      position: relative;
+      top: -35px;
+    }
+
+    input {
+      background-color: lightgray;
+      min-width: 150px;
+      position: relative;
+      top: -7px;
+      height: 30px;
+      //border: none;
+      //font-size: 14px;
+      //font-weight: 400;
+      //padding: 5px;
+    }
+
+
 }
 
 /* Form Control: Filters */
 .form__control--filter {
+  background-color: lightgray;
   color: $grey-silver;
   height: 30px;
   padding-top: 0.18rem;
