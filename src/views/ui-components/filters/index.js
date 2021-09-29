@@ -6,6 +6,9 @@ import Dropdown from "react-bootstrap/Dropdown";
 import Header from "../../../hoc/header";
 import {ListData} from "../../../utils/list";
 
+import searchImg from "../../../assets/graphics/layout/search.svg";
+import calendarImg from "../../../assets/graphics/layout/calendar.svg";
+
 const htmlString = ReactDOMServer.renderToStaticMarkup(
     <div className="filters__block">
   <span>
@@ -60,8 +63,10 @@ const FiltersPage = () => {
                                                     <ul className="x">
                                                         <li>
                                                             <form className="form-search form-inline">
+                                                                <img src={searchImg} alt="text" className="SearchIcon"/>
                                                                 <input type="text" className="search-query"
                                                                        placeholder="Search"/>
+
                                                             </form>
                                                         </li>
                                                         <li>
@@ -70,7 +75,7 @@ const FiltersPage = () => {
                                                                     className="filter-dropdown-menu form__control--filter "
                                                                 >
                                                                     Date Range
-                                                                    <i className="collecticon-calendar"></i>
+                                                                    <img src={calendarImg} alt="text" className="CalendarIcon"/>
                                                                 </Dropdown.Toggle>
 
                                                                 <Dropdown.Menu
