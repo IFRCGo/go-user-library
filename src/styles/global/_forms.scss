@@ -105,17 +105,90 @@ select.form__control {
   }
 }
 
+.filter-dropdown {
+  nav {
+    text-align: right;
+    list-style: none;
+    border: none;
+    background-color: none;
+    padding: none;
+    margin: none;
+  }
+
+  .x {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+  }
+  .x li {
+    margin-right: 1em;
+  }
+  .x li:first-child {
+    margin-right: auto;
+  }
+
+  .drop__toggle--caret::after {
+    color: grey;
+  }
+
+  input.search-query {
+    padding-left:26px;
+  }
+
+  form.form-search {
+    position: relative;
+  }
+
+  form.form-search:before {
+    content:'';
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-image: url('http://getbootstrap.com/2.3.2/assets/img/glyphicons-halflings.png');
+    background-position: -48px 0;
+    position: absolute;
+    top:5px;
+    left:8px;
+    opacity: .5;
+    z-index: 1000;
+  }
+
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: lightgrey;
+  }
+
+  .collecticon-calendar:before {
+    position: absolute;
+    right: 10px;
+  }
+
+
+}
+
+.filter-dropdown-menu {
+  background-color: lightgray;
+  min-width: 150px;
+  height: 24px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+}
+
 /* Form Control: Filters */
 .form__control--filter {
   color: $grey-silver;
   height: 30px;
-  padding-top: 0.18rem;
 
   &.form__control--brand.form__control {
     background-image: url('/assets/icons/collecticons/triangle-down-grey.svg');
     background-size: 8px;
   }
-  
+
   &.form__control--medium {
     padding-top: 0.18rem;
     height: 30px;
@@ -145,7 +218,7 @@ select.form__control {
   &.form__control--brand {
     border-bottom-color: $grey-mist;
   }
-  
+
   &:focus, &.active, &:active, &:hover {
     box-shadow: none;
   }
@@ -1008,7 +1081,7 @@ label[for] {
   p {
     margin-bottom: $global-spacing/2;
   }
-  
+
   ul {
     margin-inline-start: 0;
   }

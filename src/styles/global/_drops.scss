@@ -24,6 +24,23 @@
   }
 }
 
+.drop__filter_toggle {
+  &--caret {
+    &::after {
+      @extend %collecticon-sm-triangle-down;
+      color: grey;
+      font-size: 1rem;
+      line-height: inherit;
+      vertical-align: top;
+      margin-inline-start: 0.25rem;
+    }
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
 .drop__content {
   @extend %drop-skin;
   position: absolute;

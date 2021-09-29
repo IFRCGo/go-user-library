@@ -8,11 +8,19 @@ import Dropdown from 'react-bootstrap/Dropdown'
 
 function Header(props) {
     const data = props.lineItems ? props.lineItems : ListData.header;
+    let header = "page__header__inner__wrap";
+    let headerOne = "container-lg spacing-v";
+    let menu = "page__prime-nav col";
+    if (props.filter) {
+        header = null;
+        headerOne = null;
+        menu= null;
+    }
     return (
         <div className="desktop__header">
             <header className="page__header" role="banner">
-                <div className="page__header__inner__wrap">
-                    <div className="container-lg spacing-v">
+                <div className={header}>
+                    <div className={headerOne}>
                         <div className="inner row flex">
                             {data.logo ? (
                                 <div className="page__headline">
@@ -24,8 +32,8 @@ function Header(props) {
                                 </div>
                             ) : null}
                             {data.menu ? (
-                                <nav className="page__prime-nav col" role="navigation">
-                                    <ul className="nav-global-menu">
+                                <nav className={menu} role="navigation">
+                                    <ul className= "nav-global-menu">
                                         {data.menu.map((item, i) => (
                                             <li key={i}>
                                                 {item.type === 'dropdown' ? (
@@ -45,9 +53,12 @@ function Header(props) {
                                 </nav>
                             ) : null}
 
+                            {data.goto ? (
                             <div className="page__nav-actions">
-                                <a title="Go to GO" class="button button--small button--primary-filled" href="https://go.ifrc.org/">Go to GO</a>
+                                <a title="Go to GO" className="button button--small button--primary-filled"
+                                   href="https://go.ifrc.org/">Go to GO</a>
                             </div>
+                            ) : null}
                             {data.right_menu ? (
                                 <div className='page__meta-nav col' role='navigation'>
                                     {data.right_menu.map((item, i) => (

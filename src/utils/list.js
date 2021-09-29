@@ -188,6 +188,32 @@ export const ListData = {
         ],
         "goto": false
     },
+    "demoFilter": {
+        "logo": false,
+        "menu": [
+            {
+                type: 'link',
+                name: "All",
+                link: '/'
+            },
+            {
+                type: 'link',
+                name: "Appeals",
+                link: '/Appeals'
+            },
+            {
+                type: 'link',
+                name: "DREFs",
+                link: '/DREFs'
+            },
+            {
+                type: 'link',
+                name: "Other",
+                link: '/Other'
+            },
+        ],
+        "goto": false
+    },
     "footer": {
         "logo": false,
         "copyright": '© IFRC 2020',
