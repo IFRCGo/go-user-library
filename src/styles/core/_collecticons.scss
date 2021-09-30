@@ -1,3 +1,4 @@
+@import "../settings/_variables.scss";
 /* ==========================================================================
    Icon font: Collecticons
    ========================================================================== */
@@ -21,7 +22,7 @@
 [class^="collecticon-"],
 [class*=" collecticon-"] {
   speak: none;
-  font-family: "Collecticons", Arial, Verdana, Tahoma, sans-serif;
+  font-family: "Collecticons", $base-font-family;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
