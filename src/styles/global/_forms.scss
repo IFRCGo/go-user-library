@@ -178,7 +178,6 @@ select.form__control {
 
 .filter-dropdown-menu, .form-date-popup {
   min-width: 150px;
-  height: 38x;
   border: none;
   font-size: 14px;
   font-weight: 400;
@@ -186,7 +185,7 @@ select.form__control {
 
     .CalendarIcon {
       position: relative;
-      top: -42px;
+      top: -34px;
     }
 
     input {
@@ -195,10 +194,6 @@ select.form__control {
       position: relative;
       top: -7px;
       height: 30px;
-      //border: none;
-      //font-size: 14px;
-      //font-weight: 400;
-      //padding: 5px;
     }
 
 
