@@ -107,17 +107,111 @@ select.form__control {
   }
 }
 
+.filter-dropdown {
+  nav {
+    text-align: right;
+    list-style: none;
+    border: none;
+    background-color: none;
+    padding: none;
+    margin: none;
+  }
+
+  .form-date-popup {
+    input {
+      color: #8D8D8D;
+      background: #F4F4F4;
+      border-radius: 4px;
+    }
+  }
+  .spacing20 {
+    padding-left: 20px;
+  }
+
+  .x {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    display: flex;
+  }
+
+  .x li {
+    margin-right: 1em;
+  }
+
+  .x li:first-child {
+    margin-right: auto;
+  }
+
+  .drop__toggle--caret::after {
+    color: grey;
+  }
+
+  input.search-query {
+    padding-left:30px;
+  }
+
+  form.form-search {
+    position: relative;
+  }
+
+  form.form-search:before {
+    content:'';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url('../../assets/graphics/layout/search.svg');
+  }
+
+  input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: lightgrey;
+  }
+
+  .collecticon-calendar:before {
+    position: absolute;
+    right: 10px;
+  }
+}
+
+.filter-dropdown-menu, .form-date-popup {
+  min-width: 150px;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 5px;
+
+    .CalendarIcon {
+      position: relative;
+      top: -34px;
+    }
+
+    input {
+      background-color: lightgray;
+      min-width: 150px;
+      position: relative;
+      top: -7px;
+      height: 30px;
+    }
+
+
+}
+
 /* Form Control: Filters */
 .form__control--filter {
+  background-color: #F4F4F4;
   color: $grey-silver;
   height: 30px;
   padding-top: 0.18rem;
+  border-radius: 4px;
 
   &.form__control--brand.form__control {
     background-image: url('/assets/icons/collecticons/triangle-down-grey.svg');
     background-size: 8px;
   }
-  
+
   &.form__control--medium {
     padding-top: 0.18rem;
     height: 30px;
@@ -126,6 +220,8 @@ select.form__control {
   .Select-multi-value-wrapper {
     padding: $spacing-half 0;
   }
+
+// background-image: url('/assets/icons/collecticons/calendar.svg');
 
   .Select-control {
     height: 30px;
@@ -147,7 +243,7 @@ select.form__control {
   &.form__control--brand {
     border-bottom-color: $grey-mist;
   }
-  
+
   &:focus, &.active, &:active, &:hover {
     box-shadow: none;
   }
@@ -1010,7 +1106,7 @@ label[for] {
   p {
     margin-bottom: $global-spacing/2;
   }
-  
+
   ul {
     margin-inline-start: 0;
   }
