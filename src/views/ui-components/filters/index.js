@@ -8,7 +8,6 @@ import Header from "../../../hoc/header";
 import {ListData} from "../../../utils/list";
 
 import "react-datepicker/dist/react-datepicker.css";
-import searchImg from "../../../assets/graphics/layout/search.svg";
 import calendarImg from "../../../assets/graphics/layout/calendar.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
@@ -67,7 +66,6 @@ const FiltersPage = () => {
                                                     <ul className="x">
                                                         <li>
                                                             <form className="form-search form-inline">
-                                                                <img src={searchImg} alt="text" className="SearchIcon"/>
                                                                 <input type="text" className="search-query"
                                                                        placeholder="Search"/>
 
@@ -78,7 +76,7 @@ const FiltersPage = () => {
                                                                 <DatePicker
                                                                     className='btn'
                                                                     selected={startDate}
-                                                                            onChange={(date) => setStartDate(date)}
+                                                                    onChange={(date) => setStartDate(date)}
                                                                 />
                                                                 <img src={calendarImg} alt="text" className="CalendarIcon"/>
                                                             </form>
@@ -159,7 +157,7 @@ const FiltersPage = () => {
                                             </div>
                                         </TabPanel>
                                         <TabPanel>
-                                            <Code source="{sourceData(ChartData.line)}"/>
+                                            <Code source="To be continued. Certainly not {sourceData(ChartData.line)}"/>
                                         </TabPanel>
                                     </Tabs>
                                     <p className="poppins_16 font_weight_500">Filter/tab for graphs</p>

@@ -119,7 +119,9 @@ select.form__control {
 
   .form-date-popup {
     input {
-      color: grey;
+      color: #8D8D8D;
+      background: #F4F4F4;
+      border-radius: 4px;
     }
   }
   .spacing20 {
@@ -159,7 +161,7 @@ select.form__control {
     position: absolute;
     width: 24px;
     height: 24px;
-    //background-image: url('/src/assets/graphics/layout/search.svg');
+    background-image: url('../../assets/graphics/layout/search.svg');
   }
 
   input {
@@ -176,7 +178,7 @@ select.form__control {
 
 .filter-dropdown-menu, .form-date-popup {
   min-width: 150px;
-  height: 24px;
+  height: 38x;
   border: none;
   font-size: 14px;
   font-weight: 400;
@@ -184,7 +186,7 @@ select.form__control {
 
     .CalendarIcon {
       position: relative;
-      top: -35px;
+      top: -42px;
     }
 
     input {
@@ -204,10 +206,11 @@ select.form__control {
 
 /* Form Control: Filters */
 .form__control--filter {
-  background-color: lightgray;
+  background-color: #F4F4F4;
   color: $grey-silver;
   height: 30px;
   padding-top: 0.18rem;
+  border-radius: 4px;
 
   &.form__control--brand.form__control {
     background-image: url('/assets/icons/collecticons/triangle-down-grey.svg');
