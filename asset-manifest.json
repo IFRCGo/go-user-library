@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.afb07cfa.chunk.css",
-    "main.js": "/static/js/main.818142ed.chunk.js",
-    "main.js.map": "/static/js/main.818142ed.chunk.js.map",
+    "main.js": "/static/js/main.70c526cb.chunk.js",
+    "main.js.map": "/static/js/main.70c526cb.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351a270f.js",
     "runtime-main.js.map": "/static/js/runtime-main.351a270f.js.map",
     "static/css/2.11c51c79.chunk.css": "/static/css/2.11c51c79.chunk.css",
@@ -12,6 +12,7 @@
     "static/css/2.11c51c79.chunk.css.map": "/static/css/2.11c51c79.chunk.css.map",
     "static/css/main.afb07cfa.chunk.css.map": "/static/css/main.afb07cfa.chunk.css.map",
     "static/js/2.86f69b2c.chunk.js.LICENSE.txt": "/static/js/2.86f69b2c.chunk.js.LICENSE.txt",
+    "static/media/Mapbox-data-flow.c113b9d1.png": "/static/media/Mapbox-data-flow.c113b9d1.png",
     "static/media/apple-touch-icon-114x114.e4367525.png": "/static/media/apple-touch-icon-114x114.e4367525.png",
     "static/media/aurc_logo.1953d658.jpg": "/static/media/aurc_logo.1953d658.jpg",
     "static/media/main.scss": "/static/media/x-thin.1b5dbf5a.svg",
@@ -38,6 +39,6 @@
     "static/css/2.11c51c79.chunk.css",
     "static/js/2.86f69b2c.chunk.js",
     "static/css/main.afb07cfa.chunk.css",
-    "static/js/main.818142ed.chunk.js"
+    "static/js/main.70c526cb.chunk.js"
   ]
 }
