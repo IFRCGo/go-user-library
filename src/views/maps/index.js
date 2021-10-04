@@ -1,13 +1,13 @@
 import React from "react";
 
-import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
-import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
-import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
-import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
-import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
-import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
-import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
-import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
+// NOT USED: import AmericanLogo from "./../../assets/graphics/content/arc_logo.png";
+// NOT USED: import BritishLogo from "./../../assets/graphics/content/brc_logo.png";
+// NOT USED: import JapaneseLogo from "./../../assets/graphics/content/jrc_logo.png";
+// NOT USED: import CanadianLogo from "./../../assets/graphics/content/crc_logo.png";
+// NOT USED: import DutchLogo from "./../../assets/graphics/content/nlrc_logo.jpg";
+// NOT USED: import SpanishLogo from "./../../assets/graphics/content/esp_logo.jpg";
+// NOT USED: import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
+// NOT USED: import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 import MapboxDiagram from "./../../assets/graphics/content/Mapbox-data-flow.png"
 
 
@@ -64,7 +64,8 @@ const Maps = () => {
               <iframe
                 src="https://api.mapbox.com/styles/v1/go-ifrc/ckrfe16ru4c8718phmckdfjh0.html?fresh=true&title=view&access_token=pk.eyJ1IjoiZ28taWZyYyIsImEiOiJjamlybHUzNmMwZDUxM3Fwa215YjJ1dzk5In0.OhqEybDX303sHjHzq3nFYQ#1.86/14.69/14.13"
                 width='100%'
-                height= '500em'
+                height='500em'
+                title='mapbox1'
               />
               <br/>
             </div>
@@ -162,7 +163,7 @@ const Maps = () => {
                   <td><code>go-ifrc.go-countries</code></td>                
                   <td>Polygon</td>
                   <td rowspan="2"><a title="Countries CSV" href="https://goadmin.ifrc.org/api/v2/country/?format=csv&limit=500">Download CSV</a></td>
-                  <td rowspan="2"><a title="Countries data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565" target="_blank">View data dictionary</a></td>
+                  <td rowspan="2"><a title="Countries data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565" target="_blank" rel="noreferrer">View data dictionary</a></td>
                 </tr>
                 <tr>
                   <td>GO Country Centroids</td>
@@ -174,7 +175,7 @@ const Maps = () => {
                   <td><code>go-ifrc.go-country-centroids</code></td>
                   <td>Polygon</td>
                   <td rowspan="2"><a title="Districts CSV" href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000">Download CSV</a></td>
-                  <td rowspan="2"><a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank">View data dictionary</a></td>
+                  <td rowspan="2"><a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank" rel="noreferrer">View data dictionary</a></td>
                 </tr>
                 <tr>
                   <td>GO District Centroids</td>
@@ -194,7 +195,7 @@ const Maps = () => {
               <p>
                 The diagram below shows the data flow and processes from source files, to GO and then to Mapbox. 
               </p>
-              <p><img alt="image" src={MapboxDiagram} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
+              <p><img alt="Diagram" src={MapboxDiagram} style={{width:'100%', maxWidth:'100%', height:'auto'}} /></p>
             </div>
           </div>
 
