@@ -1,5 +1,4 @@
 {
-  "homepage": "/go-user-library",
   "name": "go-user-library",
   "version": "0.1.0",
   "private": true,
@@ -33,7 +32,7 @@
     "postcss-normalize": "8.0.1",
     "postcss-preset-env": "6.7.0",
     "postcss-safe-parser": "4.0.1",
-    "react-dev-utils": "^10.2.1",
+    "react-dev-utils": "^11.0.4",
     "resolve": "1.15.0",
     "resolve-url-loader": "^3.1.2",
     "sass-loader": "8.0.2",
@@ -65,6 +64,7 @@
     "react-bootstrap-dropdown-menu": "^1.1.23",
     "react-breadcrumbs-dynamic": "^1.2.1",
     "react-contenteditable": "^3.3.5",
+    "react-datepicker": "^4.2.1",
     "react-device-detect": "^1.11.14",
     "react-dom": "^17.0.1",
     "react-dropdown-button": "^1.0.11",

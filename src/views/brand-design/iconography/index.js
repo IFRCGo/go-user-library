@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../../components/button";
 import {Tab, Tabs, TabList, TabPanel} from "react-tabs";
-import {Link} from 'react-router-dom';
+// import {Link} from 'react-router-dom';
 import {ListData} from "../../../utils/list";
 
 import Code from "../../../hoc/source-code";

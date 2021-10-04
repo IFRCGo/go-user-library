@@ -1,9 +1,9 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { PropTypes as T } from 'prop-types';
-import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
-// import { DateTime } from 'luxon';
-import { Link } from 'react-router-dom';
+// import { connect } from 'react-redux';
+// import { PropTypes as T } from 'prop-types';
+// import { ResponsiveContainer, LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
+// // import { DateTime } from 'luxon';
+// import { Link } from 'react-router-dom';
 
 class HeaderDash extends React.Component {
     renderEmergencies () {
@@ -80,8 +80,8 @@ class HeaderDash extends React.Component {
         if (!this.props.aggregate.month) return null;
 
         const {
-            fetched,
-            data
+            fetched
+//          data
         } = this.props.aggregate.month;
 
         if (!fetched) return null;

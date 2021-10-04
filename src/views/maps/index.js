@@ -11,7 +11,7 @@ import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 import MapboxDiagram from "./../../assets/graphics/content/Mapbox-data-flow.png"
 
 
-const Templates = () => {
+const Maps = () => {
   return (
     <div className="page--homepage">
       <section className="inpage">
@@ -203,4 +203,4 @@ const Templates = () => {
     </div>
   );
 };
-export default Templates;
+export default Maps;

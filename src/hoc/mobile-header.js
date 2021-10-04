@@ -34,7 +34,7 @@ class MobileHeader extends React.PureComponent {
         <div className="inner container-lg">
           <div className="page__headline row flex">
             <div className="page__menu col">
-              <a href="#link" onClick={this.toggleMenu}></a>
+              <a href="#link" onClick={this.toggleMenu}>&nbsp;</a>
             </div>
             <h1 className="page__title col">
               <Link to="/" title="title">

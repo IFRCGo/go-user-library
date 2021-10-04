@@ -1,5 +1,5 @@
-import {MenuItem} from "react-bootstrap-dropdown-menu";
-import React from "react";
+// import {MenuItem} from "react-bootstrap-dropdown-menu";
+// import React from "react";
 
 export const ListData = {
     "header": {
@@ -27,8 +27,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: "/templates"
+                name: "Maps",
+                link: "/maps"
             }
         ],
         "login": false,
@@ -116,8 +116,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: '/GO-UI-Library/templates'
+                name: "Maps",
+                link: '/maps'
             },
             {
                 type: 'link',
@@ -141,8 +141,8 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Templates",
-                link: '/GO-UI-Library/templates'
+                name: "Maps",
+                link: '/maps'
             },
             {
                 type: 'user',
@@ -185,6 +185,32 @@ export const ListData = {
                 name: "Preparedness",
                 link: '/preparedness'
             }
+        ],
+        "goto": false
+    },
+    "demoFilter": {
+        "logo": false,
+        "menu": [
+            {
+                type: 'link',
+                name: "All",
+                link: '/'
+            },
+            {
+                type: 'link',
+                name: "Appeals",
+                link: '/Appeals'
+            },
+            {
+                type: 'link',
+                name: "DREFs",
+                link: '/DREFs'
+            },
+            {
+                type: 'link',
+                name: "Other",
+                link: '/Other'
+            },
         ],
         "goto": false
     },
@@ -246,7 +272,7 @@ export const ListData = {
                 list:[
                     {
                         type: 'f-icon-medium footer-social-icon',
-                        link: 'im@ifrc.org'
+                        link: 'https://ifrc.medium.com'
                     },
                     {
                         type: 'f-icon-facebook  footer-social-icon',

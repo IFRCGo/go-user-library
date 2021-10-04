@@ -21,7 +21,13 @@ const AlertPage = () => {
 
         <div className="fold__body">
           <div className="container-mid">
-            <p>TODO</p>
+            <Alert
+                id='1'
+                option='banner'
+                type='alert'
+                text='COVID-19 global situational information and technical guidance available here.'
+                autoDismiss='0'
+            />
           </div>
         </div>
 

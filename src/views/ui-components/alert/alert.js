@@ -76,15 +76,17 @@ class Alert extends React.Component {
                         <TabPanel>
                             {this.state.isHidden && (
                                 <div className={cl + ' ' + this.props.option + ' ' + this.props.type} role='alert'>
+
+                                {this.props.option !== "banner" ?
                                     <button className='alert__button-dismiss' title={strings.alertDismissTitle}
                                             onClick={this.onDismissAlert}>
                                                 <span>
                                                   <Translate stringId='alertDismiss'/>
                                                 </span>
-                                    </button>
+                                    </button> : null}
 
                                     <span className='icon'>
-                                            {this.props.type === "warning" ?
+                                        {this.props.type === "warning" ?
                                                 <IoWarningOutline size="24px" className={this.props.type}/> : null}
                                         {this.props.type === "error" ?
                                             <FiAlertTriangle size="24px" className={this.props.type}/> : null}
@@ -92,7 +94,7 @@ class Alert extends React.Component {
                                             <AiOutlineInfoCircle size="24px" className={this.props.type}/> : null}
                                         {this.props.type === "success" ?
                                             <CgCheckO size="24px" className={this.props.type}/> : null}
-                                        </span>
+                                    </span>
                                     <span className='text'>{this.props.text}</span>
                                 </div>
                             )}

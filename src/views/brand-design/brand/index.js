@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import Button from "../../../components/button";
-import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
-import Code from "../../../hoc/source-code";
-import ReactDOMServer from "react-dom/server";
+// import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
+// import Code from "../../../hoc/source-code";
+// import ReactDOMServer from "react-dom/server";
 import LogoHorizontal from "../../../assets/graphics/content/Logo-Horizontal-RGB.png";
 import LogoVertical from "../../../assets/graphics/content/Logo-vertical-RGB.png";
 

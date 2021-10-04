@@ -11,6 +11,7 @@ const Tooltip = ({type, title, description}) => {
                     data-tip
                     data-for={title ? title : description}
                     data-event="click focus"
+                    href
                 >
                     POPUPs
                     <InfoIcon className="popup"/>
@@ -34,16 +35,17 @@ const Tooltip = ({type, title, description}) => {
             ) : null}
 
 
-            {type != 'popup' ? (
+            {type !== 'popup' ? (
                 <a
                     data-tip
                     data-for={title ? title : description}
                     data-event="click focus"
+                    href
                 >
                     <InfoIcon className="tooltip"/>
                 </a>
             ) : null}
-            {type != 'popup' ? (
+            {type !== 'popup' ? (
                 <ReactTooltip
                     className="tooltip"
                     globalEventOff="click"
