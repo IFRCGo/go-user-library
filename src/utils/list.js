@@ -91,7 +91,6 @@ export const ListData = {
         "menu": [
             {name: "GO API templates", link: "/data/goapi"},
             {name: "Infographics", link: "/data/infographics"},
-            {name: "Map", link: "/data/map"}
         ],
         "login": false,
         "goto": [

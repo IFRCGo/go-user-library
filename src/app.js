@@ -40,7 +40,6 @@ import BrandPage from "./views/brand-design/brand";
 
 /** Content **/
 import GoApiPage from "./views/data/goapi";
-import MapPage from "./views/data/map";
 import InfographicsPage from "./views/data/infographics";
 /* 
    App 
@@ -181,11 +180,6 @@ const App = () => (
                 path="/data/infographics"
                 layout={PageLayoutContent}
                 component={InfographicsPage}
-            />
-            <AppRoute
-                path="/data/map"
-                layout={PageLayoutContent}
-                component={MapPage}
             />
 
             <AppRoute path="/maps" layout={PageLayout} component={Maps}/>
