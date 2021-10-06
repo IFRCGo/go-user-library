@@ -6,8 +6,9 @@ const FormsPage = () => {
     <React.Fragment>
       <div className="inner">
         <div className="fold__header">
-          <h1>FORMS</h1>
-          <p>Form elements allow users to provide data or configure options. The text field here are used in forms and reports, as well as in section filters.</p>
+          <h1>Form Elements</h1>
+          <p>Form elements allow users to provide data or configure options.
+            The text field here are used in forms and reports, as well as in section filters.</p>
         </div>
         <br/><br/>
 
