@@ -9,7 +9,123 @@ import React from "react";
 // NOT USED: import AustralianLogo from "./../../assets/graphics/content/aurc_logo.jpg";
 // NOT USED: import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 import MapboxDiagram from "./../../assets/graphics/content/Mapbox-data-flow.png"
+import DisplayTable from "../../components/tables";
+import ReactDOMServer from "react-dom/server";
+import LinkButton from "../../components/link-button";
+import Link from "../../components/link";
 
+const headingsOne = [
+  {
+    Header: "Mapbox",
+    columns: [
+      {
+        Header: "Mapbox name",
+        accessor: "mapbox",
+      },
+      {
+        Header: "Tileset ID",
+        accessor: "tilese_ID",
+      },
+      {
+        Header: "Type",
+        accessor: "type",
+      },
+      {
+        Header: "Data",
+        accessor: "data",
+      },
+      {
+        Header: "Details",
+        accessor: "details",
+      },
+    ],
+  },
+];
+
+const link = '<a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank" rel="noreferrer">View data dictionary</a>';
+
+const sampleLink =
+    <Link
+        href="#link"
+        class="link--with-icon"
+        name="link"
+    />;
+
+const link1 =
+    <Link
+        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565"
+        class="link--with-icon"
+        name="Countries data dictionary"
+        target="_blank"
+    />;
+
+const link2 =
+    <Link
+        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194"
+        class="link--with-icon"
+        name="Districts data dictionary"
+        target="_blank"
+    />;
+
+const link3 =
+    <Link
+        href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000"
+        class="link--with-icon"
+        name="Download CSV"
+        target="_blank"
+    />;
+
+
+const rowsOne = [
+  {
+    mapbox: "GO Countries",
+    tilese_ID: "go-ifrc.go-countries",
+    type: 'Polygon',
+    data: <Link
+        href="https://goadmin.ifrc.org/api/v2/country/?format=csv&limit=500"
+        class="link--with-icon"
+        name="Download CSV"
+        target="_blank"
+    />,
+    details: <Link
+        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565"
+        class="link--with-icon"
+        name="View data dictionary"
+        target="_blank"
+    />
+  },
+  {
+    mapbox: "GO Country Centroids",
+    tilese_ID: "go-ifrc.go-country-centroids\t",
+    type: 'Polygon',
+    data: 'Point',
+    details: ''
+  },
+  {
+    mapbox: "GO Districts 1",
+    tilese_ID: "go-ifrc.go-country-centroids",
+    type: 'Polygon',
+    data: <Link
+        href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000"
+        class="link--with-icon"
+        name="Download CSV"
+        target="_blank"
+    />,
+    details: <Link
+        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194"
+        class="link--with-icon"
+        name="View data dictionary"
+        target="_blank"
+    />
+  },
+  {
+    mapbox: "GO District Centroids",
+    tilese_ID: "go-ifrc.go-country-centroids",
+    type: 'Polygon',
+    data: 'Point',
+    details: ''
+  }
+];
 
 const Maps = () => {
   return (
@@ -151,38 +267,15 @@ const Maps = () => {
               <p>
                 Countries and districts are imported directly from GO. You can access the latest data from the API with the following link and view the data dictionary of the fields:
               </p>
-              <table>
-                <tr>
-                  <th>Mapbox name</th>
-                  <th>Tileset ID</th>
-                  <th>Type</th>
-                  <th colspan="2">Data details</th>
-                </tr>
-                <tr>
-                  <td>GO Countries</td>
-                  <td><code>go-ifrc.go-countries</code></td>                
-                  <td>Polygon</td>
-                  <td rowspan="2"><a title="Countries CSV" href="https://goadmin.ifrc.org/api/v2/country/?format=csv&limit=500">Download CSV</a></td>
-                  <td rowspan="2"><a title="Countries data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565" target="_blank" rel="noreferrer">View data dictionary</a></td>
-                </tr>
-                <tr>
-                  <td>GO Country Centroids</td>
-                  <td><code>go-ifrc.go-country-centroids</code></td>
-                  <td>Point</td>
-                </tr>
-                <tr>
-                  <td>GO Districts 1</td>
-                  <td><code>go-ifrc.go-country-centroids</code></td>
-                  <td>Polygon</td>
-                  <td rowspan="2"><a title="Districts CSV" href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000">Download CSV</a></td>
-                  <td rowspan="2"><a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank" rel="noreferrer">View data dictionary</a></td>
-                </tr>
-                <tr>
-                  <td>GO District Centroids</td>
-                  <td><code>go-ifrc.go-country-centroids</code></td>
-                  <td>Point</td>
-                </tr>
-              </table>
+
+              <div className="fold">
+                <DisplayTable
+                    type="data"
+                    columns={headingsOne}
+                    rows={rowsOne}
+                />
+              </div>
+
             </div>
           </div>
 
