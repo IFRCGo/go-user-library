@@ -24,6 +24,10 @@
     }
   }
 
+  a {
+    text-decoration: underline !important;
+  }
+
   th:first-child,
   td:first-child {
     padding-inline-start: $global-spacing;
