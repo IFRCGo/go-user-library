@@ -40,15 +40,28 @@ const IconographyPage = () => {
         <Button
             size="small"
             type="primary-bounded"
+            fname="ifrcIcons"
+            ftype="zip"
             icon="download"
-            text='Download IFRC Icons'
+            text="Download IFRC Icons"
         />
         <br/><br/>
         <Button
             size="small"
             type="primary-bounded"
+            fname="ochaIcons"
+            ftype="zip"
             icon="download"
-            text='Download OCHA Icons'
+            text="Download OCHA Icons"
+        />
+        <br/><br/>
+        <Button
+            size="small"
+            type="primary-bounded"
+            fname="generalIcons"
+            ftype="zip"
+            icon="download"
+            text="Download General Icons"
         />
       </div>
       <br/><br/>
