@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.b8b4dfd5.chunk.css",
-    "main.js": "/static/js/main.47ca09a7.chunk.js",
-    "main.js.map": "/static/js/main.47ca09a7.chunk.js.map",
+    "main.css": "/static/css/main.a11f2df4.chunk.css",
+    "main.js": "/static/js/main.e006964a.chunk.js",
+    "main.js.map": "/static/js/main.e006964a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351a270f.js",
     "runtime-main.js.map": "/static/js/runtime-main.351a270f.js.map",
     "static/css/2.11c51c79.chunk.css": "/static/css/2.11c51c79.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.86954af2.chunk.js.map": "/static/js/2.86954af2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.11c51c79.chunk.css.map": "/static/css/2.11c51c79.chunk.css.map",
-    "static/css/main.b8b4dfd5.chunk.css.map": "/static/css/main.b8b4dfd5.chunk.css.map",
+    "static/css/main.a11f2df4.chunk.css.map": "/static/css/main.a11f2df4.chunk.css.map",
     "static/js/2.86954af2.chunk.js.LICENSE.txt": "/static/js/2.86954af2.chunk.js.LICENSE.txt",
     "static/media/Mapbox-data-flow.c113b9d1.png": "/static/media/Mapbox-data-flow.c113b9d1.png",
     "static/media/apple-touch-icon-114x114.e4367525.png": "/static/media/apple-touch-icon-114x114.e4367525.png",
@@ -26,6 +26,9 @@
     "static/media/go token generator 2.b0677259.png": "/static/media/go token generator 2.b0677259.png",
     "static/media/go token generator.388274ee.png": "/static/media/go token generator.388274ee.png",
     "static/media/go-logo-2020.2b68182f.svg": "/static/media/go-logo-2020.2b68182f.svg",
+    "static/media/icons-IFRC.9181ac3c.zip": "/static/media/icons-IFRC.9181ac3c.zip",
+    "static/media/icons-OCHA.b7c388c4.zip": "/static/media/icons-OCHA.b7c388c4.zip",
+    "static/media/icons-general.17ed9bfb.zip": "/static/media/icons-general.17ed9bfb.zip",
     "static/media/ifrc_logo_2020.2463e384.svg": "/static/media/ifrc_logo_2020.2463e384.svg",
     "static/media/laptop.54818dce.png": "/static/media/laptop.54818dce.png",
     "static/media/logo-appeals.444c0497.svg": "/static/media/logo-appeals.444c0497.svg",
@@ -38,7 +41,7 @@
     "static/js/runtime-main.351a270f.js",
     "static/css/2.11c51c79.chunk.css",
     "static/js/2.86954af2.chunk.js",
-    "static/css/main.b8b4dfd5.chunk.css",
-    "static/js/main.47ca09a7.chunk.js"
+    "static/css/main.a11f2df4.chunk.css",
+    "static/js/main.e006964a.chunk.js"
   ]
 }
