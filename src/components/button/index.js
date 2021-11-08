@@ -1,6 +1,20 @@
 import React from "react";
+import ifrcIcons from "../../assets/icons/zip/icons-IFRC.zip"
+import ochaIcons from "../../assets/icons/zip/icons-OCHA.zip"
+import generalIcons from "../../assets/icons/zip/icons-general.zip"
 
 function Button({children, ...props}) {
+    if (props.ftype === 'zip') {
+       return (
+           <button
+           className={`button button--${props.size} button--${props.type}`}
+           ><a href={props.fname === 'ochaIcons' ? ochaIcons : (props.fname === 'ifrcIcons' ? ifrcIcons : generalIcons)}>
+           <span className='f-icon-download font-size-sm spacing-half-r'></span>
+           {props.text}{props.fnam}
+           </a>
+           </button>
+       )
+    }
     return (
         <button
             tabIndex="0"
