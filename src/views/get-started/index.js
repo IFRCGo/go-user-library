@@ -80,7 +80,7 @@ const GetStarted = () => {
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
-                        <div className="base-font-semi-bold">Ui Components</div>
+                        <div className="base-font-semi-bold">UI Components</div>
                       </div>
                       <div className="box__global__content">
                         <p>
