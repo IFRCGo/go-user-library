@@ -3,6 +3,8 @@ import {withRouter} from "react-router-dom";
 
 function Footer(props) {
     const data = props.lineItems.col;
+    const date = new Date();
+    const year = date.getFullYear();
     // const copyright = props.lineItems.copyright;
     return (
         <footer className="page__footer" role="contentinfo">
@@ -20,6 +22,9 @@ function Footer(props) {
                                       <span className="">
                                         {item.text}
                                       </span>
+                                      <div className="footer-copyright">
+                                          <span className="">© IFRC {year} {data.copyright}</span>
+                                      </div>
                                     </div>
                                 ) : null}
 
@@ -62,11 +67,6 @@ function Footer(props) {
                     </div>
 
                 ) : null}
-                <div className="footer-menu row flex-xs">
-                    <div className="footer-copyright">
-                        <span className="">© IFRC 2020 {data.copyright}</span>
-                    </div>
-                </div>
             </div>
         </footer>
     );
