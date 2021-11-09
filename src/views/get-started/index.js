@@ -58,6 +58,8 @@ const GetStarted = () => {
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
+                          <img src='/svg/brand-guidelines.svg' alt="Design" width="40" />
+                          &nbsp;&nbsp;&nbsp;
                           Brand & Design Guidelines
                         </div>
                       </div>
@@ -80,7 +82,11 @@ const GetStarted = () => {
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
-                        <div className="base-font-semi-bold">UI Components</div>
+                        <div className="base-font-semi-bold">
+                          <img src='/svg/ui-components.svg' alt="UI Components" width="40" />
+                          &nbsp;&nbsp;&nbsp;
+                          UI Components
+                        </div>
                       </div>
                       <div className="box__global__content">
                         <p>
@@ -106,6 +112,8 @@ const GetStarted = () => {
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
+                          <img src='/svg/data-visualisations.svg' alt="Data Visualisations" width="30" />
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           Data Visualisations
                         </div>
                       </div>
@@ -124,7 +132,11 @@ const GetStarted = () => {
                   <div className="col col-6-mid">
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
-                        <div className="base-font-semi-bold">Maps</div>
+                        <div className="base-font-semi-bold">
+                          <img src='/svg/maps.svg' alt="Maps" width="30" />
+                          &nbsp;&nbsp;&nbsp;
+                          Maps
+                        </div>
                       </div>
                       <div className="box__global__content">
                         <p>Download various IFRC templates in use for emergency operations such as reports, presentations, and others.</p>
