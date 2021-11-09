@@ -61,9 +61,9 @@
 .page__meta-nav-elements:hover {
   text-decoration: none;
 }
-//.page__meta-nav-elements:active {
-// Not nice, longer than text: border-bottom: 1px solid #f5333f;
-//}
+.page__meta-nav-elements:active {
+border-bottom: 2px solid #f5333f;
+}
 
 button#header-dropdown-lang {
   background: no-repeat;

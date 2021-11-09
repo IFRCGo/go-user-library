@@ -6,8 +6,17 @@
     list-style: none;
 
     a {
+      &.hover {
+        text-decoration: none;
+      }
       &.active {
         font-weight: bold;
+        text-decoration: none;
+        color: black;
+        border-bottom: 2px solid #f5333f;
+//        background-image: url('../../icons/collecticons/arrow-right-red.svg');
+//        background-repeat: no-repeat;
+//        background-position: 42px;
       }
     }
   }

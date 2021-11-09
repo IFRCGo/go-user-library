@@ -22,7 +22,7 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Data Viz",
+                name: "Data Visualization",
                 link: "/data/goapi"
             },
             {
