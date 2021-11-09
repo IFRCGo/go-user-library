@@ -50,13 +50,19 @@
 }
 
 .page__meta-nav-elements {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   border-inline-end: 0.5px solid $grey-titanium;
   padding: 0 $spacing;
   @include media(small-down) {
     padding-inline-start: 0;
   }
+}
+.page__meta-nav-elements:hover {
+  text-decoration: none;
+}
+.page__meta-nav-elements:active {
+// Not nice, longer than text: border-bottom: 1px solid #f5333f;
 }
 
 button#header-dropdown-lang {
@@ -74,7 +80,7 @@ button#header-dropdown-lang {
 }
 
 .page__meta-nav-elements-borderless {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 1.25rem;
   padding-inline-end: 1rem;
   padding-inline-start: 1rem;

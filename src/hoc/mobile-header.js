@@ -105,7 +105,7 @@ class MobileHeader extends React.PureComponent {
               </li>
 
               <li>
-                <span>Ui Components</span>
+                <span>UI Components</span>
                 <ul className="nav-block-submenu">
                   {components.map((item, i) => (
                     <li key={i}>

@@ -17,7 +17,7 @@ export const ListData = {
             },
             {
                 type: 'link',
-                name: "Ui Components",
+                name: "UI Components",
                 link: "/ui-components/alert"
             },
             {
