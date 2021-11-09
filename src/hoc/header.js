@@ -26,7 +26,7 @@ function Header(props) {
                                 <div className="page__headline">
                                     <h1 className="page__title">
                                         <Link to="/" title="title">
-                                            <img src={Logo} alt="text" className="logo-main"/>
+                                            <img src={Logo} alt="text" className="logo-main" activeClassName="active"/>
                                         </Link>
                                     </h1>
                                 </div>

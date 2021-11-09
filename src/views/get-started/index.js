@@ -112,9 +112,9 @@ const GetStarted = () => {
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          <img src='/svg/data-visualisations.svg' alt="Data Visualisations" width="30" />
+                          <img src='/svg/data-visualization.svg' alt="Data Visualization" width="30" />
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          Data Visualisations
+                          Data Visualization
                         </div>
                       </div>
                       <div className="box__global__content">
@@ -124,7 +124,7 @@ const GetStarted = () => {
                           href="/data/goapi"
                           icon="chevron-right"
                           class="link--with-icon"
-                          name="Explore the Data Viz section"
+                          name="Explore the Data Visualization section"
                         />
                       </div>
                     </div>
