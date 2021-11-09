@@ -134,7 +134,7 @@ const GetStarted = () => {
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
                           <img src='/svg/maps.svg' alt="Maps" width="30" />
-                          &nbsp;&nbsp;&nbsp;
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                           Maps
                         </div>
                       </div>
