@@ -15,7 +15,7 @@ const PageLayoutUi = (props) => (
         <header className="inpage__header">
           <div className="inpage__headline">
             <h1 className="inpage__title inpage__title--home container-lg">
-              Ui components
+              UI components
             </h1>
           </div>
         </header>
