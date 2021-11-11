@@ -27,7 +27,7 @@ const BreadcrumbsPage = () => {
       <div className="inner">
         <div className="fold__header">
           <h1>BREADCRUMBS</h1>
-          <p>Breadcrumbs are a secondary navifation pattern that help users understand the hierachy between levels and navigate through them.</p>
+          <p>Breadcrumbs are a secondary navigation pattern that help users understand the hierachy between levels and navigate through them.</p>
         </div>
         <br/><br/>
 
@@ -51,8 +51,9 @@ const BreadcrumbsPage = () => {
               <br/>
                 <BreadCrumb
                     crumbs={[
-                        {link: "/ui-components/buttons", name: "Buttons"},
-                        {link: "/get-started", name: "Home"},
+                      {link: "/ui-components/buttons", name: "Country"},
+                      {link: "/ui-components", name: "Region"},
+                      {link: "/get-started", name: "Home"},
                     ]}
                 />
               </TabPanel>
@@ -62,6 +63,15 @@ const BreadcrumbsPage = () => {
             </Tabs>
           </div>
         </div>
+
+        <div className="fold container-mid">
+          <div className="container-mid">
+            <h2 className="fold__title margin-reset">COMMENTS</h2>
+            <br/>
+            <p>They will be used in the page header to show the pathway from the main page to specific countries and emergencies.</p>
+          </div>
+        </div>
+
       </div>
     </React.Fragment>
   );

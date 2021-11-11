@@ -31,6 +31,13 @@ const AlertPage = () => {
           </div>
         </div>
 
+        <div className="fold container-mid">
+          <div className="container-mid">
+            <h2 className="fold__title margin-reset">COMMENTS</h2>
+            <br/>
+            <p>Banners are a important type of alert and are used in IFRC red colour.</p>
+          </div>
+        </div>
 
         <div className="fold__header">
           <div className="container-mid">

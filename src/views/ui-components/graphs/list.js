@@ -12,9 +12,7 @@ export const ChartData = {
             }
         ],
         options: {
-            fill: {
-                colors: '#f5333f'
-            },
+            colors: ['#FF9E00', '#F5333F'],
             chart: {
                 height: 350,
                 width: 450,
