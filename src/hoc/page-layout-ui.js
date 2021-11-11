@@ -19,14 +19,12 @@ const PageLayoutUi = (props) => (
             </h1>
           </div>
         </header>
-        <div className="fold">
-          <div className="container-lg">
-            <div className="flex flex-lg">
-              <div className="col-3-xs col-2-mid mobile">
-                <LeftNavUi />
-              </div>
-              <div className="col-12-xs col-10-mid main">{props.children}</div>
+        <div className="container-lg">
+          <div className="flex flex-lg">
+            <div className="col-3-xs col-2-mid mobile">
+              <LeftNavUi />
             </div>
+            <div className="col-12-xs col-10-mid main">{props.children}</div>
           </div>
         </div>
       </section>
