@@ -20,14 +20,12 @@ const PageLayoutContent = (props) => (
           </div>
         </header>
 
-        <div className="fold">
-          <div className="container-lg">
-            <div className=" flex-lg">
-              <div className="col-3-xs col-2-mid mobile">
-                <LeftNavContent />
-              </div>
-              <div className="col-12-xs col-10-mid main">{props.children}</div>
+        <div className="container-lg">
+          <div className=" flex-lg">
+            <div className="col-3-xs col-2-mid mobile">
+              <LeftNavContent />
             </div>
+            <div className="col-12-xs col-10-mid main">{props.children}</div>
           </div>
         </div>
       </section>

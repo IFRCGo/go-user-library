@@ -17,8 +17,8 @@ body {
   }
 
   .main {
-    border-left: 1px solid #cccccc;
-    padding: 0 10px;
+    border-left: 1px solid #eeeeee;
+    padding: 2rem 10px;
   }
 
   @include media(small-down) {

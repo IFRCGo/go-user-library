@@ -47,7 +47,7 @@ export const ListData = {
             {name: "Logo", link: "/brand-design/logo"},
             {name: "Typography", link: "/brand-design/typography"},
             {name: "IFRC Brand Guidelines", link: "/brand-design/brand"},
-            {name: "Design/Usability Principles", link: "/brand-design/design"}
+            {name: "Design & Usability Principles", link: "/brand-design/design"}
         ],
         "login": false,
         "goto": [

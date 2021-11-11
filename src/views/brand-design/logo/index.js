@@ -3,8 +3,8 @@ import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
 import Icon from "../../../assets/graphics/layout/logo-icon.svg";
-import FavIcon from "../../../assets/graphics/layout/apple-touch-icon-114x114.png";
-import GoIcon from "../../../assets/graphics/layout/ifrc_logo_2020.svg";
+import FavIcon from "../../../assets/graphics/layout/favicon.png";
+import GoIcon from "../../../assets/graphics/layout/go-logo-2020.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
   <span>
