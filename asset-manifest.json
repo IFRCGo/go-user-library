@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.950b1b96.chunk.css",
-    "main.js": "/static/js/main.2244e4e0.chunk.js",
-    "main.js.map": "/static/js/main.2244e4e0.chunk.js.map",
+    "main.css": "/static/css/main.ae5e1584.chunk.css",
+    "main.js": "/static/js/main.2c9f9862.chunk.js",
+    "main.js.map": "/static/js/main.2c9f9862.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.351a270f.js",
     "runtime-main.js.map": "/static/js/runtime-main.351a270f.js.map",
     "static/css/2.11c51c79.chunk.css": "/static/css/2.11c51c79.chunk.css",
@@ -10,10 +10,9 @@
     "static/js/2.86954af2.chunk.js.map": "/static/js/2.86954af2.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.11c51c79.chunk.css.map": "/static/css/2.11c51c79.chunk.css.map",
-    "static/css/main.950b1b96.chunk.css.map": "/static/css/main.950b1b96.chunk.css.map",
+    "static/css/main.ae5e1584.chunk.css.map": "/static/css/main.ae5e1584.chunk.css.map",
     "static/js/2.86954af2.chunk.js.LICENSE.txt": "/static/js/2.86954af2.chunk.js.LICENSE.txt",
     "static/media/Mapbox-data-flow.c113b9d1.png": "/static/media/Mapbox-data-flow.c113b9d1.png",
-    "static/media/apple-touch-icon-114x114.e4367525.png": "/static/media/apple-touch-icon-114x114.e4367525.png",
     "static/media/aurc_logo.1953d658.jpg": "/static/media/aurc_logo.1953d658.jpg",
     "static/media/main.scss": "/static/media/x-thin.1b5dbf5a.svg",
     "static/media/brc_logo.929136f2.png": "/static/media/brc_logo.929136f2.png",
@@ -21,6 +20,7 @@
     "static/media/create new.2be03728.png": "/static/media/create new.2be03728.png",
     "static/media/emergency-brand.b9954477.svg": "/static/media/emergency-brand.b9954477.svg",
     "static/media/example1_powerbi_api.c5b05eb7.png": "/static/media/example1_powerbi_api.c5b05eb7.png",
+    "static/media/favicon.e0539de5.png": "/static/media/favicon.e0539de5.png",
     "static/media/funding-coverage.63b5d26e.svg": "/static/media/funding-coverage.63b5d26e.svg",
     "static/media/funding-requirements.0d0083c0.svg": "/static/media/funding-requirements.0d0083c0.svg",
     "static/media/go token generator 2.b0677259.png": "/static/media/go token generator 2.b0677259.png",
@@ -41,7 +41,7 @@
     "static/js/runtime-main.351a270f.js",
     "static/css/2.11c51c79.chunk.css",
     "static/js/2.86954af2.chunk.js",
-    "static/css/main.950b1b96.chunk.css",
-    "static/js/main.2244e4e0.chunk.js"
+    "static/css/main.ae5e1584.chunk.css",
+    "static/js/main.2c9f9862.chunk.js"
   ]
 }
