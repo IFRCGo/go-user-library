@@ -40,7 +40,6 @@ const NavigationsPage = () => {
                 <Tab>Code</Tab>
               </TabList>
               <TabPanel>
-                <p><b>Component:</b>  Header (path: /hoc/header)</p>
                 <Header
                   lineItems={menu.demoOne}
                 />
@@ -60,7 +59,6 @@ const NavigationsPage = () => {
                   <Tab>Data Code</Tab>
                 </TabList>
                 <TabPanel>
-                  <p><b>Component:</b> Header (path: /hoc/header)</p>
                   <Header
                     lineItems={menu.demoTwo}
                   />
@@ -80,7 +78,6 @@ const NavigationsPage = () => {
                 <Tab>Data Code</Tab>
               </TabList>
               <TabPanel>
-                <p><b>Component:</b>  Header (path: /hoc/header)</p>
                 <Header
                   lineItems={menu.demoThree}
                 />
