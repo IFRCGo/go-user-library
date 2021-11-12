@@ -68,7 +68,7 @@ export const ListData = {
             {name: "Filters", link: "/ui-components/filters"},
             {name: "Forms", link: "/ui-components/forms"},
             {name: "Graphs", link: "/ui-components/graphs"},
-            {name: "Header", link: "/ui-components/headers"},
+            {name: "Headers", link: "/ui-components/headers"},
             {name: "Links", link: "/ui-components/links"},
             {name: "Modal", link: "/ui-components/modal"},
             {name: "Navigation", link: "/ui-components/navigation"},
@@ -121,7 +121,7 @@ export const ListData = {
             {
                 type: 'link',
                 name: "Login",
-                link: 'https://www.redcross.org.uk/'
+                link: '/'
             }
         ],
         "goto": false
@@ -135,7 +135,7 @@ export const ListData = {
                 dropdown: [
                     {"name": "English"},
                     {"name": "French"},
-                    {"name": "Spainish"}
+                    {"name": "Spanish"}
                 ]
             },
             {
@@ -146,7 +146,7 @@ export const ListData = {
             {
                 type: 'user',
                 name: "Mariam",
-                link: 'https://www.redcross.org.uk/',
+                link: '/',
                 menu: [
                     {"name": "Home", "location": "/home"},
                     {"name": "Edit Profile", "location": "/profile"},
