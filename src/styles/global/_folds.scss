@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-.fold { // not used recently
+.fold {
   background: #fff;
   padding: $spacing-2 0;
   box-shadow: $base-box-shadow;
@@ -82,6 +82,11 @@
 
 .fold--filled {
   background: tint($base-color, 92%);
+}
+
+.fold--outlined {
+  border: 1px solid $grey-titanium;
+  margin-bottom: 2rem;
 }
 
 .empty-data__container {
