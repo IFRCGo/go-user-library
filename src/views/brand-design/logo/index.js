@@ -3,7 +3,9 @@ import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 import Code from "../../../hoc/source-code";
 import ReactDOMServer from "react-dom/server";
 import Icon from "../../../assets/graphics/layout/logo-icon.svg";
-import FavIcon from "../../../assets/graphics/layout/favicon.png";
+import FavIcon from "../../../assets/graphics/layout/favicon.svg";
+import FavIcom from "../../../assets/graphics/layout/ul-favicon.svg";
+import FavIcow from "../../../assets/graphics/layout/wiki-favicon.svg";
 import GoIcon from "../../../assets/graphics/layout/go-logo-2020.svg";
 
 const htmlString = ReactDOMServer.renderToStaticMarkup(
@@ -56,7 +58,18 @@ const LogoPage = () => {
               <div className="box_space">
                 <h4>Favicon</h4>
                 <div className="icon-center">
+                  <div className="airy">
+                  <p>Main GO</p>
                   <img src={FavIcon} alt="text" className="fav-icon"/>
+                  </div>
+                  <div className="airy">
+                  <p>User Library</p>
+                  <img src={FavIcom} alt="text" className="fav-icon"/>
+                  </div>
+                  <div className="airy">
+                  <p>Wiki</p>
+                  <img src={FavIcow} alt="text" className="fav-icon"/>
+                  </div>
                 </div>
               </div>
             </TabPanel>
