@@ -11,9 +11,9 @@ const htmlString = ReactDOMServer.renderToStaticMarkup(
   <Headers
     breadcrumb={false}
     id="1"
-    title="IFRC Disaster Response and Preparedness"
+    title="IFRC GO User Library"
     url="/"
-    description='"IFRC GO aims to make all disaster information universally accessible and useful to IFRC responders for better decision making."'
+    description="This User Library provides guidance and practical advice for designers, developers and users adding data, graphics and dashboards to GO."
     data={DataOne}
   />
 );
