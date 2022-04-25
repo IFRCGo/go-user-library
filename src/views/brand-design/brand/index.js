@@ -1,6 +1,6 @@
 import React from "react";
-import {Link} from "react-router-dom";
-import Button from "../../../components/button";
+// import {Link} from "react-router-dom";
+// import Button from "../../../components/button";
 // import {Tab, TabList, TabPanel, Tabs} from "react-tabs";
 // import Code from "../../../hoc/source-code";
 // import ReactDOMServer from "react-dom/server";
@@ -13,17 +13,17 @@ const BrandPage = () => {
       <div className="fold__header">
         <h1>IFRC BRAND GUIDELINES</h1>
         <p>GO guidelines are largely based on IFRC brand guidelines with a few deviations due to how those are displayed on the GO platform. You may refer to IFRC guidelines in the document below.</p>
-        <Link
-              to="https://github.com/IFRCGo/IFRC-Icons"
-              target="_blank"
-          >
-            <Button
-                size="small"
-                type="primary-bounded"
-                icon="download"
-                text='Download IFRC Brand Guidelines'
-            />
-          </Link>
+        <a
+          title="Download"
+          className="button button--small button--primary-filled"
+          // instead of "https://github.com/IFRCGo/IFRC-Icons":
+          href="https://www.dropbox.com/sh/v9scmzq69i2bdk4/AABICdMR9QEqA9c3TFC7YSmda?dl=0"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span class="f-icon-download font-size-sm spacing-half-r"></span>
+          Download IFRC Brand Guidelines
+        </a>
       </div>
       <br/><br/>
 
