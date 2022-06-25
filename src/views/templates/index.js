@@ -40,8 +40,10 @@ const Templates = () => {
               The IFRC Mapbox basemap can be used in other applications to add additional data on top, for example in web maps, PowerBI and Tableau. The basic information you will need for any application is the style URL and token:
             </p>
             <p>
-              <b>Style URL</b><br/>
-              <code>mapbox://styles/go-ifrc/ckrfe16ru4c8718phmckdfjh0</code><br/>
+              <b>Style URLs</b><br/>
+              Main: <code>mapbox://styles/go-ifrc/ckrfe16ru4c8718phmckdfjh0</code><br/>
+              WMTS: <code>https://api.mapbox.com/styles/v1/go-ifrc/ckrfe16ru4c8718phmckdfjh0/wmts?access_token=pk.eyJ1IjoiZ28taWZyYyIsImEiOiJjamlybHUzNmMwZDUxM3Fwa215YjJ1dzk5In0.OhqEybDX303sHjHzq3nFYQ</code><br/>
+              Tableau: <code>https://api.mapbox.com/styles/v1/go-ifrc/ckrfe16ru4c8718phmckdfjh0.html?title=true&access_token=pk.eyJ1IjoiZ28taWZyYyIsImEiOiJjamlybHUzNmMwZDUxM3Fwa215YjJ1dzk5In0.OhqEybDX303sHjHzq3nFYQ#1.9/14.694911/14.129731/0</code><br/>
             </p>
             <p>
               <b>Access token</b><br/>
