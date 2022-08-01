@@ -239,12 +239,12 @@ const Maps = () => {
                     <div className="box__global box__global--resources">
                       <div className="box__global__heading">
                         <div className="base-font-semi-bold">
-                          Tableau - CAN YOU HELP CREATE THIS?
+                          Tableau
                         </div>
                       </div>
                       <div className="box__global__content">
                         <p>
-                          We're looking to provide a template and instructions to use Mapbox in Tableau. Can you help us create this documentation? If so, please email im@ifrc.org.
+                          <Link href="/files/9234692/using.Mapbox.in.Tableau.docx" name="Here" target="_blank" class="link--inline" /> you can find instructions for adding an IFRC standard Mapbox map in Tableau.
                         </p>
                       </div>
                     </div>
