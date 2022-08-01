@@ -244,7 +244,7 @@ const Maps = () => {
                       </div>
                       <div className="box__global__content">
                         <p>
-                          <Link href="/files/9234692/using.Mapbox.in.Tableau.docx" name="Here" target="_blank" class="link--inline" /> you can find instructions for adding an IFRC standard Mapbox map in Tableau.
+                          <Link href="https://github.com/IFRCGo/go-user-library/files/9234692/using.Mapbox.in.Tableau.docx" name="Here" target="_blank" class="link--inline" /> you can find instructions for adding an IFRC standard Mapbox map in Tableau.
                         </p>
                       </div>
                     </div>
