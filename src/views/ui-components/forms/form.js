@@ -10,14 +10,8 @@ import {
     FormRadio,
 } from "./../../../components/form-elements";
 
-import Button from "../../../components/button";
 import Code from "./../../../hoc/source-code";
 
-const options = [
-    {value: 'chocolate', label: 'Chocolate'},
-    {value: 'strawberry', label: 'Strawberry'},
-    {value: 'vanilla', label: 'Vanilla'}
-];
 
 const InputString = ReactDOMServer.renderToStaticMarkup(
     <div className="form__group">
@@ -190,7 +184,6 @@ class Form extends React.Component {
             {value: "3", label: "Option 3"},
             {value: "4", label: "Option 4"},
         ];
-        const {selectedOption} = this.state;
 
         return (
             <div>
