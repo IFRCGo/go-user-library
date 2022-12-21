@@ -10,8 +10,6 @@ import React from "react";
 // NOT USED: import EricssonLogo from "./../../assets/graphics/content/ericsson_logo.png";
 import MapboxDiagram from "./../../assets/graphics/content/Mapbox-data-flow.png"
 import DisplayTable from "../../components/tables";
-import ReactDOMServer from "react-dom/server";
-import LinkButton from "../../components/link-button";
 import Link from "../../components/link";
 
 const headingsOne = [
@@ -42,39 +40,6 @@ const headingsOne = [
   },
 ];
 
-const link = '<a title="Districts data dictionary" href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194" target="_blank" rel="noreferrer">View data dictionary</a>';
-
-const sampleLink =
-    <Link
-        href="#link"
-        class="link--with-icon"
-        name="link"
-    />;
-
-const link1 =
-    <Link
-        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1444469565"
-        class="link--with-icon"
-        name="Countries data dictionary"
-        target="_blank"
-    />;
-
-const link2 =
-    <Link
-        href="https://docs.google.com/spreadsheets/d/1Ixb39GhNOGlWdE2ersLe1xb35x1-Q4KNlmtd_1ArIYs/edit#gid=1578736194"
-        class="link--with-icon"
-        name="Districts data dictionary"
-        target="_blank"
-    />;
-
-const link3 =
-    <Link
-        href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000"
-        class="link--with-icon"
-        name="Download CSV"
-        target="_blank"
-    />;
-
 
 const rowsOne = [
   {
@@ -82,9 +47,9 @@ const rowsOne = [
     tilese_ID: "go-ifrc.go-countries",
     type: 'Polygon',
     data: <Link
-        href="https://goadmin.ifrc.org/api/v2/country/?format=csv&limit=500"
+        href="https://ifrcorg.sharepoint.com/:f:/s/IFRCSharing/El6soiT45VpLsHd2IoUUVuQBZ2wZq0n2YhF2wF5ow0VNIw?e=Rt1gJy"
         class="link--with-icon"
-        name="Download CSV"
+        name="Download"
         target="_blank"
     />,
     details: <Link
@@ -95,20 +60,13 @@ const rowsOne = [
     />
   },
   {
-    mapbox: "GO Country Centroids",
-    tilese_ID: "go-ifrc.go-country-centroids\t",
-    type: 'Polygon',
-    data: 'Point',
-    details: ''
-  },
-  {
     mapbox: "GO Districts 1",
     tilese_ID: "go-ifrc.go-country-centroids",
     type: 'Polygon',
     data: <Link
-        href="https://goadmin.ifrc.org/api/v2/district/?format=csv&limit=5000"
+        href="https://ifrcorg.sharepoint.com/:f:/s/IFRCSharing/El6soiT45VpLsHd2IoUUVuQBZ2wZq0n2YhF2wF5ow0VNIw?e=Rt1gJy"
         class="link--with-icon"
-        name="Download CSV"
+        name="Download"
         target="_blank"
     />,
     details: <Link
@@ -118,13 +76,6 @@ const rowsOne = [
         target="_blank"
     />
   },
-  {
-    mapbox: "GO District Centroids",
-    tilese_ID: "go-ifrc.go-country-centroids",
-    type: 'Polygon',
-    data: 'Point',
-    details: ''
-  }
 ];
 
 const Maps = () => {
