@@ -250,7 +250,7 @@ export const ListData = {
                     },
                     {
                         name: 'API Documentation',
-                        link: 'https://dscgocdnapi.azureedge.net/docs'
+                        link: 'https://goadmin.ifrc.org/docs'
                     },
                     {
                         name: 'Other Resources',
